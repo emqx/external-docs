@@ -1,0 +1,143 @@
+export default {
+  __not: [],
+  maxSix: {
+    zh: '最大支持 6 个连接',
+    jp: '最大支持 6 个连接',
+    en: 'Maximum support for 6 connection',
+  },
+  defaultConnection: {
+    zh: '默认连接',
+    jp: '默认连接',
+    en: 'Default',
+  },
+  connectionName: {
+    zh: '新连接',
+    jp: '新连接',
+    en: 'New',
+  },
+  connectionConfiguration: {
+    zh: '连接配置',
+    jp: '连接配置',
+    en: 'Connection',
+  },
+  protocolType: {
+    zh: '协议类型',
+    jp: '协议类型',
+    en: 'Protocol Type',
+  },
+  host: {
+    zh: '主机名',
+    jp: '主机名',
+    en: 'Host',
+  },
+  port: {
+    zh: '端口',
+    jp: '端口',
+    en: 'Port',
+  },
+  mountPoint: {
+    zh: '挂载点',
+    jp: '挂载点',
+    en: 'Mountpoint',
+  },
+  randomGeneration: {
+    zh: '随机生成',
+    jp: '随机生成',
+    en: 'Random',
+  },
+  connected: {
+    zh: '已连接',
+    jp: '已连接',
+    en: 'Connected',
+  },
+  inConnection: {
+    zh: '连接中',
+    jp: '连接中',
+    en: 'Connecting',
+  },
+  disconnected: {
+    zh: '已断开连接',
+    jp: '已断开连接',
+    en: 'Disconnected',
+  },
+  connect: {
+    zh: '连接',
+    jp: '连接',
+    en: 'Connect',
+  },
+  cancelConnection: {
+    zh: '取消连接',
+    jp: '取消连接',
+    en: 'Cancel connection',
+  },
+  disconnect: {
+    zh: '断开连接',
+    jp: '断开连接',
+    en: 'Disconnect',
+  },
+  Subscription: {
+    zh: '订阅',
+    jp: '订阅',
+    en: 'Subscription',
+  },
+  Subscribe: {
+    zh: '订阅',
+    jp: '订阅',
+    en: 'Subscribe',
+  },
+  time: {
+    zh: '时间',
+    jp: '时间',
+    en: 'Time',
+  },
+  publish: {
+    zh: '发布',
+    jp: '发布',
+    en: 'Publish',
+  },
+  received: {
+    zh: '已接收',
+    jp: '已接收',
+    en: 'Received',
+  },
+  clear: {
+    zh: '清除',
+    jp: '清除',
+    en: 'Clear',
+  },
+  published: {
+    zh: '已发送',
+    jp: '已发送',
+    en: 'Published',
+  },
+  pleaseEnter: {
+    zh: '请输入',
+    jp: '请输入',
+    en: 'Please enter',
+  },
+  rangeError: {
+    zh: '范围错误',
+    jp: '范围错误',
+    en: 'range error',
+  },
+  clientNotConnected: {
+    zh: '客户端未连接',
+    jp: '客户端未连接',
+    en: 'Client not connected',
+  },
+  subscriptionFailure: {
+    zh: '订阅失败',
+    jp: '订阅失败',
+    en: 'Subscription failure',
+  },
+  publishingFailure: {
+    zh: '发布失败',
+    jp: '发布失败',
+    en: 'Publishing failure',
+  },
+  connectionDisconnected: {
+    zh: '连接已断开',
+    jp: '连接已断开',
+    en: 'connection disconnected',
+  },
+}

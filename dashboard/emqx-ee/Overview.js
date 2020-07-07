@@ -1,0 +1,389 @@
+export default
+{
+  __not: [
+    '默认是80',
+    '默认是60',
+    '默认80',
+    '默认60',
+    '莱森斯信息',
+  ],
+  shareSubscription: {
+    zh: '共享订阅',
+    jp: '共享订阅',
+    en: 'Share Subscription',
+  },
+  subscription: {
+    zh: '订阅',
+    jp: '订阅',
+    en: 'Subscriptions',
+  },
+  retained: {
+    zh: '保留消息',
+    jp: '保留消息',
+    en: 'Retained',
+  },
+  connectionsTips: {
+    zh: '当前活跃连接数',
+    jp: '当前活跃连接数',
+    en: 'Currently active connections',
+  },
+  view: {
+    zh: '查看',
+    jp: '查看',
+    en: 'View',
+  },
+  viewMore: {
+    zh: '查看详情',
+    jp: '查看详情',
+    en: 'View More',
+  },
+  systemTime: {
+    zh: '系统时间',
+    jp: '系统时间',
+    en: 'System Time',
+  },
+  uptime: {
+    zh: '运行时长',
+    jp: '运行时长',
+    en: 'Uptime',
+  },
+  currentConnection: {
+    zh: '连接',
+    jp: '连接',
+    en: 'Connections',
+  },
+  nodeState: {
+    zh: '节点状态',
+    jp: '节点状态',
+    en: 'Node State',
+  },
+  running: {
+    zh: '运行中',
+    jp: '运行中',
+    en: 'Running',
+  },
+  stopped: {
+    zh: '已停止',
+    jp: '已停止',
+    en: 'Stopped',
+  },
+  memory: {
+    zh: '内存',
+    jp: '内存',
+    en: 'Memory',
+  },
+  maxFds: {
+    zh: '最大文件句柄',
+    jp: '最大文件句柄',
+    en: 'Max Fds',
+  },
+  process: {
+    zh: '进程',
+    jp: '进程',
+    en: 'Process',
+  },
+  load: {
+    zh: '负载',
+    jp: '负载',
+    en: 'Load',
+  },
+  monitor: {
+    zh: '监控',
+    jp: '监控',
+    en: 'Monitor',
+  },
+  nodeName: {
+    zh: '节点名称',
+    jp: '节点名称',
+    en: 'Node Name',
+  },
+  nodeData: {
+    zh: '节点数据',
+    jp: '节点数据',
+    en: 'Node',
+  },
+  currentNodeInfo: {
+    zh: '当前节点信息如下',
+    jp: '当前节点信息如下',
+    en: 'Current node info',
+  },
+  basicInfo: {
+    zh: '基础信息',
+    jp: '基础信息',
+    en: 'Basic Info',
+  },
+  metric: {
+    zh: '度量指标',
+    jp: '度量指标',
+    en: 'Metric',
+  },
+  configuration: {
+    zh: '配置信息',
+    jp: '配置信息',
+    en: 'Configuration',
+  },
+  version: {
+    zh: '版本信息',
+    jp: '版本信息',
+    en: 'Version',
+  },
+  basic: {
+    zh: '基础信息',
+    jp: '基础信息',
+    en: 'Basic',
+  },
+  listener: {
+    zh: '监听器',
+    jp: '监听器',
+    en: 'Listener',
+  },
+  ListeningPorts: {
+    zh: '当前监听端口列表',
+    jp: '当前监听端口列表',
+    en: 'Listening address and ports',
+  },
+  listenerProtocol: {
+    zh: '监听协议',
+    jp: '监听协议',
+    en: 'Protocol',
+  },
+  listenerAddress: {
+    zh: '监听地址',
+    jp: '监听地址',
+    en: 'Address',
+  },
+  connectCurrentAndMax: {
+    zh: '连接 (当前/最大)',
+    jp: '连接 (当前/最大)',
+    en: 'Connect (Current/Max)',
+  },
+  current: {
+    zh: '当前',
+    jp: '当前',
+    en: 'Current',
+  },
+  maximum: {
+    zh: '最大',
+    jp: '最大',
+    en: 'Maximum',
+  },
+  dataList: {
+    zh: '数据列表',
+    jp: '数据列表',
+    en: 'Data List',
+  },
+  packetStatisticsOfNodes: {
+    zh: '节点的报文信息, 消息统计与流量收发统计',
+    jp: '节点的报文信息, 消息统计与流量收发统计',
+    en: 'Packet statistics of nodes、Message I/O Statistics',
+  },
+  mqttPackages: {
+    zh: '报文',
+    jp: '报文',
+    en: 'Packages',
+  },
+  messageNumber: {
+    zh: '消息数',
+    jp: '消息数',
+    en: 'Messages',
+  },
+  traffic: {
+    zh: '流量收发(字节)',
+    jp: '流量收发(字节)',
+    en: 'Byte',
+  },
+  client: {
+    zh: '客户端',
+    jp: '客户端',
+    en: 'Client',
+  },
+  session: {
+    zh: '会话',
+    jp: '会话',
+    en: 'Session',
+  },
+  mainConfiguration: {
+    zh: '节点主要配置',
+    jp: '节点主要配置',
+    en: 'Main Configuration',
+  },
+  brokerStatus: {
+    zh: '服务器状态',
+    jp: '服务器状态',
+    en: 'Broker status',
+  },
+  nodesNun: {
+    zh: '节点数',
+    jp: '节点数',
+    en: 'Nodes',
+  },
+  numberOfNodesInCluster: {
+    zh: '集群中节点数',
+    jp: '集群中节点数',
+    en: 'Nodes',
+  },
+  messageOut: {
+    zh: '消息发出',
+    jp: '消息发出',
+    en: 'Message Out',
+  },
+  strip: {
+    zh: '条',
+    jp: '条',
+    en: 'strip',
+  },
+  second: {
+    zh: '秒',
+    jp: '秒',
+    en: 'second',
+  },
+  currentMessageOutRate: {
+    zh: '当前消息发出速度',
+    jp: '当前消息发出速度',
+    en: 'Current message-out rate',
+  },
+  messageIn: {
+    zh: '消息流入',
+    jp: '消息流入',
+    en: 'Message In',
+  },
+  currentMessageInRate: {
+    zh: '当前消息流入速度',
+    jp: '当前消息流入速度',
+    en: 'Current message-in rate',
+  },
+  subscriptionNumber: {
+    zh: '订阅数',
+    jp: '订阅数',
+    en: 'Subscriptions',
+  },
+  topicNumber: {
+    zh: '集群订阅关系数',
+    jp: '集群订阅关系数',
+    en: 'Topics',
+  },
+  connection: {
+    zh: '连接',
+    jp: '连接',
+    en: 'Connection',
+  },
+  connectionNumber: {
+    zh: '连接数',
+    jp: '连接数',
+    en: 'Connections',
+  },
+  maxConnections: {
+    zh: '连接数峰值',
+    jp: '连接数峰值',
+    en: 'Max connections',
+  },
+  noData: {
+    zh: '暂无数据',
+    jp: '暂无数据',
+    en: 'No data',
+  },
+  customer: {
+    zh: '签发对象',
+    jp: '签发对象',
+    en: 'Customer',
+  },
+  numberOfConnectionLines: {
+    zh: 'License 使用情况',
+    jp: 'License 使用情况',
+    en: 'License usage',
+  },
+  issuanceOfEmail: {
+    zh: '签发邮箱',
+    jp: '签发邮箱',
+    en: 'Issuance of email',
+  },
+  issuedAt: {
+    zh: '签发时间',
+    jp: '签发时间',
+    en: 'Issued At',
+  },
+  expireAt: {
+    zh: '到期时间',
+    jp: '到期时间',
+    en: 'Expire At',
+  },
+  beforeTheCertificateExpires: {
+    zh: '证书到期前 EMQ 将通过邮件通知签发邮箱，请留意信息接收以免错过续期时间对业务造成影响。',
+    jp: '证书到期前 EMQ 将通过邮件通知签发邮箱，请留意信息接收以免错过续期时间对业务造成影响。',
+    en: 'EMQ will issue mailbox through email notification before the certificate expires. Please pay attention to receiving information so as not to miss the renewal time, which will affect the business.',
+  },
+  forTrialEdition: {
+    zh: '当前 License 为试用版',
+    jp: '当前 License 为试用版',
+    en: 'The license is trial edition',
+  },
+  license: {
+    zh: 'License 信息',
+    jp: 'License 信息',
+    en: 'License',
+  },
+  trialEdition: {
+    zh: '试用版',
+    jp: '试用版',
+    en: 'Trial Edition',
+  },
+  messageDrop: {
+    zh: '消息丢弃',
+    jp: '消息丢弃',
+    en: 'Message Drop',
+  },
+  topics: {
+    zh: '主题',
+    jp: '主题',
+    en: 'Topics',
+  },
+  Subscription: {
+    zh: '订阅',
+    jp: '订阅',
+    en: 'Subscription',
+  },
+  message: {
+    zh: '消息',
+    jp: '消息',
+    en: 'Message',
+  },
+  rate: {
+    zh: '速率',
+    jp: '速率',
+    en: 'Rate',
+  },
+  notPromptAgain: {
+    zh: '不再提示',
+    jp: '不再提示',
+    en: 'don\'t prompt again',
+  },
+  licenseExpiryTip: {
+    zh: `
+    您的试用 License 已过期，请
+    <a target="_blank" rel="noopener norefferrer" href="https://www.emqx.io/cn/licenses#trial">更新 License </a>
+    或联系销售人员更新 License。
+    `,
+    en: `
+    Your license has expired. Please
+    <a target="_blank" rel="noopener norefferrer" href="https://www.emqx.io/licenses#trial">update license</a>
+    or contact our customer services for an updated license.
+    `,
+  },
+  licenseEvaluationTip: {
+    zh: `
+    当前正在使用评估 License，限制为10个连接。请
+    <a target="_blank" rel="noopener norefferrer" href="https://www.emqx.io/cn/licenses#trial">升级 License</a> 。<br>如已购买
+    License，请<a target="_blank" rel="noopener norefferrer" href="https://docs.emqx.io/enterprise/latest/cn/getting-started/start.html#license"> 替换 </a>正式的 License。
+    `,
+    en: `
+    You are now using the 10-connection evaluation license.<br>Please
+    <a target="_blank" rel="noopener norefferrer" href="https://www.emqx.io/licenses#trial">upgrade license</a>.
+    If you already applied offcial license,<br>please <a target="_blank" rel="noopener norefferrer" href="https://docs.emqx.io/enterprise/latest/en/getting-started/start.html#license">replace</a> with your official license.
+    `,
+  },
+  konw: {
+    zh: '知道了',
+    jp: '知道了',
+    en: 'I knew',
+  },
+}
