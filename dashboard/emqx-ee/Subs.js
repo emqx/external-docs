@@ -1,17 +1,17 @@
 export default {
   currentSubs: {
     zh: '当前订阅主题列表',
-    jp: 'カレントサブスクリプションリスト',
+    jp: '当前订阅主题列表',
     en: 'Current Subscriptions',
   },
   topic: {
     zh: '主题',
-    jp: 'トピック',
+    jp: '主题',
     en: 'Topic',
   },
   share: {
     zh: '共享订阅',
-    jp: 'サブスクリプション共有',
+    jp: '共享订阅',
     en: 'Share',
   },
 }
