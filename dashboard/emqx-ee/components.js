@@ -217,7 +217,7 @@ export default {
   },
   addModule: {
     zh: '添加模块',
-    ja: '',
+    ja: 'モジュール追加',
     en: 'Module Add',
   },
 }
