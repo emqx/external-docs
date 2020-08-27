@@ -14,11 +14,13 @@
 
 将 (./dashboard/emqx-jp.js)[./dashboard/emqx-jp.js] 中的中文全部翻译为日文；
 
-将 (./dashboard/emqx-rule.js)[./dashboard/emqx-rule.js] 中的以下代码块全部翻译为日文：
+将 (./dashboard/emqx-rule.js)[./dashboard/emqx-rule.js] 中的**以下代码块**全部翻译为日文：
 
 ```js
-export const jp = {
-  viewStates: '状态',
+export const ja = {
+  viewStates: 'xxxxxxxxxxxxxxx',
+  topic: 'xxxxx',
+  node: 'xxxxx',
   ...
 }
 ```
