@@ -1,7 +1,7 @@
 export default {
   topic: {
     zh: '主题',
-    jp: 'トピック',
+    jp: '主题',
     en: 'Topic',
   },
 }
