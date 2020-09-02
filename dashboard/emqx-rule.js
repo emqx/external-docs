@@ -361,11 +361,11 @@ export const zh = {
 }
 
 export const ja = {
-  viewStates: 'ビューのステータス',
+  viewStates: 'ステータス',
   topic: 'トピック',
   node: 'ノード',
   all: '合計',
-  connectSuccess: '接続成功',
+  connectSuccess: '接続に成功しました',
   speed_unit: '回/秒',
   match_unit: '回',
   match_rate: 'ヒット率',
@@ -400,7 +400,7 @@ export const ja = {
   test: 'テスト',
   input_test_data: 'SQLテスト',
   input_test_data_tips: 'SQLテスト用のカスタムシミュレーションデータ、テスト用のみ',
-  is_required: '必須項目接続テスト',
+  is_required: 'を入力してください',
   conf_test: '接続テスト',
   conf_test_success: '接続可能',
   conf_test_fail: '接続不可能',
@@ -422,7 +422,7 @@ export const ja = {
   },
   trigger_events: 'トリガーイベント',
   id: 'ID',
-  exists: 'キー重複',
+  exists: '重複キー',
   data_key: 'キー',
   data_value: '値',
   rely_resource: '関連リソース',
@@ -436,8 +436,8 @@ export const ja = {
   actions: '応答アクション',
   action: 'アクション',
   resource: 'リソース',
-  oper: 'オペレーティング',
-  view: 'プレビュー',
+  oper: 'オペレーション',
+  view: '詳細',
   confirm: '確認',
   delete: '削除',
   rule_details: 'ルール詳細',
@@ -455,15 +455,15 @@ export const ja = {
   value: '値',
   edit: '編集',
   add: '追加',
-  ruleEnabled: '有効',
-  ruleDisabled: '無効',
+  ruleEnabled: '有効になります',
+  ruleDisabled: '無効になります',
 
   basic_info: '基本情報',
   rule_name_required: 'ルール名を入力してください',
   rule_sql: 'ルールSQL',
   rule_id: 'ルールID',
   rule_descr_placeholder: '例：Webhookへ転送されたメッセージ',
-  rule_sql_tips_title: '条件付きフィルタリングとデータ処理のためのSQLの記述：',
+  rule_sql_tips_title: 'SQLによる条件付きフィルタリングとデータ処理：',
   sql_tips_html: `<p>EMQXは、メッセージが公開されてイベントがトリガーされると、ルールエンジンをトリガーします。トリガー条件を適応するルールは、自体のSQLを実行し、メッセージとイベントのコンテキスト情報をフィルター処理します。</p>
   <p class="item">ルールエンジンは、応答アクションを利用して、特定のトピックのメッセージの処理結果をデータベースに格納し、HTTPサーバーに送信し、メッセージキューKafkaまたはRabbitMQに転送し、新しいトピックまたは別のBrokerクラスターに再発行できます。各ルールに対して、複数の応答アクションをデプロイ可能です。</p>
 
@@ -490,9 +490,9 @@ export const ja = {
   condition_screening: '条件付きフィルタリング',
   topic_condition: 'トピック条件',
   message_publish_topic: 'メッセージ公開トピック',
-  set_action: 'アクションハンドラ',
+  set_action: '応答アクション',
   sql_required: 'SQLを入力してください',
-  actions_required: '必要なアクション',
+  actions_required: 'アクションを選択してください',
   rule_action_tips_title: 'アクションを定義する',
   action_tips_html: `
 <p>1. メッセージをメッセージサーバに再公開</p>
@@ -504,8 +504,8 @@ export const ja = {
   resource_des: 'リソース詳細',
   resource_id: 'リソースID',
   id_len_tip: '最大64ビットまで',
-  id_char_tip: '入力可能文字：半角英数字・「_（アンダースコア）」・「:（コロン）」のみをご入力ください',
-  type_required: '必要なタイプ',
+  id_char_tip: '入力可能文字：半角英数字・「_（アンダースコア）」・「:（コロン）」のみ',
+  type_required: 'リソースタイプを選択してください',
   resource_details: 'リソース詳細',
   config_info: '構成情報',
 
