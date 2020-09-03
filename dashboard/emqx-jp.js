@@ -104,6 +104,7 @@ export default {
     // Analysis
     analysis: '分析',
     topicMetrics: 'トピック分析',
+    alarms: '告警',
   },
   // overview
   overview: {
@@ -462,6 +463,17 @@ export default {
     messageDropDesc: '（メッセージドロップ頻度）',
     loadAnalysis: '有効にする',
     loadSuccess: '有効になりました',
+    alarmName: '告警名称',
+    alarmMessage: '告警消息',
+    activateAt: '开始时间',
+    deactivateAt: '结束时间',
+    duration: '持续时间',
+    currentAlarms: '当前告警',
+    historicalAlarm: '历史告警',
+    deactivate: '取消告警',
+    clearAll: '清除全部',
+    confirmClear: '确认清除全部告警信息？',
+    confirmDeactivate: '确认取消该告警信息？',
   },
   httpCode: {
     0: '成功しました',
