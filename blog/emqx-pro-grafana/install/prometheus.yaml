@@ -1,0 +1,34 @@
+global:
+  scrape_interval:     10s # 默认抓取时间
+  evaluation_interval: 10s # 每10秒评估一次rules
+
+  # 在本机上每一条时间序列上都会默认产生的，主要可以用于联合查询、远程存储、Alertmanager时使用。
+  external_labels:
+      monitor: 'emqx-monitor'
+
+# 加载规则,依据 evaluation_interval 来定期评估rule
+rule_files:
+  # - "first.rules"
+  # - "second.rules"
+  - "/etc/prometheus/rules/*.rules"
+
+scrape_configs:
+  # 表示在这个配置内的时间序例，每一条都会自动添加上这个{job_name:"prometheus"}的标签
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['127.0.0.1:9090']
+
+  - job_name: 'node-exporter'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['192.168.6.11:9100']
+        labels:
+          instance: wivwiv@127.0.0.1
+
+  - job_name: 'pushgateway'
+    scrape_interval: 5s
+    honor_labels: true
+    static_configs:
+      # pushgateway 位置
+      - targets: ['192.168.6.11:9091']
