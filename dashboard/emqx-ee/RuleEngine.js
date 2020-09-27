@@ -22,7 +22,7 @@ export default {
   },
   view: {
     zh: '点击查看',
-    ja: 'プレビュー',
+    ja: '詳細',
     en: 'View',
   },
   hide: {
@@ -237,7 +237,7 @@ export default {
   },
   createRules: {
     zh: '创建规则',
-    ja: 'ルール新規',
+    ja: '新規ルール',
     en: 'Create Rules',
   },
   condition: {
@@ -247,7 +247,7 @@ export default {
   },
   definingRuleConditionsAndDataProcessing: {
     zh: '使用 SQL 设定规则，对消息数据筛选、编解码、变型，灵活地将处理后的数据无缝转发至数据库、流处理、API 网关等数据目的地',
-    ja: 'SQlでルールを設定して、メッセージデータをフィルター・エンコード・デコードと編集が可能です。シームレスに処理後のデータをデーターベース・ストリーム処理・APIゲートウェイに転送できます。',
+    ja: 'SQLでルールを設定して、メッセージデータをフィルター・エンコード・デコード・変換が可能です。シームレスに処理後のデータをデーターベース・ストリーム処理・APIゲートウェイに転送できます。',
     en: 'Use SQL to set rules to filter, encode, decode, and modify message data, and seamlessly forward processed data to data destinations such as databases, stream processing, and API gateways',
   },
   triggerEvent: {
@@ -287,7 +287,7 @@ export default {
   },
   inputMetadata: {
     zh: '输入元数据进行 SQL 匹配测试',
-    ja: 'SQLテストのためメタデータを入力します',
+    ja: 'SQLテスト用のカスタムシミュレーションデータ、テスト用のみ',
     en: 'Input metadata for SQL test',
   },
   testOutput: {
@@ -317,7 +317,7 @@ export default {
   },
   responseAction: {
     zh: '响应动作',
-    ja: 'アクション',
+    ja: '応答アクション',
     en: 'Action',
   },
   processingMessagesForHitRules: {
@@ -357,7 +357,7 @@ export default {
   },
   pleaseAddAResponseAction: {
     zh: '请添加响应动作',
-    ja: 'アクションを追加してください',
+    ja: '応答アクションを追加してください',
     en: 'Please add a action',
   },
   createSuccess: {
@@ -462,7 +462,7 @@ export default {
   },
   averageExecutionSpeedInTheLast5Minutes: {
     zh: '最近5分钟平均执行速度',
-    ja: '過去5分間平均速度',
+    ja: '過去5分間平均スピード',
     en: 'Average speed in the last 5 minutes',
   },
   rule: {

@@ -99,7 +99,7 @@ export default {
   },
   accessNode: {
     zh: '接入节点',
-    ja: 'ノードへアクセス',
+    ja: 'ノード名',
     en: 'Access Node',
   },
   protocol: {
@@ -149,7 +149,7 @@ export default {
   },
   disconnect: {
     zh: '断开连接',
-    ja: '接続切れ',
+    ja: '切断',
     en: 'Disconnect',
   },
   cleanSession: {
@@ -244,7 +244,7 @@ export default {
   },
   reductions: {
     zh: '调度递减计数',
-    ja: '減少数',
+    ja: 'スケジューリングデクリメント数',
     en: 'Reductions',
   },
   mailbox: {
@@ -264,7 +264,7 @@ export default {
   },
   unsubscribe: {
     zh: '取消订阅',
-    ja: 'アンサブスクリプション',
+    ja: '解除',
     en: 'unsubscribe',
   },
   onLine: {
@@ -334,12 +334,12 @@ export default {
   },
   awaiting_rel: {
     zh: '未确认的 PUBREC 数据包计数',
-    ja: '未確認のPUBRECパケットカウント',
+    ja: '未確認のPUBRECパケット数',
     en: 'Unconfirmed PUBREC Packets Count',
   },
   max_awaiting_rel: {
     zh: '最大未确认的 PUBREC 数据包计数',
-    ja: '最大未確認のPUBRECパケットカウント',
+    ja: '未確認のPUBRECパケットの最大数',
     en: 'Maximum Unconfirmed PUBREC Packets Count',
   },
   collapse: {

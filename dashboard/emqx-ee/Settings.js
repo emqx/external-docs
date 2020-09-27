@@ -49,7 +49,7 @@ export default {
   },
   cancelConfirm: {
     zh: '是否取消本次修改？',
-    ja: '今回の変更は破棄しますか',
+    ja: '今回の変更を破棄しますか',
     en: 'You have unsaved changes, confirm cancel?',
   },
   noSaveConfirm: {
@@ -134,7 +134,7 @@ export default {
   },
   enable_stats: {
     zh: '启用连接状态统计，会降低部分性能',
-    ja: '接続ステータス統計を有効にします（性能に影響があるかもしれません）',
+    ja: '接続ステータス統計を有効にしますか（性能に影響があるかもしれません）',
     en: 'Enable per connection stats',
   },
   use_username_as_clientid: {
@@ -159,12 +159,12 @@ export default {
   },
   ignore_loop_deliver: {
     zh: '是否忽略消息循环传递，常用于消息桥接',
-    ja: 'メッセージをループで転送することを無視するかどうかを選択することができます（MQTT v3.1.1のみ）',
+    ja: 'メッセージがループで転送することを無視しますか（メッセージブリッジングによく使われる、MQTT v3.1.1のみ）',
     en: 'Whether to ignore loop delivery of messages (for MQTT v3.1.1)',
   },
   mqtt_ignore_loop_deliver: {
     zh: '是否忽略消息循环传递，常用于消息桥接（对于 MQTT v3.1.1）',
-    ja: 'メッセージをループで転送することを無視しますか（MQTT v3.1.1のみ）',
+    ja: 'メッセージがループで転送することを無視しますか（MQTT v3.1.1のみ）',
     en: 'Whether to ignore loop delivery of messages (for MQTT v3.1.1)',
   },
   idle_timeout: {
@@ -234,7 +234,7 @@ export default {
   },
   upgrade_qos: {
     zh: '根据订阅强制升级 QoS',
-    ja: 'サブスクリプションによってQoSを強制的にアップグレードします',
+    ja: 'サブスクリプションによってQoSを強制的にアップグレードしますか',
     en: 'Force to upgrade QoS according to subscription',
   },
   max_packet_size: {
@@ -319,7 +319,7 @@ export default {
   },
   hibernate_after: {
     zh: '闲置后进入休眠状态的时间',
-    ja: 'アイドル状態の持続時間',
+    ja: 'アイドル状態になってからスリープまでの時間',
     en: 'Hibernate after a duration of idle state',
   },
   acl_cache_max_size: {
@@ -365,7 +365,7 @@ export default {
   },
   clusterType: {
     zh: '集群方式',
-    ja: 'クラスタータイプ',
+    ja: 'タイプ',
     en: 'Cluster Type',
   },
   currentNode: {

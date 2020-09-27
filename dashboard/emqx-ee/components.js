@@ -82,7 +82,7 @@ export default {
   },
   topic_metrics: {
     zh: '主题监控',
-    ja: 'トピック メトリクス',
+    ja: 'トピック分析',
     en: 'Topic metrics',
   },
   alerts: {
@@ -167,7 +167,7 @@ export default {
   },
   applicationManagement: {
     zh: '应用管理',
-    ja: 'アプリケーション管理',
+    ja: 'アプリ管理',
     en: 'Application',
   },
   usersManagement: {
@@ -187,12 +187,12 @@ export default {
   },
   theSystemHas: {
     zh: '系统有',
-    ja: 'システムに', // TODO
+    ja: 'システムに',
     en: 'The system has',
   },
   noteAlertClickView: {
     zh: '条告警，点击查看',
-    ja: '件アラームがあります、クリックして詳細を確認します。',
+    ja: '件アラームがあります。クリックして詳細を確認します。',
     en: 'alerts, Click to view',
   },
   noWarning: {
