@@ -7,7 +7,7 @@ export default {
   },
   loginUserAccount: {
     zh: '使用 Dashboard 用户登录',
-    ja: 'ダッシュボードアカウントでログイン',
+    ja: 'ダッシュボードのアカウントを使用',
     en: 'Login using Dashboard accounts',
   },
   forgetPassword: {
@@ -32,7 +32,7 @@ export default {
   },
   remember: {
     zh: '记住',
-    ja: 'ログイン状態を保存する',
+    ja: 'ログイン状態を保持する',
     en: 'remember',
   },
   resourcesNotFound: {
@@ -47,7 +47,7 @@ export default {
   },
   copied: {
     zh: '复制成功！',
-    ja: 'コピーしました',
+    ja: 'コピーが成功しました',
     en: 'Copied!',
   },
   copy: {
@@ -67,7 +67,7 @@ export default {
   },
   view: {
     zh: '详情',
-    ja: 'プレビュー',
+    ja: '詳細',
     en: 'View',
   },
   detail: {
