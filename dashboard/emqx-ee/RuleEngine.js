@@ -246,9 +246,12 @@ export default {
     en: 'Condition',
   },
   definingRuleConditionsAndDataProcessing: {
-    zh: '使用 SQL 设定规则，对消息数据筛选、编解码、变型，灵活地将处理后的数据无缝转发至数据库、流处理、API 网关等数据目的地',
-    ja: 'SQLでルールを設定して、メッセージデータをフィルター・エンコード・デコード・変換が可能です。シームレスに処理後のデータをデーターベース・ストリーム処理・APIゲートウェイに転送できます。',
-    en: 'Use SQL to set rules to filter, encode, decode, and modify message data, and seamlessly forward processed data to data destinations such as databases, stream processing, and API gateways',
+    zh:
+      '使用 SQL 设定规则，对消息数据筛选、编解码、变型，灵活地将处理后的数据无缝转发至数据库、流处理、API 网关等数据目的地',
+    ja:
+      'SQLでルールを設定して、メッセージデータをフィルター・エンコード・デコード・変換が可能です。シームレスに処理後のデータをデーターベース・ストリーム処理・APIゲートウェイに転送できます。',
+    en:
+      'Use SQL to set rules to filter, encode, decode, and modify message data, and seamlessly forward processed data to data destinations such as databases, stream processing, and API gateways',
   },
   triggerEvent: {
     zh: '触发事件',
@@ -307,8 +310,10 @@ export default {
   },
   jsonDecodeUpgrade: {
     zh: '当前版本取消对 payload 的自动 JSON 解码，选择 payload 中的字段请使用 json_decode 解码，如 SQL 示例。',
-    ja: 'カレントバージョンでは自動的にpayloadのJSONにデコード機能が廃棄されました。payloadのフィールドを選択して、json_decodeでデコードしてください。例として、',
-    en: 'The current version cancels the automatic JSON decoding of the payload. Select the field in the payload and use json_decode to decode it, as in the SQL example.',
+    ja:
+      'カレントバージョンでは自動的にpayloadのJSONにデコード機能が廃棄されました。payloadのフィールドを選択して、json_decodeでデコードしてください。例として、',
+    en:
+      'The current version cancels the automatic JSON decoding of the payload. Select the field in the payload and use json_decode to decode it, as in the SQL example.',
   },
   exampleSql: {
     zh: '规则 SQL 示例',
@@ -432,7 +437,7 @@ export default {
   },
   last5MinutesSpeed: {
     zh: '最近5分钟执行速度',
-    ja: '過去5分間スピード',
+    ja: '過去5分間平均スピード',
     en: 'Last 5 minutes speed',
   },
   actionMetrics: {
@@ -462,7 +467,7 @@ export default {
   },
   averageExecutionSpeedInTheLast5Minutes: {
     zh: '最近5分钟平均执行速度',
-    ja: '過去5分間平均スピード',
+    ja: '過去5分間平均速度',
     en: 'Average speed in the last 5 minutes',
   },
   rule: {
@@ -496,9 +501,11 @@ export default {
     ja: 'MQTT message id',
   },
   payload_doc: {
-    en: 'The payload, if in JSON format, will be automatically decoded, and the object information will be obtained by using payload.x in SQL',
+    en:
+      'The payload, if in JSON format, will be automatically decoded, and the object information will be obtained by using payload.x in SQL',
     zh: '消息内容, 如果是 JSON 格式将自动解码, 在 SQL 中使用 payload.x 获取对象信息',
-    ja: 'JSONフォーマットの場合、payloadが自動的にデコードされます。 SQL文中にpayload.xでオブジェクト情報を取得することができます',
+    ja:
+      'JSONフォーマットの場合、payloadが自動的にデコードされます。 SQL文中にpayload.xでオブジェクト情報を取得することができます',
   },
   peername_doc: {
     en: 'Client peer host',
@@ -516,9 +523,12 @@ export default {
     ja: 'タイムスタンプ（ミリ秒）',
   },
   topic_doc: {
-    en: 'Currently MQTT topic can be filtered by wildcards in SQL.  When multiple topics are included in subscribe and unsubscribe, only the first one will be obtained here. To obtain all topics, please use topic_filters',
-    zh: '当前 MQTT 主题, SQL 中可以使用通配符进行筛选.\nSubscribe 与 Unsubscribe 请求中包含多个主题时, 这里只会获取到第一个, 如需获取全部请使用 topic_filters',
-    ja: 'カレントMQTTトピック、SQL中にワイルドカードを使用してフィルターすることができます。 \nサブスクライブとアンサブスクライブの中に複数のトピックが存在している場合、最初のトピックだけを受け取れます。全てのデータを取得したい場合、topic_filtersを使用してください',
+    en:
+      'Currently MQTT topic can be filtered by wildcards in SQL.  When multiple topics are included in subscribe and unsubscribe, only the first one will be obtained here. To obtain all topics, please use topic_filters',
+    zh:
+      '当前 MQTT 主题, SQL 中可以使用通配符进行筛选.\nSubscribe 与 Unsubscribe 请求中包含多个主题时, 这里只会获取到第一个, 如需获取全部请使用 topic_filters',
+    ja:
+      'カレントMQTTトピック、SQL中にワイルドカードを使用してフィルターすることができます。 \nサブスクライブとアンサブスクライブの中に複数のトピックが存在している場合、最初のトピックだけを受け取れます。全てのデータを取得したい場合、topic_filtersを使用してください',
   },
   node_doc: {
     en: 'Node name of the trigger event',
@@ -604,5 +614,30 @@ export default {
     zh: '代理订阅',
     ja: 'サーバー・サイド・サブスクリプション',
     en: 'Server side subscription',
+  },
+  resourceID: {
+    zh: '资源 ID',
+    ja: '待翻译',
+    en: 'Resource ID',
+  },
+  resourceDes: {
+    zh: '描述',
+    ja: '詳細',
+    en: 'Description',
+  },
+  id_len_tip: {
+    zh: '最长64位',
+    ja: '待翻译',
+    en: 'The longest 64',
+  },
+  id_char_tip: {
+    zh: '仅支持数字、字母、下划线和冒号',
+    ja: '待翻译',
+    en: 'Only Numbers, letters, underscores, and colons are supported',
+  },
+  ruleID: {
+    zh: '规则 ID',
+    ja: '待翻译',
+    en: 'Rule ID',
   },
 }

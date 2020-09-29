@@ -6,7 +6,8 @@ export default {
   },
   schemaDesc: {
     zh: '自定义消息编解码，支持 avro、protobuf 与外部编解码网关',
-    ja: 'メッセージのスキーマレジストリをカスタムすると、avro、protobufと外部スキーマレジストリがサーポートされています',
+    ja:
+      'メッセージのスキーマレジストリをカスタムすると、avro、protobufと外部スキーマレジストリがサーポートされています',
     en: 'Custom message codec, support avro, protobuf and external codec gateway',
   },
   docs: {

@@ -17,8 +17,10 @@ export default {
   },
   applicationIsCalled: {
     zh: '应用为调用 REST API 认证凭证，通过 REST API 可查询、调整 EMQ X 集群信息，对设备进行管理操作',
-    ja: 'アプリケーションはRESTAPIを介して認証を行った後、EMQ Xクラスタ情報の照会・調整、デバイス上での管理することができます。',
-    en: 'In order to invoke the certificate of REST API, the application can query and adjust EMQ X cluster information through REST API, and manage and operate the equipment',
+    ja:
+      'アプリケーションはRESTAPIを介して認証を行った後、EMQ Xクラスタ情報の照会・調整、デバイス上での管理することができます。',
+    en:
+      'In order to invoke the certificate of REST API, the application can query and adjust EMQ X cluster information through REST API, and manage and operate the equipment',
   },
   appId: {
     zh: '应用 ID',
@@ -267,8 +269,10 @@ export default {
   },
   blacklistTips: {
     zh: '通过黑名单禁止客户端建立连接，该功能适用于管理少量客户端，客户端认证请使用',
-    ja: 'クライアントがブラックリストのエントリに一致する場合、接続が拒否されます。この機能は少数クライアントの認証をお勧めします',
-    en: 'The blacklist prohibits clients from establishing connections. This function is suitable for managing a small number of clients. For client authentication, view',
+    ja:
+      'クライアントがブラックリストのエントリに一致する場合、接続が拒否されます。この機能は少数クライアントの認証をお勧めします',
+    en:
+      'The blacklist prohibits clients from establishing connections. This function is suitable for managing a small number of clients. For client authentication, view',
   },
   authDocs: {
     zh: '认证文档',
