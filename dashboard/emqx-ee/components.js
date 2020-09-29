@@ -40,6 +40,11 @@ export default {
     ja: '接続',
     en: 'Connections',
   },
+  usersAcl: {
+    zh: '认证鉴权',
+    ja: '待翻译',
+    en: 'Users & ACL',
+  },
   clients: {
     zh: '客户端',
     ja: 'クライアント',
@@ -187,7 +192,7 @@ export default {
   },
   theSystemHas: {
     zh: '系统有',
-    ja: 'システムに',
+    ja: 'システムに', // TODO
     en: 'The system has',
   },
   noteAlertClickView: {
@@ -215,9 +220,9 @@ export default {
     ja: 'ログアウト',
     en: 'Logout',
   },
-  addModule: {
-    zh: '添加模块',
-    ja: 'モジュール追加',
-    en: 'Module Add',
+  selectModules: {
+    zh: '选择模块',
+    ja: '待翻译',
+    en: 'Modules Select',
   },
 }

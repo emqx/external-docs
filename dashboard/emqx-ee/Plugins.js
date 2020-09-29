@@ -152,7 +152,8 @@ export default {
   },
   pluginTips: {
     zh: '该功能仅做调试使用，配置将在 Broker 重启后将丢失，请将配置写入相应配置文件',
-    ja: 'この機能はテストやデバッグのみ使用します。ブローカー再起動した後設定が失われますので、設定ファイルに書き入れてください',
+    ja:
+      'この機能はテストやデバッグのみ使用します。ブローカー再起動した後設定が失われますので、設定ファイルに書き入れてください',
     en: 'The module is only used for debugging or testing, and the configuration will be lost when broker restart',
   },
   configuration: {
@@ -207,8 +208,10 @@ export default {
   },
   payloadDesc: {
     zh: '启用 verify_claims 时有效, 可以使用 %u，%c 占位符分别替换输入的 username 和 clientid，详见',
-    ja: '%uと%cプレースホルダは、入力したusernameとclientidの代わりに使用できます（verify_claimsを起動する場合）、詳細はこちらへ',
-    en: 'It is valid when verify_claims is enabled. You can use% u and% c placeholders to replace the entered user name and clientid respectively. For details, see',
+    ja:
+      '%uと%cプレースホルダは、入力したusernameとclientidの代わりに使用できます（verify_claimsを起動する場合）、詳細はこちらへ',
+    en:
+      'It is valid when verify_claims is enabled. You can use% u and% c placeholders to replace the entered user name and clientid respectively. For details, see',
   },
   jwtDoc: {
     zh: 'JWT 认证',
@@ -250,6 +253,11 @@ export default {
     zh: '用户名或 Client ID',
     ja: 'ユーザー名やClient ID',
     en: 'Username or Client ID',
+  },
+  username: {
+    zh: '用户名',
+    ja: 'ユーザー名',
+    en: 'Username',
   },
   mnesiaTip: {
     zh: '默认使用 Username，以 auth.mnesia.as 配置为准',

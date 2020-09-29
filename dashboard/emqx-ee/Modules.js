@@ -35,9 +35,9 @@ export default {
     en: 'Description',
   },
   searchTip: {
-    zh: '搜索全部模块...',
-    ja: 'すべてのモジュールを検索する...',
-    en: 'Search all modules...',
+    zh: '搜索模块...',
+    ja: '待翻译',
+    en: 'Search modules...',
   },
   reconnect: {
     zh: '重连',
@@ -125,14 +125,19 @@ export default {
     en: 'Authentication',
   },
   protocols: {
-    zh: '协议拓展',
-    ja: 'プロトコル',
+    zh: '协议接入',
+    ja: '待翻译',
     en: 'Protocols',
   },
   messagePublish: {
     zh: '消息下发',
     ja: 'メッセージのパブリッシュ',
     en: 'Message Publish',
+  },
+  extension: {
+    zh: '多语言扩展',
+    ja: '待翻译',
+    en: 'extensions',
   },
   monitor: {
     zh: '运维监控',
@@ -143,5 +148,127 @@ export default {
     zh: '内部模块',
     ja: 'ローカルモジュール',
     en: 'Local Modules',
+  },
+  configuration: {
+    zh: '配置信息',
+    ja: '設定',
+    en: 'Configuration',
+  },
+  listener: {
+    zh: '监听器',
+    ja: 'リスナー',
+    en: 'Listeners',
+  },
+  addListener: {
+    zh: '添加监听器',
+    ja: '待翻译',
+    en: 'Add Listener',
+  },
+  editListener: {
+    zh: '编辑监听器',
+    ja: '待翻译',
+    en: 'Edit Listener',
+  },
+  edit: {
+    zh: '编辑',
+    ja: '編集',
+    en: 'Edit',
+  },
+  remove: {
+    zh: '移除',
+    ja: '外す',
+    en: 'Remove',
+  },
+  listen_on: {
+    zh: '监听地址',
+    ja: 'アドレス',
+    en: 'Listener',
+  },
+  listener_type: {
+    zh: '监听类型',
+    ja: '待翻译',
+    en: 'Listener Type',
+  },
+  acceptors: {
+    zh: '接收器个数',
+    ja: '待翻译',
+    en: 'Acceptors',
+  },
+  active_n: {
+    zh: 'Active',
+    ja: '待翻译',
+    en: 'Active',
+  },
+  max_conn_rate: {
+    zh: '每秒最大连接数',
+    ja: '待翻译',
+    en: 'Max CPS',
+  },
+  max_connections: {
+    zh: '最大连接数',
+    ja: '待翻译',
+    en: 'Max Connections',
+  },
+  emptyListenerTip: {
+    zh: '请添加监听器！',
+    ja: '待翻译',
+    en: 'Please add Listener!',
+  },
+  fileTip: {
+    zh: '请上传文件',
+    ja: '待翻译',
+    en: 'Please upload File',
+  },
+  noNeedAddConfigTip: {
+    zh: '此模块无需配置相关信息！',
+    ja: '待翻译',
+    en: 'No configuration information is required for this module!',
+  },
+  continueCommit: {
+    zh: '继续提交',
+    ja: '待翻译',
+    en: 'Submit',
+  },
+  editTip: {
+    zh: '应用更改将会短暂重启当前模块，可能会造成数据丢失或服务中断，请确保在不影响业务的情况下提交更改。',
+    ja: '待翻译',
+    en: `
+      Applying changes will immediately restart the current module which may cause data loss
+      or service interruption. Please make sure to submit the changes without affecting the business.`,
+  },
+  auth: {
+    zh: '认证',
+    ja: '認証',
+    en: 'Authentication',
+  },
+  confirmDelete: {
+    zh: '确认删除？',
+    ja: '削除してもよろしいですか？',
+    en: 'Confirm Delete?',
+  },
+  listNull: {
+    zh: '列表为空，请调整过滤条件再试',
+    ja: 'データがありません。条件を確認してもう一度試してください',
+    en: 'Empty. Please change the filter and try again',
+  },
+  allow: {
+    zh: '允许',
+    ja: '許可',
+    en: 'Allow',
+  },
+  deny: {
+    zh: '不允许',
+    ja: '拒否',
+    en: 'Deny',
+  },
+  action: {
+    zh: '主题动作',
+    ja: 'アクション',
+    en: 'Action',
+  },
+  isAllow: {
+    zh: '是否允许',
+    ja: '許可',
+    en: 'Allowed',
   },
 }
