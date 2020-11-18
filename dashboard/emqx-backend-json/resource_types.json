@@ -1,0 +1,2641 @@
+[
+  {
+    "name": "backend_cassa",
+    "title": {
+      "zh": "Cassandra",
+      "en": "Cassandra",
+      "ja": "Cassandra"
+    },
+    "description": {
+      "zh": "Cassandra 数据库",
+      "en": "Cassandra Database",
+      "ja": "Cassandra Database"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "Cassandra 用户名",
+          "en": "Cassandra Username",
+          "ja": "Cassandra Username"
+        },
+        "description": {
+          "zh": "Cassandra 用户名",
+          "en": "Username for Cassandra",
+          "ja": "Username for Cassandra"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启SSL链接",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启Cassandra SSL",
+          "en": "If enable ssl",
+          "ja": "If enable ssl"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "Cassandra 连接池大小",
+          "en": "Connection Pool Size for Cassandra",
+          "ja": "Connection Pool Size for Cassandra"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Cassandra 密码",
+          "en": "Cassandra Password",
+          "ja": "Cassandra Password"
+        },
+        "description": {
+          "zh": "Cassandra 密码",
+          "en": "Password for Cassandra",
+          "ja": "Password for Cassandra"
+        }
+      },
+      "nodes": {
+        "title": {
+          "zh": "Cassandra 服务器",
+          "en": "Cassandra Server",
+          "ja": "Cassandra Server"
+        },
+        "description": {
+          "zh": "Cassandra 服务器地址",
+          "en": "Cassandra Server Address",
+          "ja": "Cassandra Server Address"
+        }
+      },
+      "keyspace": {
+        "title": {
+          "zh": "Cassandra Keysapce",
+          "en": "Cassandra Keyspace",
+          "ja": "Cassandra Keyspace"
+        },
+        "description": {
+          "zh": "Cassandra Keyspace 名称",
+          "en": "Keyspace Name for Cassandra",
+          "ja": "Keyspace Name for Cassandra"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL Key",
+          "en": "SSL Key",
+          "ja": "SSL Key"
+        },
+        "description": {
+          "zh": "Cassandra SSL 私钥",
+          "en": "Your ssl keyfile",
+          "ja": "Your ssl keyfile"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL Cert",
+          "en": "SSL Cert",
+          "ja": "SSL Cert"
+        },
+        "description": {
+          "zh": "Cassandra SSL 证书",
+          "en": "Your ssl certfile",
+          "ja": "Your ssl certfile"
+        }
+      },
+      "cafile": {
+        "title": {
+          "zh": "SSL CA",
+          "en": "SSL CA",
+          "ja": "SSL CA"
+        },
+        "description": {
+          "zh": "Cassandra SSL CA证书",
+          "en": "Your ssl cafile",
+          "ja": "Your ssl cafile"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "Cassandra 连接断开后自动重连",
+          "en": "If Re-try when the Connection Lost",
+          "ja": "If Re-try when the Connection Lost"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_clickouse",
+    "title": {
+      "zh": "ClickHouse",
+      "en": "ClickHouse",
+      "ja": "ClickHouse"
+    },
+    "description": {
+      "zh": "ClickHouse",
+      "en": "ClickHouse",
+      "ja": "ClickHouse"
+    },
+    "params": {
+      "user": {
+        "title": {
+          "zh": "ClickHouse 用户名",
+          "en": "ClickHouse User",
+          "ja": "ClickHouse User"
+        },
+        "description": {
+          "zh": "ClickHouse 用户名",
+          "en": "User for connecting to ClickHouse",
+          "ja": "User for connecting to ClickHouse"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "ClickHouse 服务器",
+          "en": "ClickHouse Server",
+          "ja": "ClickHouse Server"
+        },
+        "description": {
+          "zh": "ClickHouse 服务器地址",
+          "en": "ClickHouse Server",
+          "ja": "ClickHouse Server"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "ClickHouse 连接池大小",
+          "en": "Size of ClickHouse Connection Pool",
+          "ja": "Size of ClickHouse Connection Pool"
+        }
+      },
+      "key": {
+        "title": {
+          "zh": "ClickHouse 密码",
+          "en": "ClickHouse Key",
+          "ja": "ClickHouse Key"
+        },
+        "description": {
+          "zh": "ClickHouse 密码",
+          "en": "Key for connecting to ClickHouse",
+          "ja": "Key for connecting to ClickHouse"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_dynamo",
+    "title": {
+      "zh": "DynamoDB",
+      "en": "DynamoDB",
+      "ja": "DynamoDB"
+    },
+    "description": {
+      "zh": "DynamoDB 资源",
+      "en": "DynamoDB Resource",
+      "ja": "DynamoDB Resource"
+    },
+    "params": {
+      "url": {
+        "title": {
+          "zh": "DynamoDB 服务器",
+          "en": "DynamoDB Server",
+          "ja": "DynamoDB Server"
+        },
+        "description": {
+          "zh": "DynamoDB 服务器地址",
+          "en": "Url of DynamoDB Server",
+          "ja": "Url of DynamoDB Server"
+        }
+      },
+      "region": {
+        "title": {
+          "zh": "DynamoDB 区域",
+          "en": "DynamoDB Region",
+          "ja": "DynamoDB Region"
+        },
+        "description": {
+          "zh": "AWS DynamoDB 所在的区域",
+          "en": "Region of the AWS dynamo",
+          "ja": "Region of the AWS dynamo"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "DynamoDB 连接池大小",
+          "en": "Size of DynamoDB Connection Pool",
+          "ja": "Size of DynamoDB Connection Pool"
+        }
+      },
+      "aws_secret_access_key": {
+        "title": {
+          "zh": "连接访问密钥",
+          "en": "AWS Secret Access Key",
+          "ja": "AWS Secret Access Key"
+        },
+        "description": {
+          "zh": "DynamoDB 的访问密钥",
+          "en": "AWS Secret Access Key for connecting to DynamoDB",
+          "ja": "AWS Secret Access Key for connecting to DynamoDB"
+        }
+      },
+      "aws_access_key_id": {
+        "title": {
+          "zh": "连接访问 ID",
+          "en": "AWS Access Key Id",
+          "ja": "AWS Access Key Id"
+        },
+        "description": {
+          "zh": "DynamoDB 的访问 ID",
+          "en": "Access Key Id for connecting to DynamoDB",
+          "ja": "Access Key Id for connecting to DynamoDB"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "自动重连间隔",
+          "en": "Auto Reconnect Times",
+          "ja": "Auto Reconnect Times"
+        },
+        "description": {
+          "zh": "DynamoDB 的自动重连间隔",
+          "en": "Auto Reconnect Times for DynamoDB Client",
+          "ja": "Auto Reconnect Times for DynamoDB Client"
+        }
+      }
+    }
+  },
+  {
+    "name": "bridge_rpc",
+    "title": {
+      "zh": "EMQX Bridge",
+      "en": "EMQX Bridge",
+      "ja": "EMQX Bridge"
+    },
+    "description": {
+      "zh": "EMQ X RPC 消息桥接",
+      "en": "EMQ X RPC Bridge",
+      "ja": "EMQ X RPC Bridge"
+    },
+    "params": {
+      "reconnect_interval": {
+        "title": {
+          "zh": "重连间隔",
+          "en": "Reconnect Interval",
+          "ja": "Reconnect Interval"
+        },
+        "description": {
+          "zh": "重连间隔",
+          "en": "Reconnect Interval of bridge",
+          "ja": "Reconnect Interval of bridge"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "连接池大小",
+          "en": "MQTT/RPC Connection Pool Size",
+          "ja": "MQTT/RPC Connection Pool Size"
+        }
+      },
+      "mountpoint": {
+        "title": {
+          "zh": "桥接挂载点",
+          "en": "Bridge MountPoint",
+          "ja": "Bridge MountPoint"
+        },
+        "description": {
+          "zh": "桥接主题的挂载点<br/>示例: 本地节点向 `topic1` 发消息，远程桥接节点的主题会变换为 `bridge/aws/${node}/topic1`",
+          "en": "MountPoint for bridge topic<br/>Example: The topic of messages sent to `topic1` on local nodewill be transformed to `bridge/aws/${node}/topic1`",
+          "ja": "MountPoint for bridge topic<br/>Example: The topic of messages sent to `topic1` on local nodewill be transformed to `bridge/aws/${node}/topic1`"
+        }
+      },
+      "disk_cache": {
+        "title": {
+          "zh": "磁盘缓存",
+          "en": "Disk Cache",
+          "ja": "Disk Cache"
+        },
+        "description": {
+          "zh": "当桥接断开时用于控制是否将消息缓存到本地磁盘队列上",
+          "en": "The flag which determines whether messagescan be cached on local disk when bridge isdisconnected",
+          "ja": "The flag which determines whether messagescan be cached on local disk when bridge isdisconnected"
+        }
+      },
+      "batch_size": {
+        "title": {
+          "zh": "批处理大小",
+          "en": "Batch Size",
+          "ja": "Batch Size"
+        },
+        "description": {
+          "zh": "批处理大小",
+          "en": "Batch Size",
+          "ja": "Batch Size"
+        }
+      },
+      "address": {
+        "title": {
+          "zh": "EMQ X 节点名称",
+          "en": "EMQ X Node Name",
+          "ja": "EMQ X Node Name"
+        },
+        "description": {
+          "zh": "远程 EMQ X 节点名称 ",
+          "en": "EMQ X Remote Node Name",
+          "ja": "EMQ X Remote Node Name"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_influxdb_http",
+    "title": {
+      "zh": "InfluxDB HTTP 服务",
+      "en": "InfluxDB HTTP Service",
+      "ja": "InfluxDB HTTP Service"
+    },
+    "description": {
+      "zh": "使用 HTTP 协议将数据点写入 InfluxDB",
+      "en": "Write data points to InfluxDB using HTTP protocol",
+      "ja": "Write data points to InfluxDB using HTTP protocol"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "InfluxDB 用户名",
+          "en": "InfluxDB Username",
+          "ja": "InfluxDB Username"
+        },
+        "description": {
+          "zh": "连接到 InfluxDB 的用户名",
+          "en": "Username to connect to InfluxDB",
+          "ja": "Username to connect to InfluxDB"
+        }
+      },
+      "tls_version": {
+        "title": {
+          "zh": "TLS 协议版本",
+          "en": "TLS Protocol Version",
+          "ja": "TLS Protocol Version"
+        },
+        "description": {
+          "zh": "TLS 协议版本",
+          "en": "TLS protocol version",
+          "ja": "TLS protocol version"
+        }
+      },
+      "precision": {
+        "title": {
+          "zh": "时间戳精度",
+          "en": "Precision of timestamp",
+          "ja": "Precision of timestamp"
+        },
+        "description": {
+          "zh": "时间戳精度",
+          "en": "Precision of timestamp",
+          "ja": "Precision of timestamp"
+        }
+      },
+      "port": {
+        "title": {
+          "zh": "InfluxDB 端口",
+          "en": "InfluxDB Port",
+          "ja": "InfluxDB Port"
+        },
+        "description": {
+          "zh": "要连接的端口",
+          "en": "Port to connect to",
+          "ja": "Port to connect to"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "进程池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "InfluxDB 写进程池大小",
+          "en": "Size of InfluxDB writing process pool",
+          "ja": "Size of InfluxDB writing process pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "InfluxDB 密码",
+          "en": "InfluxDB Password",
+          "ja": "InfluxDB Password"
+        },
+        "description": {
+          "zh": "连接到 InfluxDB 的密码",
+          "en": "Password to connect to InfluxDB",
+          "ja": "Password to connect to InfluxDB"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "密钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        },
+        "description": {
+          "zh": "密钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        }
+      },
+      "https_enabled": {
+        "title": {
+          "zh": "启用 HTTPS",
+          "en": "HTTPS Enabled",
+          "ja": "HTTPS Enabled"
+        },
+        "description": {
+          "zh": "确定是否启用 HTTPS",
+          "en": "Determines whether HTTPS is enabled",
+          "ja": "Determines whether HTTPS is enabled"
+        }
+      },
+      "host": {
+        "title": {
+          "zh": "InfluxDB 主机",
+          "en": "InfluxDB Host",
+          "ja": "InfluxDB Host"
+        },
+        "description": {
+          "zh": "InfluxDB HTTP/HTTPS 服务器地址",
+          "en": "HTTP/HTTPS address of InfluxDB",
+          "ja": "HTTP/HTTPS address of InfluxDB"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "InfluxDB 数据库名",
+          "en": "InfluxDB Database",
+          "ja": "InfluxDB Database"
+        },
+        "description": {
+          "zh": "InfluxDB 数据库名",
+          "en": "InfluxDB Database",
+          "ja": "InfluxDB Database"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        },
+        "description": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificates File",
+          "ja": "CA Certificates File"
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificates File",
+          "ja": "CA Certificates File"
+        }
+      },
+      "batch_size": {
+        "title": {
+          "zh": "批量写入大小",
+          "en": "Batch Size",
+          "ja": "Batch Size"
+        },
+        "description": {
+          "zh": "批量收集的数据点数量",
+          "en": "The number of data points to collect in a batch",
+          "ja": "The number of data points to collect in a batch"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_influxdb_udp",
+    "title": {
+      "zh": "InfluxDB UDP 服务",
+      "en": "InfluxDB UDP Service",
+      "ja": "InfluxDB UDP Service"
+    },
+    "description": {
+      "zh": "使用 UDP 协议将数据点写入 InfluxDB",
+      "en": "Write data points to InfluxDB using UDP protocol",
+      "ja": "Write data points to InfluxDB using UDP protocol"
+    },
+    "params": {
+      "port": {
+        "title": {
+          "zh": "InfluxDB 端口",
+          "en": "InfluxDB Port",
+          "ja": "InfluxDB Port"
+        },
+        "description": {
+          "zh": "要连接的端口",
+          "en": "Port to connect to",
+          "ja": "Port to connect to"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "进程池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "InfluxDB 写进程池大小",
+          "en": "Size of InfluxDB writing process pool",
+          "ja": "Size of InfluxDB writing process pool"
+        }
+      },
+      "host": {
+        "title": {
+          "zh": "InfluxDB 主机",
+          "en": "InfluxDB Host",
+          "ja": "InfluxDB Host"
+        },
+        "description": {
+          "zh": "InfluxDB UDP 服务器地址",
+          "en": "UDP address of InfluxDB",
+          "ja": "UDP address of InfluxDB"
+        }
+      },
+      "batch_size": {
+        "title": {
+          "zh": "批量写入大小",
+          "en": "Batch Size",
+          "ja": "Batch Size"
+        },
+        "description": {
+          "zh": "批量收集的数据点数量",
+          "en": "The number of data points to collect in a batch",
+          "ja": "The number of data points to collect in a batch"
+        }
+      }
+    }
+  },
+  {
+    "name": "bridge_kafka",
+    "title": {
+      "zh": "Kafka",
+      "en": "Kafka",
+      "ja": "Kafka"
+    },
+    "description": {
+      "zh": "Kafka",
+      "en": "Kafka",
+      "ja": "Kafka"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "Kafka 用户名",
+          "en": "Kafka Username",
+          "ja": "Kafka Username"
+        },
+        "description": {
+          "zh": "Kafka 认证用户名",
+          "en": "Kafka Auth Username",
+          "ja": "Kafka Auth Username"
+        }
+      },
+      "sync_timeout": {
+        "title": {
+          "zh": "同步调用超时时间",
+          "en": "Sync Timeout",
+          "ja": "Sync Timeout"
+        },
+        "description": {
+          "zh": "同步调用超时时间",
+          "en": "Sync Timeout",
+          "ja": "Sync Timeout"
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "Kafka 服务器",
+          "en": "Kafka Server",
+          "ja": "Kafka Server"
+        },
+        "description": {
+          "zh": "Kafka 服务器地址, 多节点使用逗号分隔",
+          "en": "Kafka Server Address, Multiple nodes separated by commas",
+          "ja": "Kafka Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "send_buffer": {
+        "title": {
+          "zh": "发送消息的缓冲区大小",
+          "en": "Send Buffer Size",
+          "ja": "Send Buffer Size"
+        },
+        "description": {
+          "zh": "套接字发送消息的缓冲区大小",
+          "en": "Socket Send Buffer",
+          "ja": "Socket Send Buffer"
+        }
+      },
+      "query_api_versions": {
+        "title": {
+          "zh": "查询 API 版本号",
+          "en": "Query API Versions",
+          "ja": "Query API Versions"
+        },
+        "description": {
+          "zh": "是否开启查询 API 版本号",
+          "en": "Query API Versions",
+          "ja": "Query API Versions"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Kafka 密码",
+          "en": "Kafka Password",
+          "ja": "Kafka Password"
+        },
+        "description": {
+          "zh": "Kafka 认证密码",
+          "en": "Kafka Auth Password",
+          "ja": "Kafka Auth Password"
+        }
+      },
+      "min_metadata_refresh_interval": {
+        "title": {
+          "zh": "Metadata 更新间隔",
+          "en": "Metadata Refresh",
+          "ja": "Metadata Refresh"
+        },
+        "description": {
+          "zh": "最小 Metadata 更新间隔",
+          "en": "Min Metadata Refresh Interval",
+          "ja": "Min Metadata Refresh Interval"
+        }
+      },
+      "max_batch_bytes": {
+        "title": {
+          "zh": "最大批处理字节数",
+          "en": "Max Batch Bytes",
+          "ja": "Max Batch Bytes"
+        },
+        "description": {
+          "zh": "最大批处理字节数",
+          "en": "Max Batch Bytes",
+          "ja": "Max Batch Bytes"
+        }
+      },
+      "compression": {
+        "title": {
+          "zh": "压缩",
+          "en": "Compression",
+          "ja": "Compression"
+        },
+        "description": {
+          "zh": "压缩",
+          "en": "Compression",
+          "ja": "Compression"
+        }
+      }
+    }
+  },
+  {
+    "name": "bridge_mqtt",
+    "title": {
+      "zh": "MQTT Bridge",
+      "en": "MQTT Bridge",
+      "ja": "MQTT Bridge"
+    },
+    "description": {
+      "zh": "MQTT 消息桥接",
+      "en": "MQTT Message Bridge",
+      "ja": "MQTT Message Bridge"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "用户名",
+          "en": "Username",
+          "ja": "Username"
+        },
+        "description": {
+          "zh": "连接远程 Broker 的用户名",
+          "en": "Username for connecting to remote MQTT Broker",
+          "ja": "Username for connecting to remote MQTT Broker"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "Bridge SSL",
+          "en": "Bridge SSL",
+          "ja": "Bridge SSL"
+        },
+        "description": {
+          "zh": "是否启用 Bridge SSL 连接",
+          "en": "Switch which used to enable ssl connection of the bridge",
+          "ja": "Switch which used to enable ssl connection of the bridge"
+        }
+      },
+      "retry_interval": {
+        "title": {
+          "zh": "重传间隔",
+          "en": "Retry interval",
+          "ja": "Retry interval"
+        },
+        "description": {
+          "zh": "消息重传间隔",
+          "en": "Retry interval for bridge QoS1 message delivering",
+          "ja": "Retry interval for bridge QoS1 message delivering"
+        }
+      },
+      "reconnect_interval": {
+        "title": {
+          "zh": "重连间隔",
+          "en": "Reconnect Interval",
+          "ja": "Reconnect Interval"
+        },
+        "description": {
+          "zh": "重连间隔",
+          "en": "Reconnect interval of bridge:<br/>",
+          "ja": "Reconnect interval of bridge:<br/>"
+        }
+      },
+      "proto_ver": {
+        "title": {
+          "zh": "协议版本",
+          "en": "Protocol Version",
+          "ja": "Protocol Version"
+        },
+        "description": {
+          "zh": "MQTT 协议版本",
+          "en": "MQTTT Protocol version",
+          "ja": "MQTTT Protocol version"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "连接池大小",
+          "en": "MQTT Connection Pool Size",
+          "ja": "MQTT Connection Pool Size"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        },
+        "description": {
+          "zh": "连接远程 Broker 的密码",
+          "en": "Password for connecting to remote MQTT Broker",
+          "ja": "Password for connecting to remote MQTT Broker"
+        }
+      },
+      "mountpoint": {
+        "title": {
+          "zh": "桥接挂载点",
+          "en": "Bridge MountPoint",
+          "ja": "Bridge MountPoint"
+        },
+        "description": {
+          "zh": "桥接主题的挂载点:<br/>示例: 本地节点向 `topic1` 发消息，远程桥接节点的主题会变换为 `bridge/aws/${node}/topic1`",
+          "en": "MountPoint for bridge topic:<br/>Example: The topic of messages sent to `topic1` on local nodewill be transformed to `bridge/aws/${node}/topic1`",
+          "ja": "MountPoint for bridge topic:<br/>Example: The topic of messages sent to `topic1` on local nodewill be transformed to `bridge/aws/${node}/topic1`"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL 密钥文件",
+          "en": "SSL Keyfile",
+          "ja": "SSL Keyfile"
+        },
+        "description": {
+          "zh": "客户端密钥路径",
+          "en": "The file path of the client keyfile",
+          "ja": "The file path of the client keyfile"
+        }
+      },
+      "keepalive": {
+        "title": {
+          "zh": "心跳间隔",
+          "en": "Keepalive",
+          "ja": "Keepalive"
+        },
+        "description": {
+          "zh": "心跳间隔",
+          "en": "Keepalive",
+          "ja": "Keepalive"
+        }
+      },
+      "disk_cache": {
+        "title": {
+          "zh": "磁盘缓存",
+          "en": "Disk Cache",
+          "ja": "Disk Cache"
+        },
+        "description": {
+          "zh": "当桥接断开时用于控制是否将消息缓存到本地磁盘队列上",
+          "en": "The flag which determines whether messagescan be cached on local disk when bridge isdisconnected",
+          "ja": "The flag which determines whether messagescan be cached on local disk when bridge isdisconnected"
+        }
+      },
+      "clientid": {
+        "title": {
+          "zh": "客户端 Id",
+          "en": "ClientId",
+          "ja": "ClientId"
+        },
+        "description": {
+          "zh": "连接远程 Broker 的 ClientId",
+          "en": "ClientId for connecting to remote MQTT broker",
+          "ja": "ClientId for connecting to remote MQTT broker"
+        }
+      },
+      "ciphers": {
+        "title": {
+          "zh": "SSL 加密算法",
+          "en": "SSL Ciphers",
+          "ja": "SSL Ciphers"
+        },
+        "description": {
+          "zh": "SSL 加密算法",
+          "en": "SSL Ciphers",
+          "ja": "SSL Ciphers"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL 客户端证书",
+          "en": "SSL Certfile",
+          "ja": "SSL Certfile"
+        },
+        "description": {
+          "zh": "客户端证书路径",
+          "en": "The file path of the client certfile",
+          "ja": "The file path of the client certfile"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书",
+          "en": "CA certificates",
+          "ja": "CA certificates"
+        },
+        "description": {
+          "zh": "CA 证书路径",
+          "en": "The file path of the CA certificates",
+          "ja": "The file path of the CA certificates"
+        }
+      },
+      "bridge_mode": {
+        "title": {
+          "zh": "桥接模式",
+          "en": "Bridge Mode",
+          "ja": "Bridge Mode"
+        },
+        "description": {
+          "zh": "MQTT 连接是否为桥接模式",
+          "en": "Bridge mode for MQTT bridge connection",
+          "ja": "Bridge mode for MQTT bridge connection"
+        }
+      },
+      "append": {
+        "title": {
+          "zh": "附加 GUID",
+          "en": "Append GUID",
+          "ja": "Append GUID"
+        },
+        "description": {
+          "zh": "是否将GUID附加到 MQTT ClientId 后",
+          "en": "Append GUID to MQTT ClientId?",
+          "ja": "Append GUID to MQTT ClientId?"
+        }
+      },
+      "address": {
+        "title": {
+          "zh": "远程 broker 地址",
+          "en": " Broker Address",
+          "ja": " Broker Address"
+        },
+        "description": {
+          "zh": "远程 MQTT Broker 的地址",
+          "en": "The MQTT Remote Address",
+          "ja": "The MQTT Remote Address"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_mongo_rs",
+    "title": {
+      "zh": "MongoDB Relica Set 模式",
+      "en": "MongoDB Replica Set Mode",
+      "ja": "MongoDB Replica Set Mode"
+    },
+    "description": {
+      "zh": "MongoDB Relica Set 模式",
+      "en": "MongoDB Replica Set Mode",
+      "ja": "MongoDB Replica Set Mode"
+    },
+    "params": {
+      "w_mode": {
+        "title": {
+          "zh": "写模式",
+          "en": "Write Mode",
+          "ja": "Write Mode"
+        },
+        "description": {
+          "zh": "写模式",
+          "en": "Write Mode",
+          "ja": "Write Mode"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL 连接 MongoDB",
+          "en": "Enable SSL for connecting MongoDB",
+          "ja": "Enable SSL for connecting MongoDB"
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "MongoDB 服务器",
+          "en": "MongoDB Server",
+          "ja": "MongoDB Server"
+        },
+        "description": {
+          "zh": "MongoDB 服务器地址, 多节点使用逗号分隔",
+          "en": "MongoDB Server Address, Multiple nodes separated by commas",
+          "ja": "MongoDB Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "rs_set_name": {
+        "title": {
+          "zh": "Set Name",
+          "en": "Set Name",
+          "ja": "Set Name"
+        },
+        "description": {
+          "zh": "Set name of Replica Set type",
+          "en": "Set name of Replica Set type",
+          "ja": "Set name of Replica Set type"
+        }
+      },
+      "r_mode": {
+        "title": {
+          "zh": "读模式",
+          "en": "Read Mode",
+          "ja": "Read Mode"
+        },
+        "description": {
+          "zh": "读模式",
+          "en": "Read Mode",
+          "ja": "Read Mode"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "MongoDB 连接池大小",
+          "en": "Connection Pool Size for MongoDB",
+          "ja": "Connection Pool Size for MongoDB"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        },
+        "description": {
+          "zh": "MongoDB 密码",
+          "en": "Password for connecting to MongoDB",
+          "ja": "Password for connecting to MongoDB"
+        }
+      },
+      "login": {
+        "title": {
+          "zh": "用户名",
+          "en": "Username",
+          "ja": "Username"
+        },
+        "description": {
+          "zh": "MongoDB 用户名",
+          "en": "Username for connecting to MongoDB",
+          "ja": "Username for connecting to MongoDB"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL Key",
+          "en": "SSL Key",
+          "ja": "SSL Key"
+        },
+        "description": {
+          "zh": "MongoDB SSL 私钥",
+          "en": "Your ssl keyfile",
+          "ja": "Your ssl keyfile"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "数据库名称",
+          "en": "Database Name",
+          "ja": "Database Name"
+        },
+        "description": {
+          "zh": "数据库名称",
+          "en": "Database name for saving data",
+          "ja": "Database name for saving data"
+        }
+      },
+      "connectTimoutMS": {
+        "title": {
+          "zh": "连接超时时间(毫秒)",
+          "en": "Connect Timeout(ms)",
+          "ja": "Connect Timeout(ms)"
+        },
+        "description": {
+          "zh": "ޥ����",
+          "en": "Timeout for connecting to server",
+          "ja": "Timeout for connecting to server"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL Cert",
+          "en": "SSL Cert",
+          "ja": "SSL Cert"
+        },
+        "description": {
+          "zh": "MongoDB SSL 证书",
+          "en": "Your ssl certfile",
+          "ja": "Your ssl certfile"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "SSL CA",
+          "en": "SSL CA",
+          "ja": "SSL CA"
+        },
+        "description": {
+          "zh": "MongoDB SSL CA证书",
+          "en": "Your ssl CAcert file",
+          "ja": "Your ssl CAcert file"
+        }
+      },
+      "auth_source": {
+        "title": {
+          "zh": "连接认证源",
+          "en": "Auth Source",
+          "ja": "Auth Source"
+        },
+        "description": {
+          "zh": "用户认证源",
+          "en": "Auth source for connecting to MongoDB",
+          "ja": "Auth source for connecting to MongoDB"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_mongo_sharded",
+    "title": {
+      "zh": "MongoDB Sharded 模式",
+      "en": "MongoDB Sharded Mode",
+      "ja": "MongoDB Sharded Mode"
+    },
+    "description": {
+      "zh": "MongoDB Shared 模式",
+      "en": "MongoDB Sharded Mode",
+      "ja": "MongoDB Sharded Mode"
+    },
+    "params": {
+      "w_mode": {
+        "title": {
+          "zh": "写模式",
+          "en": "Write Mode",
+          "ja": "Write Mode"
+        },
+        "description": {
+          "zh": "写模式",
+          "en": "Write Mode",
+          "ja": "Write Mode"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL 连接 MongoDB",
+          "en": "Enable SSL for connecting MongoDB",
+          "ja": "Enable SSL for connecting MongoDB"
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "MongoDB 服务器",
+          "en": "MongoDB Server",
+          "ja": "MongoDB Server"
+        },
+        "description": {
+          "zh": "MongoDB 服务器地址, 多节点使用逗号分隔",
+          "en": "MongoDB Server Address, Multiple nodes separated by commas",
+          "ja": "MongoDB Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "r_mode": {
+        "title": {
+          "zh": "读模式",
+          "en": "Read Mode",
+          "ja": "Read Mode"
+        },
+        "description": {
+          "zh": "读模式",
+          "en": "Read Mode",
+          "ja": "Read Mode"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "MongoDB 连接池大小",
+          "en": "Connection Pool Size for MongoDB",
+          "ja": "Connection Pool Size for MongoDB"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        },
+        "description": {
+          "zh": "MongoDB 密码",
+          "en": "Password for connecting to MongoDB",
+          "ja": "Password for connecting to MongoDB"
+        }
+      },
+      "login": {
+        "title": {
+          "zh": "用户名",
+          "en": "Username",
+          "ja": "Username"
+        },
+        "description": {
+          "zh": "MongoDB 用户名",
+          "en": "Username for connecting to MongoDB",
+          "ja": "Username for connecting to MongoDB"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL Key",
+          "en": "SSL Key",
+          "ja": "SSL Key"
+        },
+        "description": {
+          "zh": "MongoDB SSL 私钥",
+          "en": "Your ssl keyfile",
+          "ja": "Your ssl keyfile"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "数据库名称",
+          "en": "Database Name",
+          "ja": "Database Name"
+        },
+        "description": {
+          "zh": "数据库名称",
+          "en": "Database name for saving data",
+          "ja": "Database name for saving data"
+        }
+      },
+      "connectTimoutMS": {
+        "title": {
+          "zh": "连接超时时间(毫秒)",
+          "en": "Connect Timeout(ms)",
+          "ja": "Connect Timeout(ms)"
+        },
+        "description": {
+          "zh": "ޥ����",
+          "en": "Timeout for connecting to server",
+          "ja": "Timeout for connecting to server"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL Cert",
+          "en": "SSL Cert",
+          "ja": "SSL Cert"
+        },
+        "description": {
+          "zh": "MongoDB SSL 证书",
+          "en": "Your ssl certfile",
+          "ja": "Your ssl certfile"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "SSL CA",
+          "en": "SSL CA",
+          "ja": "SSL CA"
+        },
+        "description": {
+          "zh": "MongoDB SSL CA证书",
+          "en": "Your ssl CAcert file",
+          "ja": "Your ssl CAcert file"
+        }
+      },
+      "auth_source": {
+        "title": {
+          "zh": "连接认证源",
+          "en": "Auth Source",
+          "ja": "Auth Source"
+        },
+        "description": {
+          "zh": "用户认证源",
+          "en": "Auth source for connecting to MongoDB",
+          "ja": "Auth source for connecting to MongoDB"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_mongo_single",
+    "title": {
+      "zh": "MongoDB 单节点模式",
+      "en": "MongoDB Single Mode",
+      "ja": "MongoDB Single Mode"
+    },
+    "description": {
+      "zh": "MongoDB 单节点模式",
+      "en": "MongoDB Single Mode",
+      "ja": "MongoDB Single Mode"
+    },
+    "params": {
+      "w_mode": {
+        "title": {
+          "zh": "写模式",
+          "en": "Write Mode",
+          "ja": "Write Mode"
+        },
+        "description": {
+          "zh": "写模式",
+          "en": "Write Mode",
+          "ja": "Write Mode"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL 连接 MongoDB",
+          "en": "Enable SSL for connecting MongoDB",
+          "ja": "Enable SSL for connecting MongoDB"
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "MongoDB 服务器",
+          "en": "MongoDB Server",
+          "ja": "MongoDB Server"
+        },
+        "description": {
+          "zh": "MongoDB 服务器地址, 多节点使用逗号分隔",
+          "en": "MongoDB Server Address, Multiple nodes separated by commas",
+          "ja": "MongoDB Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "MongoDB 连接池大小",
+          "en": "Connection Pool Size for MongoDB",
+          "ja": "Connection Pool Size for MongoDB"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        },
+        "description": {
+          "zh": "MongoDB 密码",
+          "en": "Password for connecting to MongoDB",
+          "ja": "Password for connecting to MongoDB"
+        }
+      },
+      "login": {
+        "title": {
+          "zh": "用户名",
+          "en": "Username",
+          "ja": "Username"
+        },
+        "description": {
+          "zh": "MongoDB 用户名",
+          "en": "Username for connecting to MongoDB",
+          "ja": "Username for connecting to MongoDB"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL Key",
+          "en": "SSL Key",
+          "ja": "SSL Key"
+        },
+        "description": {
+          "zh": "MongoDB SSL 私钥",
+          "en": "Your ssl keyfile",
+          "ja": "Your ssl keyfile"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "数据库名称",
+          "en": "Database Name",
+          "ja": "Database Name"
+        },
+        "description": {
+          "zh": "数据库名称",
+          "en": "Database name for saving data",
+          "ja": "Database name for saving data"
+        }
+      },
+      "connectTimoutMS": {
+        "title": {
+          "zh": "连接超时时间(毫秒)",
+          "en": "Connect Timeout(ms)",
+          "ja": "Connect Timeout(ms)"
+        },
+        "description": {
+          "zh": "ޥ����",
+          "en": "Timeout for connecting to server",
+          "ja": "Timeout for connecting to server"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL Cert",
+          "en": "SSL Cert",
+          "ja": "SSL Cert"
+        },
+        "description": {
+          "zh": "MongoDB SSL 证书",
+          "en": "Your ssl certfile",
+          "ja": "Your ssl certfile"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "SSL CA",
+          "en": "SSL CA",
+          "ja": "SSL CA"
+        },
+        "description": {
+          "zh": "MongoDB SSL CA证书",
+          "en": "Your ssl CAcert file",
+          "ja": "Your ssl CAcert file"
+        }
+      },
+      "auth_source": {
+        "title": {
+          "zh": "连接认证源",
+          "en": "Auth Source",
+          "ja": "Auth Source"
+        },
+        "description": {
+          "zh": "用户认证源",
+          "en": "Auth source for connecting to MongoDB",
+          "ja": "Auth source for connecting to MongoDB"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_mysql",
+    "title": {
+      "zh": "MySQL",
+      "en": "MySQL",
+      "ja": "MySQL"
+    },
+    "description": {
+      "zh": "MySQL 数据库",
+      "en": "MySQL Database",
+      "ja": "MySQL Database"
+    },
+    "params": {
+      "user": {
+        "title": {
+          "zh": "MySQL 用户名",
+          "en": "MySQL User Name",
+          "ja": "MySQL User Name"
+        },
+        "description": {
+          "zh": "MySQL 用户名",
+          "en": "Username for connecting to MySQL",
+          "ja": "Username for connecting to MySQL"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启SSL链接",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启MySQL SSL",
+          "en": "If enable ssl",
+          "ja": "If enable ssl"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "MySQL 服务器",
+          "en": "MySQL Server",
+          "ja": "MySQL Server"
+        },
+        "description": {
+          "zh": "MySQL 服务器地址",
+          "en": "MySQL IP address or hostname and port",
+          "ja": "MySQL IP address or hostname and port"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "MySQL 连接池大小",
+          "en": "The size of connection pool for MySQL",
+          "ja": "The size of connection pool for MySQL"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "MySQL 密码",
+          "en": "MySQL Password",
+          "ja": "MySQL Password"
+        },
+        "description": {
+          "zh": "MySQL 密码",
+          "en": "Password for connecting to MySQL",
+          "ja": "Password for connecting to MySQL"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL Key",
+          "en": "SSL Key",
+          "ja": "SSL Key"
+        },
+        "description": {
+          "zh": "MySQL SSL 私钥",
+          "en": "Your ssl keyfile",
+          "ja": "Your ssl keyfile"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "MySQL 数据库名",
+          "en": "MySQL Database",
+          "ja": "MySQL Database"
+        },
+        "description": {
+          "zh": "MySQL 数据库名",
+          "en": "Database name for connecting to MySQL",
+          "ja": "Database name for connecting to MySQL"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL Cert",
+          "en": "SSL Cert",
+          "ja": "SSL Cert"
+        },
+        "description": {
+          "zh": "MySQL SSL 证书",
+          "en": "Your ssl certfile",
+          "ja": "Your ssl certfile"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "SSL CA",
+          "en": "SSL CA",
+          "ja": "SSL CA"
+        },
+        "description": {
+          "zh": "MySQL SSL CA证书",
+          "en": "Your ssl cacertfile",
+          "ja": "Your ssl cacertfile"
+        }
+      },
+      "batch_time": {
+        "title": {
+          "zh": "批量写入间隔(毫秒)",
+          "en": "Batch Time",
+          "ja": "Batch Time"
+        },
+        "description": {
+          "zh": "MySQL 批量写入间隔(毫秒)",
+          "en": "Time of MySQL batch insert SQL interval(millisecond)",
+          "ja": "Time of MySQL batch insert SQL interval(millisecond)"
+        }
+      },
+      "batch_size": {
+        "title": {
+          "zh": "批量写入大小",
+          "en": "Batch Size",
+          "ja": "Batch Size"
+        },
+        "description": {
+          "zh": "MySQL 批量写入大小",
+          "en": "The size of MySQL batch insert SQL",
+          "ja": "The size of MySQL batch insert SQL"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "MySQL 连接断开时是否重连",
+          "en": "If re-try when the connection lost",
+          "ja": "If re-try when the connection lost"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_opentsdb",
+    "title": {
+      "zh": "OpenTSDB",
+      "en": "OpenTSDB",
+      "ja": "OpenTSDB"
+    },
+    "description": {
+      "zh": "OpenTSDB",
+      "en": "OpenTSDB",
+      "ja": "OpenTSDB"
+    },
+    "params": {
+      "server": {
+        "title": {
+          "zh": "OpenTSDB 服务器",
+          "en": "OpenTSDB Server",
+          "ja": "OpenTSDB Server"
+        },
+        "description": {
+          "zh": "OpenTSDB 服务器地址",
+          "en": "OpenTSDB Server",
+          "ja": "OpenTSDB Server"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "OpenTSDB 连接池大小",
+          "en": "Size of OpenTSDB Connection Pool",
+          "ja": "Size of OpenTSDB Connection Pool"
+        }
+      }
+    }
+  },
+  {
+    "name": "parser_http",
+    "title": {
+      "zh": "HTTP 编解码",
+      "en": "Parser HTTP",
+      "ja": "Parser HTTP"
+    },
+    "description": {
+      "zh": "HTTP 编解码",
+      "en": "Parser HTTP",
+      "ja": "Parser HTTP"
+    },
+    "params": {
+      "parser_url": {
+        "title": {
+          "zh": "请求 URL",
+          "en": "Request URL",
+          "ja": "Request URL"
+        },
+        "description": {
+          "zh": "编解码服务的 URL",
+          "en": "HTTP URL of The Parser Server",
+          "ja": "HTTP URL of The Parser Server"
+        }
+      },
+      "method": {
+        "title": {
+          "zh": "请求方法",
+          "en": "Request Method",
+          "ja": "Request Method"
+        },
+        "description": {
+          "zh": "请求方法",
+          "en": "Request Method",
+          "ja": "Request Method"
+        }
+      },
+      "headers": {
+        "title": {
+          "zh": "请求头",
+          "en": "Request Header",
+          "ja": "Request Header"
+        },
+        "description": {
+          "zh": "请求头",
+          "en": "Request Header",
+          "ja": "Request Header"
+        }
+      },
+      "connect_timeout": {
+        "title": {
+          "zh": "连接超时",
+          "en": "Connect Timeout",
+          "ja": "Connect Timeout"
+        },
+        "description": {
+          "zh": "连接超时(秒)",
+          "en": "Connect Timeout in Seconds",
+          "ja": "Connect Timeout in Seconds"
+        }
+      }
+    }
+  },
+  {
+    "name": "parser_tcp",
+    "title": {
+      "zh": "TCP 编解码",
+      "en": "Parser TCP",
+      "ja": "Parser TCP"
+    },
+    "description": {
+      "zh": "TCP 编解码",
+      "en": "Parser TCP ",
+      "ja": "Parser TCP "
+    },
+    "params": {
+      "server": {
+        "title": {
+          "zh": "TCP 编解码服务地址",
+          "en": "TCP Parser Server",
+          "ja": "TCP Parser Server"
+        },
+        "description": {
+          "zh": "编解码服务的 IP 和端口",
+          "en": "IP Address and Port of TCP Parser",
+          "ja": "IP Address and Port of TCP Parser"
+        }
+      },
+      "connect_timeout": {
+        "title": {
+          "zh": "连接超时",
+          "en": "Connect Timeout",
+          "ja": "Connect Timeout"
+        },
+        "description": {
+          "zh": "连接超时(秒)",
+          "en": "Connect Timeout in Seconds",
+          "ja": "Connect Timeout in Seconds"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_pgsql",
+    "title": {
+      "zh": "PostgreSQL",
+      "en": "PostgreSQL",
+      "ja": "PostgreSQL"
+    },
+    "description": {
+      "zh": "PostgreSQL",
+      "en": "PostgreSQL",
+      "ja": "PostgreSQL"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "PostgreSQL 用户名",
+          "en": "PostgreSQL User",
+          "ja": "PostgreSQL User"
+        },
+        "description": {
+          "zh": "PostgreSQL 用户名",
+          "en": "User Name for Connecting to PostgreSQL",
+          "ja": "User Name for Connecting to PostgreSQL"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启SSL链接",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启PostgreSQL SSL",
+          "en": "If enable ssl",
+          "ja": "If enable ssl"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "PostgreSQL 服务器",
+          "en": "PostgreSQL Server",
+          "ja": "PostgreSQL Server"
+        },
+        "description": {
+          "zh": "PostgreSQL 服务器地址",
+          "en": "PostgreSQL Server Address",
+          "ja": "PostgreSQL Server Address"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "PostgreSQL 连接池大小",
+          "en": "Connection Pool Size for PostgreSQL",
+          "ja": "Connection Pool Size for PostgreSQL"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "PostgreSQL 密码",
+          "en": "PostgreSQL Password",
+          "ja": "PostgreSQL Password"
+        },
+        "description": {
+          "zh": "PostgreSQL 密码",
+          "en": "Password for Connecting to PostgreSQL",
+          "ja": "Password for Connecting to PostgreSQL"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL Key",
+          "en": "SSL Key",
+          "ja": "SSL Key"
+        },
+        "description": {
+          "zh": "PostgreSQL SSL 私钥",
+          "en": "Your ssl keyfile",
+          "ja": "Your ssl keyfile"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "PostgreSQL 数据库名称",
+          "en": "PostgreSQL Database",
+          "ja": "PostgreSQL Database"
+        },
+        "description": {
+          "zh": "PostgreSQL 数据库名称",
+          "en": "Database Name for Connecting to PostgreSQL",
+          "ja": "Database Name for Connecting to PostgreSQL"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL Cert",
+          "en": "SSL Cert",
+          "ja": "SSL Cert"
+        },
+        "description": {
+          "zh": "PostgreSQL SSL 证书",
+          "en": "Your ssl certfile",
+          "ja": "Your ssl certfile"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "SSL CA",
+          "en": "SSL CA",
+          "ja": "SSL CA"
+        },
+        "description": {
+          "zh": "PostgreSQL SSL CA证书",
+          "en": "Your ssl CAcert file",
+          "ja": "Your ssl CAcert file"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "PostgreSQL 连接断开时是否重连",
+          "en": "If Re-try when the Connection Lost",
+          "ja": "If Re-try when the Connection Lost"
+        }
+      }
+    }
+  },
+  {
+    "name": "bridge_pulsar",
+    "title": {
+      "zh": "Pulsar",
+      "en": "Pulsar",
+      "ja": "Pulsar"
+    },
+    "description": {
+      "zh": "Pulsar",
+      "en": "Pulsar",
+      "ja": "Pulsar"
+    },
+    "params": {
+      "sync_timeout": {
+        "title": {
+          "zh": "同步调用超时时间",
+          "en": "Sync Timeout",
+          "ja": "Sync Timeout"
+        },
+        "description": {
+          "zh": "同步调用超时时间",
+          "en": "Sync Timeout",
+          "ja": "Sync Timeout"
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "Pulsar 服务器",
+          "en": "Pulsar Server",
+          "ja": "Pulsar Server"
+        },
+        "description": {
+          "zh": "Pulsar 服务器地址, 多节点使用逗号分隔",
+          "en": "Pulsar Server Address, Multiple nodes separated by commas",
+          "ja": "Pulsar Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "send_buffer": {
+        "title": {
+          "zh": "发送消息的缓冲区大小",
+          "en": "Send Buffer Size",
+          "ja": "Send Buffer Size"
+        },
+        "description": {
+          "zh": "套接字发送消息的缓冲区大小",
+          "en": "Socket Send Buffer",
+          "ja": "Socket Send Buffer"
+        }
+      },
+      "compression": {
+        "title": {
+          "zh": "压缩",
+          "en": "Compression",
+          "ja": "Compression"
+        },
+        "description": {
+          "zh": "压缩",
+          "en": "Compression",
+          "ja": "Compression"
+        }
+      },
+      "batch_size": {
+        "title": {
+          "zh": "最大批处理数",
+          "en": "Max Batch Size",
+          "ja": "Max Batch Size"
+        },
+        "description": {
+          "zh": "最大批处理数",
+          "en": "Max Batch Size",
+          "ja": "Max Batch Size"
+        }
+      }
+    }
+  },
+  {
+    "name": "bridge_rabbit",
+    "title": {
+      "zh": "RabbitMQ",
+      "en": "RabbitMQ",
+      "ja": "RabbitMQ"
+    },
+    "description": {
+      "zh": "RabbitMQ 资源",
+      "en": "RabbitMQ Resource",
+      "ja": "RabbitMQ Resource"
+    },
+    "params": {
+      "virtual_host": {
+        "title": {
+          "zh": "虚拟主机",
+          "en": "Virtual Host",
+          "ja": "Virtual Host"
+        },
+        "description": {
+          "zh": "RabbitMQ 虚拟主机",
+          "en": "Virtual host for connecting to RabbitMQ",
+          "ja": "Virtual host for connecting to RabbitMQ"
+        }
+      },
+      "username": {
+        "title": {
+          "zh": "用户名",
+          "en": "Username",
+          "ja": "Username"
+        },
+        "description": {
+          "zh": "RabbitMQ 用户名",
+          "en": "RabbitMQ Username",
+          "ja": "RabbitMQ Username"
+        }
+      },
+      "timeout": {
+        "title": {
+          "zh": "连接超时时间",
+          "en": "Connection Timeout",
+          "ja": "Connection Timeout"
+        },
+        "description": {
+          "zh": "RabbitMQ 连接超时时间",
+          "en": "Connection timeout for connecting to RabbitMQ",
+          "ja": "Connection timeout for connecting to RabbitMQ"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "RabbitMQ 服务器",
+          "en": "RabbitMQ Server",
+          "ja": "RabbitMQ Server"
+        },
+        "description": {
+          "zh": "RabbitMQ 服务器地址",
+          "en": "RabbitMQ Server",
+          "ja": "RabbitMQ Server"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "RabbitMQ 连接池大小",
+          "en": "Size of RabbitMQ connection pool",
+          "ja": "Size of RabbitMQ connection pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        },
+        "description": {
+          "zh": "RabbitMQ 密码",
+          "en": "RabbitMQ Password",
+          "ja": "RabbitMQ Password"
+        }
+      },
+      "heartbeat": {
+        "title": {
+          "zh": "心跳间隔",
+          "en": "Heartbeart",
+          "ja": "Heartbeart"
+        },
+        "description": {
+          "zh": "RabbitMQ 心跳间隔",
+          "en": "Heartbeat for connecting to RabbitMQ",
+          "ja": "Heartbeat for connecting to RabbitMQ"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "自动重连间隔",
+          "en": "Auto Reconnect Times",
+          "ja": "Auto Reconnect Times"
+        },
+        "description": {
+          "zh": "RabbitMQ 自动重连间隔",
+          "en": "Auto Reconnect Times for connecting to RabbitMQ",
+          "ja": "Auto Reconnect Times for connecting to RabbitMQ"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_redis_cluster",
+    "title": {
+      "zh": "Redis Cluster模式",
+      "en": "Redis Cluster Mode",
+      "ja": "Redis Cluster Mode"
+    },
+    "description": {
+      "zh": "Redis Cluster模式",
+      "en": "Redis Cluster Mode",
+      "ja": "Redis Cluster Mode"
+    },
+    "params": {
+      "servers": {
+        "title": "Redis Cluster Servers",
+        "description": {
+          "zh": "Redis Cluster 服务器地址, 多节点使用逗号分隔",
+          "en": "Redis Cluster Server Address, Multiple nodes separated by commas",
+          "ja": "Redis Cluster Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "Redis 连接池大小",
+          "en": "Size of Redis Connection Pool",
+          "ja": "Size of Redis Connection Pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Redis 密码",
+          "en": "Redis Password",
+          "ja": "Redis Password"
+        },
+        "description": {
+          "zh": "Redis 密码",
+          "en": "Redis Password",
+          "ja": "Redis Password"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "Redis 数据库",
+          "en": "Redis Database",
+          "ja": "Redis Database"
+        },
+        "description": {
+          "zh": "Redis 数据库",
+          "en": "Redis Database",
+          "ja": "Redis Database"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_redis_sentinel",
+    "title": {
+      "zh": "Redis Sentinel模式",
+      "en": "Redis Sentinel Mode",
+      "ja": "Redis Sentinel Mode"
+    },
+    "description": {
+      "zh": "Redis Sentinel模式",
+      "en": "Redis Sentinel Mode",
+      "ja": "Redis Sentinel Mode"
+    },
+    "params": {
+      "servers": {
+        "title": {
+          "zh": "Redis 服务器列表",
+          "en": "Redis Sentinel Servers",
+          "ja": "Redis Sentinel Servers"
+        },
+        "description": {
+          "zh": "Redis Sentinel 服务器地址, 多节点使用逗号分隔",
+          "en": "Redis Sentinel Server Address, Multiple nodes separated by commas",
+          "ja": "Redis Sentinel Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "sentinel": {
+        "title": {
+          "zh": "Redis Sentinel 名字",
+          "en": "Redis Sentinel Name",
+          "ja": "Redis Sentinel Name"
+        },
+        "description": {
+          "zh": "Redis Sentinel 名字",
+          "en": "Redis Sentinel Name",
+          "ja": "Redis Sentinel Name"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "Redis 连接池大小",
+          "en": "Size of Redis Connection Pool",
+          "ja": "Size of Redis Connection Pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Redis 密码",
+          "en": "Redis Password",
+          "ja": "Redis Password"
+        },
+        "description": {
+          "zh": "Redis 密码",
+          "en": "Redis Password",
+          "ja": "Redis Password"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "Redis 数据库",
+          "en": "Redis Database",
+          "ja": "Redis Database"
+        },
+        "description": {
+          "zh": "Redis 数据库",
+          "en": "Redis Database",
+          "ja": "Redis Database"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "Redis 连接断开时是否重连",
+          "en": "If Re-try when the Connection Lost",
+          "ja": "If Re-try when the Connection Lost"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_redis_single",
+    "title": {
+      "zh": "Redis 单节点模式",
+      "en": "Redis Single Mode",
+      "ja": "Redis Single Mode"
+    },
+    "description": {
+      "zh": "Redis 单节点模式",
+      "en": "Redis Single Mode",
+      "ja": "Redis Single Mode"
+    },
+    "params": {
+      "server": {
+        "title": {
+          "zh": "Redis 服务器",
+          "en": "Redis Server",
+          "ja": "Redis Server"
+        },
+        "description": {
+          "zh": "Redis 服务器地址",
+          "en": "Redis Server",
+          "ja": "Redis Server"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "Redis 连接池大小",
+          "en": "Size of Redis Connection Pool",
+          "ja": "Size of Redis Connection Pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Redis 密码",
+          "en": "Redis Password",
+          "ja": "Redis Password"
+        },
+        "description": {
+          "zh": "Redis 密码",
+          "en": "Redis Password",
+          "ja": "Redis Password"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "Redis 数据库",
+          "en": "Redis Database",
+          "ja": "Redis Database"
+        },
+        "description": {
+          "zh": "Redis 数据库",
+          "en": "Redis Database",
+          "ja": "Redis Database"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "Redis 连接断开时是否重连",
+          "en": "If Re-try when the Connection Lost",
+          "ja": "If Re-try when the Connection Lost"
+        }
+      }
+    }
+  },
+  {
+    "name": "bridge_rocket",
+    "title": {
+      "zh": "RocketMQ",
+      "en": "RocketMQ",
+      "ja": "RocketMQ"
+    },
+    "description": {
+      "zh": "RocketMQ",
+      "en": "RocketMQ",
+      "ja": "RocketMQ"
+    },
+    "params": {
+      "sync_timeout": {
+        "title": {
+          "zh": "同步调用超时时间",
+          "en": "Sync Timeout",
+          "ja": "Sync Timeout"
+        },
+        "description": {
+          "zh": "同步调用超时时间",
+          "en": "Sync Timeout",
+          "ja": "Sync Timeout"
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "RocketMQ 服务器",
+          "en": "RocketMQ Server",
+          "ja": "RocketMQ Server"
+        },
+        "description": {
+          "zh": "RocketMQ 服务器地址, 多节点使用逗号分隔",
+          "en": "RocketMQ Server Address, Multiple nodes separated by commas",
+          "ja": "RocketMQ Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "send_buffer": {
+        "title": {
+          "zh": "发送消息的缓冲区大小",
+          "en": "Send Buffer Size",
+          "ja": "Send Buffer Size"
+        },
+        "description": {
+          "zh": "套接字发送消息的缓冲区大小",
+          "en": "Socket Send Buffer",
+          "ja": "Socket Send Buffer"
+        }
+      },
+      "refresh_interval": {
+        "title": {
+          "zh": "Topic Route 更新间隔",
+          "en": "Topic Route Refresh",
+          "ja": "Topic Route Refresh"
+        },
+        "description": {
+          "zh": "主题路由更新间隔",
+          "en": "Topic Route Refresh Interval",
+          "ja": "Topic Route Refresh Interval"
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_tdengine",
+    "title": {
+      "zh": "TDengine",
+      "en": "TDengine",
+      "ja": "TDengine"
+    },
+    "description": {
+      "zh": "TDengine",
+      "en": "TDengine",
+      "ja": "TDengine"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "TDengine 用户名",
+          "en": "TDengine User",
+          "ja": "TDengine User"
+        },
+        "description": {
+          "zh": "TDengine 用户名",
+          "en": "User for connecting to TDengine",
+          "ja": "User for connecting to TDengine"
+        }
+      },
+      "port": {
+        "title": {
+          "zh": "TDengine 端口",
+          "en": "TDengine Port",
+          "ja": "TDengine Port"
+        },
+        "description": {
+          "zh": "要连接的端口",
+          "en": "Port to connect to",
+          "ja": "Port to connect to"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "TDengine 连接池大小",
+          "en": "Size of TDengine Connection Pool",
+          "ja": "Size of TDengine Connection Pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "TDengine 密码",
+          "en": "TDengine Password",
+          "ja": "TDengine Password"
+        },
+        "description": {
+          "zh": "TDengine 密码",
+          "en": "Key for connecting to TDengine",
+          "ja": "Key for connecting to TDengine"
+        }
+      },
+      "host": {
+        "title": {
+          "zh": "TDengine 主机",
+          "en": "TDengine Host",
+          "ja": "TDengine Host"
+        },
+        "description": {
+          "zh": "TDengine HTTP/HTTPS 服务器地址",
+          "en": "HTTP/HTTPS address of TDengine",
+          "ja": "HTTP/HTTPS address of TDengine"
+        }
+      }
+    }
+  },
+  {
+    "name": "timescale",
+    "title": {
+      "zh": "Timescale",
+      "en": "Timescale",
+      "ja": "Timescale"
+    },
+    "description": {
+      "zh": "Timescale",
+      "en": "Timescale",
+      "ja": "Timescale"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "Timescale 用户名",
+          "en": "Timescale User",
+          "ja": "Timescale User"
+        },
+        "description": {
+          "zh": "Timescale 用户名",
+          "en": "User Name for Timescale",
+          "ja": "User Name for Timescale"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启SSL链接",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启PostgreSQL SSL",
+          "en": "If enable ssl",
+          "ja": "If enable ssl"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "Timescale 服务器",
+          "en": "Timescale Server",
+          "ja": "Timescale Server"
+        },
+        "description": {
+          "zh": "Timescale 服务器地址",
+          "en": "Timescale Server",
+          "ja": "Timescale Server"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "Timescale 连接池大小",
+          "en": "Size of Timescale Connection Pool",
+          "ja": "Size of Timescale Connection Pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Timescale 密码",
+          "en": "Timescale Password",
+          "ja": "Timescale Password"
+        },
+        "description": {
+          "zh": "Timescale 密码",
+          "en": "Password for Timescale",
+          "ja": "Password for Timescale"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL Key",
+          "en": "SSL Key",
+          "ja": "SSL Key"
+        },
+        "description": {
+          "zh": "PostgreSQL SSL 私钥",
+          "en": "Your ssl keyfile",
+          "ja": "Your ssl keyfile"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "Timescale 数据库",
+          "en": "Timescale Database",
+          "ja": "Timescale Database"
+        },
+        "description": {
+          "zh": "Timescale 数据库",
+          "en": "Database Name for Timescale",
+          "ja": "Database Name for Timescale"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL Cert",
+          "en": "SSL Cert",
+          "ja": "SSL Cert"
+        },
+        "description": {
+          "zh": "PostgreSQL SSL 证书",
+          "en": "Your ssl certfile",
+          "ja": "Your ssl certfile"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "SSL CA",
+          "en": "SSL CA",
+          "ja": "SSL CA"
+        },
+        "description": {
+          "zh": "PostgreSQL SSL CA证书",
+          "en": "Your ssl CAcert file",
+          "ja": "Your ssl CAcert file"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "Timescale 连接断开时是否重连",
+          "en": "If Re-try when the Connection Lost",
+          "ja": "If Re-try when the Connection Lost"
+        }
+      }
+    }
+  },
+  {
+    "name": "web_hook",
+    "title": {
+      "zh": "WebHook",
+      "en": "WebHook",
+      "ja": "WebHook"
+    },
+    "description": {
+      "zh": "WebHook",
+      "en": "WebHook",
+      "ja": "WebHook"
+    },
+    "params": {
+      "url": {
+        "title": {
+          "zh": "请求 URL",
+          "en": "Request URL",
+          "ja": "Request URL"
+        },
+        "description": {
+          "zh": "请求 URL",
+          "en": "Request URL",
+          "ja": "Request URL"
+        }
+      },
+      "method": {
+        "title": {
+          "zh": "请求方法",
+          "en": "Request Method",
+          "ja": "Request Method"
+        },
+        "description": {
+          "zh": "请求方法",
+          "en": "Request Method",
+          "ja": "Request Method"
+        }
+      },
+      "headers": {
+        "title": {
+          "zh": "请求头",
+          "en": "Request Header",
+          "ja": "Request Header"
+        },
+        "description": {
+          "zh": "请求头",
+          "en": "Request Header",
+          "ja": "Request Header"
+        }
+      }
+    }
+  }
+]
