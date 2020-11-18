@@ -1,0 +1,4985 @@
+[
+  {
+    "name": "coap_protocol",
+    "title": {
+      "zh": "CoAP 接入网关",
+      "en": "CoAP Gateway",
+      "ja": "CoAP Gateway"
+    },
+    "description": {
+      "zh": "EMQ X CoAP 接入网关",
+      "en": "EMQ X CoAP Gateway",
+      "ja": "EMQ X CoAP Gateway"
+    },
+    "params": {
+      "listener": {
+        "udp_options": {},
+        "protocol": {
+          "listener_type": {
+            "title": {
+              "zh": "监听类型",
+              "en": "Listener Type",
+              "ja": "Listener Type"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "listen_on": {
+            "title": {
+              "zh": "监听地址",
+              "en": "Listener",
+              "ja": "Listener"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          }
+        },
+        "dtls_options": {
+          "versions": {
+            "title": {
+              "zh": "DTLS 协议版本",
+              "en": "DTLS Version",
+              "ja": "DTLS Version"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "verify": {
+            "title": {
+              "zh": "校验类型",
+              "en": "Verify",
+              "ja": "Verify"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "keyfile": {
+            "title": {
+              "zh": "密钥文件",
+              "en": "Keyfile",
+              "ja": "Keyfile"
+            },
+            "description": {
+              "zh": "秘钥文件路径",
+              "en": "The Key file path",
+              "ja": "The Key file path"
+            }
+          },
+          "fail_if_no_peer_cert": {
+            "title": {
+              "zh": "关闭无证书客户端连接",
+              "en": "fail_if_no_peer_cert",
+              "ja": "fail_if_no_peer_cert"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "ciphers": {
+            "title": {
+              "zh": "加密套件",
+              "en": "Ciphers",
+              "ja": "Ciphers"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "certfile": {
+            "title": {
+              "zh": "证书文件",
+              "en": "Certfile",
+              "ja": "Certfile"
+            },
+            "description": {
+              "zh": "证书路径",
+              "en": "The certificate file path",
+              "ja": "The certificate file path"
+            }
+          },
+          "cacertfile": {
+            "title": {
+              "zh": "CA 证书文件",
+              "en": "CA Certfile",
+              "ja": "CA Certfile"
+            },
+            "description": {
+              "zh": "CA 证书文件路径",
+              "en": "The CA certificate file path",
+              "ja": "The CA certificate file path"
+            }
+          }
+        },
+        "common": {
+          "sndbuf": {
+            "title": {
+              "zh": "发送缓冲区",
+              "en": "Send Buffer",
+              "ja": "Send Buffer"
+            },
+            "description": {
+              "zh": "Socket 发送缓冲区大小 (操作系统内核级)",
+              "en": "The send buffer of socket (os kernel)",
+              "ja": "The send buffer of socket (os kernel)"
+            }
+          },
+          "reuseaddr": {
+            "title": {
+              "zh": "SO_REUSEADDR 标识",
+              "en": "SO_REUSEADDR Flag",
+              "ja": "SO_REUSEADDR Flag"
+            },
+            "description": {
+              "zh": "设置 Socket 的 SO_REUSEADDR 标识",
+              "en": "The SO_REUSEADDR flag for listener",
+              "ja": "The SO_REUSEADDR flag for listener"
+            }
+          },
+          "recbuf": {
+            "title": {
+              "zh": "接收缓冲区",
+              "en": "Receive Buffer",
+              "ja": "Receive Buffer"
+            },
+            "description": {
+              "zh": "Socket 接收缓冲区大小 (操作系统内核级)",
+              "en": "The receive buffer of socket (os kernel)",
+              "ja": "The receive buffer of socket (os kernel)"
+            }
+          },
+          "proxy_protocol_timeout": {
+            "title": {
+              "zh": "Proxy Protocol 处理超时时间",
+              "en": "Proxy Protocol Timeout",
+              "ja": "Proxy Protocol Timeout"
+            },
+            "description": {
+              "zh": "处理 Proxy Protocol 的超时时间，如果超过该时间未收到 Proxy Protocol 的报文，EMQ X 将关闭该 TCP 连接",
+              "en": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout",
+              "ja": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout"
+            }
+          },
+          "proxy_protocol": {
+            "title": {
+              "zh": "开启 Proxy Protocol",
+              "en": "Proxy Protocol",
+              "ja": "Proxy Protocol"
+            },
+            "description": {
+              "zh": "开启 Proxy Protocol V1/2，如果 EMQ X 集群部署在 HAProxy 或 Nginx 后",
+              "en": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx",
+              "ja": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx"
+            }
+          },
+          "max_connections": {
+            "title": {
+              "zh": "最大连接数",
+              "en": "Max Connections",
+              "ja": "Max Connections"
+            },
+            "description": {
+              "zh": "该监听器允许的最大连接数",
+              "en": "The maximum connections of listener",
+              "ja": "The maximum connections of listener"
+            }
+          },
+          "max_conn_rate": {
+            "title": {
+              "zh": "最大连接速率",
+              "en": "Max Connection Rate",
+              "ja": "Max Connection Rate"
+            },
+            "description": {
+              "zh": "该监听器每秒允许的最大连接个数",
+              "en": "Allowed connections per second",
+              "ja": "Allowed connections per second"
+            }
+          },
+          "active_n": {
+            "title": {
+              "zh": "ActiveN",
+              "en": "ActiveN",
+              "ja": "ActiveN"
+            },
+            "description": {
+              "zh": "设置 Socket 的 {active, N} 选项",
+              "en": "Specify the {active, N} option for the Socket",
+              "ja": "Specify the {active, N} option for the Socket"
+            }
+          },
+          "acceptors": {
+            "title": {
+              "zh": "接收器数量",
+              "en": "Acceptors",
+              "ja": "Acceptors"
+            },
+            "description": {
+              "zh": "接收器数量，执行 accept 操作的进程数量，仅对 TCP/SSL/DTLS Socket 有效",
+              "en": "The number of acceoptors, It just works for TCP/SSL/DTLS socket",
+              "ja": "The number of acceoptors, It just works for TCP/SSL/DTLS socket"
+            }
+          }
+        }
+      },
+      "enable_stats": {
+        "title": {
+          "zh": "启用数据统计",
+          "en": "Enable Statistic",
+          "ja": "Enable Statistic"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    }
+  },
+  {
+    "name": "stomp_protocol",
+    "title": {
+      "zh": "Stomp 接入网关",
+      "en": "Stomp Gateway",
+      "ja": "Stomp Gateway"
+    },
+    "description": {
+      "zh": "EMQ X Stomp 接入网关",
+      "en": "EMQ X Stomp Gateway",
+      "ja": "EMQ X Stomp Gateway"
+    },
+    "params": {
+      "max_headers": {
+        "title": {
+          "zh": "最大报文头部数量",
+          "en": "Maximum Headers",
+          "ja": "Maximum Headers"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "max_header_length": {
+        "title": {
+          "zh": "最大报文头部长度",
+          "en": "Maximum Header Length",
+          "ja": "Maximum Header Length"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "max_body_length": {
+        "title": {
+          "zh": "报文体最大长度",
+          "en": "Maximum Body Length",
+          "ja": "Maximum Body Length"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "listener": {
+        "tcp_options": {
+          "send_timeout_close": {
+            "title": {
+              "zh": "关闭发送超时连接",
+              "en": "Send Timeout Close",
+              "ja": "Send Timeout Close"
+            },
+            "description": {
+              "zh": "关闭发送超时的 TCP 连接",
+              "en": "Close the TCP connection if send timeout",
+              "ja": "Close the TCP connection if send timeout"
+            }
+          },
+          "send_timeout": {
+            "title": {
+              "zh": "发送超时时间",
+              "en": "Send Timeout",
+              "ja": "Send Timeout"
+            },
+            "description": {
+              "zh": "TCP 报文发送超时时间",
+              "en": "The TCP send timeout",
+              "ja": "The TCP send timeout"
+            }
+          },
+          "nodelay": {
+            "title": {
+              "zh": "TCP_NODELAY 标识",
+              "en": "TCP_NODELAY Flag",
+              "ja": "TCP_NODELAY Flag"
+            },
+            "description": {
+              "zh": "设置 TCP_NODELAY 标识",
+              "en": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending",
+              "ja": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending"
+            }
+          },
+          "backlog": {
+            "title": {
+              "zh": "TCP 连接队列长度",
+              "en": "Backlog",
+              "ja": "Backlog"
+            },
+            "description": {
+              "zh": "TCP 连接队列最大长度",
+              "en": "The TCP backlog defines the maximum length that the queue of pendingconnections can grow to",
+              "ja": "The TCP backlog defines the maximum length that the queue of pendingconnections can grow to"
+            }
+          }
+        },
+        "ssl_options": {
+          "versions": {
+            "title": {
+              "zh": "TLS 版本",
+              "en": "TLS Version",
+              "ja": "TLS Version"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "verify": {
+            "title": {
+              "zh": "校验类型",
+              "en": "Verify",
+              "ja": "Verify"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "keyfile": {
+            "title": {
+              "zh": "密钥文件",
+              "en": "Keyfile",
+              "ja": "Keyfile"
+            },
+            "description": {
+              "zh": "秘钥文件路径",
+              "en": "The Key file path",
+              "ja": "The Key file path"
+            }
+          },
+          "handshake_timeout": {
+            "title": {
+              "zh": "握手超时时间",
+              "en": "Handshake Timeout",
+              "ja": "Handshake Timeout"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "fail_if_no_peer_cert": {
+            "title": {
+              "zh": "关闭无证书客户端连接",
+              "en": "fail_if_no_peer_cert",
+              "ja": "fail_if_no_peer_cert"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "ciphers": {
+            "title": {
+              "zh": "加密套件",
+              "en": "Ciphers",
+              "ja": "Ciphers"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "certfile": {
+            "title": {
+              "zh": "证书文件",
+              "en": "Certfile",
+              "ja": "Certfile"
+            },
+            "description": {
+              "zh": "证书文件路径",
+              "en": "The certificate file path",
+              "ja": "The certificate file path"
+            }
+          },
+          "cacertfile": {
+            "title": {
+              "zh": "CA 证书文件",
+              "en": "CA Certfile",
+              "ja": "CA Certfile"
+            },
+            "description": {
+              "zh": "CA 证书文件路径",
+              "en": "The CA certificate file path",
+              "ja": "The CA certificate file path"
+            }
+          }
+        },
+        "protocol": {
+          "listener_type": {
+            "title": {
+              "zh": "监听类型",
+              "en": "Listener Type",
+              "ja": "Listener Type"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "listen_on": {
+            "title": {
+              "zh": "监听地址",
+              "en": "Listener",
+              "ja": "Listener"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          }
+        },
+        "common": {
+          "sndbuf": {
+            "title": {
+              "zh": "发送缓冲区",
+              "en": "Send Buffer",
+              "ja": "Send Buffer"
+            },
+            "description": {
+              "zh": "Socket 发送缓冲区大小 (操作系统内核级)",
+              "en": "The send buffer of socket (os kernel)",
+              "ja": "The send buffer of socket (os kernel)"
+            }
+          },
+          "reuseaddr": {
+            "title": {
+              "zh": "SO_REUSEADDR 标识",
+              "en": "SO_REUSEADDR Flag",
+              "ja": "SO_REUSEADDR Flag"
+            },
+            "description": {
+              "zh": "设置 Socket 的 SO_REUSEADDR 标识",
+              "en": "The SO_REUSEADDR flag for listener",
+              "ja": "The SO_REUSEADDR flag for listener"
+            }
+          },
+          "recbuf": {
+            "title": {
+              "zh": "接收缓冲区",
+              "en": "Receive Buffer",
+              "ja": "Receive Buffer"
+            },
+            "description": {
+              "zh": "Socket 接收缓冲区大小 (操作系统内核级)",
+              "en": "The receive buffer of socket (os kernel)",
+              "ja": "The receive buffer of socket (os kernel)"
+            }
+          },
+          "proxy_protocol_timeout": {
+            "title": {
+              "zh": "Proxy Protocol 处理超时时间",
+              "en": "Proxy Protocol Timeout",
+              "ja": "Proxy Protocol Timeout"
+            },
+            "description": {
+              "zh": "处理 Proxy Protocol 的超时时间，如果超过该时间未收到 Proxy Protocol 的报文，EMQ X 将关闭该 TCP 连接",
+              "en": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout",
+              "ja": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout"
+            }
+          },
+          "proxy_protocol": {
+            "title": {
+              "zh": "开启 Proxy Protocol",
+              "en": "Proxy Protocol",
+              "ja": "Proxy Protocol"
+            },
+            "description": {
+              "zh": "开启 Proxy Protocol V1/2，如果 EMQ X 集群部署在 HAProxy 或 Nginx 后",
+              "en": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx",
+              "ja": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx"
+            }
+          },
+          "max_connections": {
+            "title": {
+              "zh": "最大连接数",
+              "en": "Max Connections",
+              "ja": "Max Connections"
+            },
+            "description": {
+              "zh": "该监听器允许的最大连接数",
+              "en": "The maximum connections of listener",
+              "ja": "The maximum connections of listener"
+            }
+          },
+          "max_conn_rate": {
+            "title": {
+              "zh": "最大连接速率",
+              "en": "Max Connection Rate",
+              "ja": "Max Connection Rate"
+            },
+            "description": {
+              "zh": "该监听器每秒允许的最大连接个数",
+              "en": "Allowed connections per second",
+              "ja": "Allowed connections per second"
+            }
+          },
+          "active_n": {
+            "title": {
+              "zh": "ActiveN",
+              "en": "ActiveN",
+              "ja": "ActiveN"
+            },
+            "description": {
+              "zh": "设置 Socket 的 {active, N} 选项",
+              "en": "Specify the {active, N} option for the Socket",
+              "ja": "Specify the {active, N} option for the Socket"
+            }
+          },
+          "acceptors": {
+            "title": {
+              "zh": "接收器数量",
+              "en": "Acceptors",
+              "ja": "Acceptors"
+            },
+            "description": {
+              "zh": "接收器数量，执行 accept 操作的进程数量，仅对 TCP/SSL/DTLS Socket 有效",
+              "en": "The number of acceoptors, It just works for TCP/SSL/DTLS socket",
+              "ja": "The number of acceoptors, It just works for TCP/SSL/DTLS socket"
+            }
+          }
+        }
+      },
+      "default_username": {
+        "title": {
+          "zh": "默认用户名",
+          "en": "Default Username",
+          "ja": "Default Username"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "default_password": {
+        "title": {
+          "zh": "默认密码",
+          "en": "Default Password",
+          "ja": "Default Password"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "allow_anonymous": {
+        "title": {
+          "zh": "允许匿名登录",
+          "en": "Allow Anonymous",
+          "ja": "Allow Anonymous"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    }
+  },
+  {
+    "name": "lwm2m_protocol",
+    "title": {
+      "zh": "LwM2M 接入网关",
+      "en": "LwM2M Gateway",
+      "ja": "LwM2M Gateway"
+    },
+    "description": {
+      "zh": "EMQ X LwM2M 接入网关",
+      "en": "EMQ X LwM2M Gateway",
+      "ja": "EMQ X LwM2M Gateway"
+    },
+    "params": {
+      "xml_dir": {
+        "title": {
+          "zh": "XML 文件路径",
+          "en": "XML Directory",
+          "ja": "XML Directory"
+        },
+        "description": {
+          "zh": "对象定义的 XML 文件路径",
+          "en": "Directory where the object definition files can be found",
+          "ja": "Directory where the object definition files can be found"
+        }
+      },
+      "update_topic": {
+        "title": {
+          "zh": "更新消息主题",
+          "en": "Update Topic",
+          "ja": "Update Topic"
+        },
+        "description": {
+          "zh": "更新消息主题，LwM2M 客户端连接后会自动订阅该主题",
+          "en": "The topic to which the lwm2m client's update is published",
+          "ja": "The topic to which the lwm2m client's update is published"
+        }
+      },
+      "response_topic": {
+        "title": {
+          "zh": "上行应答主题",
+          "en": "Response Topic",
+          "ja": "Response Topic"
+        },
+        "description": {
+          "zh": "上行应答主题，LwM2M 客户端连接后会自动订阅该主题",
+          "en": "The topic to which the lwm2m client's response is published",
+          "ja": "The topic to which the lwm2m client's response is published"
+        }
+      },
+      "register_topic": {
+        "title": {
+          "zh": "注册消息主题",
+          "en": "Register Topic",
+          "ja": "Register Topic"
+        },
+        "description": {
+          "zh": "注册消息主题，LwM2M 客户端连接后会自动订阅该主题",
+          "en": "The topic to which the lwm2m client's register is published",
+          "ja": "The topic to which the lwm2m client's register is published"
+        }
+      },
+      "qmode_time_window": {
+        "title": {
+          "zh": "QMode 窗口",
+          "en": "QMode Time Window",
+          "ja": "QMode Time Window"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "notify_topic": {
+        "title": {
+          "zh": "上行通知主题",
+          "en": "Notify Topic",
+          "ja": "Notify Topic"
+        },
+        "description": {
+          "zh": "上行通知主题，LwM2M 客户端连接后会自动订阅该主题",
+          "en": "The topic to which the lwm2m client's notify is published",
+          "ja": "The topic to which the lwm2m client's notify is published"
+        }
+      },
+      "mountpoint": {
+        "title": {
+          "zh": "挂载点",
+          "en": "Mountpoint",
+          "ja": "Mountpoint"
+        },
+        "description": {
+          "zh": "客户端主题的挂载点",
+          "en": "The mountpint for client subscribed topic",
+          "ja": "The mountpint for client subscribed topic"
+        }
+      },
+      "listener": {
+        "udp_options": {},
+        "protocol": {
+          "listener_type": {
+            "title": {
+              "zh": "监听类型",
+              "en": "Listener Type",
+              "ja": "Listener Type"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "listen_on": {
+            "title": {
+              "zh": "监听地址",
+              "en": "Listener",
+              "ja": "Listener"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          }
+        },
+        "dtls_options": {
+          "versions": {
+            "title": {
+              "zh": "DTLS 协议版本",
+              "en": "DTLS Version",
+              "ja": "DTLS Version"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "verify": {
+            "title": {
+              "zh": "校验类型",
+              "en": "Verify",
+              "ja": "Verify"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "keyfile": {
+            "title": {
+              "zh": "密钥文件",
+              "en": "Keyfile",
+              "ja": "Keyfile"
+            },
+            "description": {
+              "zh": "秘钥文件路径",
+              "en": "The Key file path",
+              "ja": "The Key file path"
+            }
+          },
+          "fail_if_no_peer_cert": {
+            "title": {
+              "zh": "关闭无证书客户端连接",
+              "en": "fail_if_no_peer_cert",
+              "ja": "fail_if_no_peer_cert"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "ciphers": {
+            "title": {
+              "zh": "加密套件",
+              "en": "Ciphers",
+              "ja": "Ciphers"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "certfile": {
+            "title": {
+              "zh": "证书文件",
+              "en": "Certfile",
+              "ja": "Certfile"
+            },
+            "description": {
+              "zh": "证书路径",
+              "en": "The certificate file path",
+              "ja": "The certificate file path"
+            }
+          },
+          "cacertfile": {
+            "title": {
+              "zh": "CA 证书文件",
+              "en": "CA Certfile",
+              "ja": "CA Certfile"
+            },
+            "description": {
+              "zh": "CA 证书文件路径",
+              "en": "The CA certificate file path",
+              "ja": "The CA certificate file path"
+            }
+          }
+        },
+        "common": {
+          "sndbuf": {
+            "title": {
+              "zh": "发送缓冲区",
+              "en": "Send Buffer",
+              "ja": "Send Buffer"
+            },
+            "description": {
+              "zh": "Socket 发送缓冲区大小 (操作系统内核级)",
+              "en": "The send buffer of socket (os kernel)",
+              "ja": "The send buffer of socket (os kernel)"
+            }
+          },
+          "reuseaddr": {
+            "title": {
+              "zh": "SO_REUSEADDR 标识",
+              "en": "SO_REUSEADDR Flag",
+              "ja": "SO_REUSEADDR Flag"
+            },
+            "description": {
+              "zh": "设置 Socket 的 SO_REUSEADDR 标识",
+              "en": "The SO_REUSEADDR flag for listener",
+              "ja": "The SO_REUSEADDR flag for listener"
+            }
+          },
+          "recbuf": {
+            "title": {
+              "zh": "接收缓冲区",
+              "en": "Receive Buffer",
+              "ja": "Receive Buffer"
+            },
+            "description": {
+              "zh": "Socket 接收缓冲区大小 (操作系统内核级)",
+              "en": "The receive buffer of socket (os kernel)",
+              "ja": "The receive buffer of socket (os kernel)"
+            }
+          },
+          "proxy_protocol_timeout": {
+            "title": {
+              "zh": "Proxy Protocol 处理超时时间",
+              "en": "Proxy Protocol Timeout",
+              "ja": "Proxy Protocol Timeout"
+            },
+            "description": {
+              "zh": "处理 Proxy Protocol 的超时时间，如果超过该时间未收到 Proxy Protocol 的报文，EMQ X 将关闭该 TCP 连接",
+              "en": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout",
+              "ja": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout"
+            }
+          },
+          "proxy_protocol": {
+            "title": {
+              "zh": "开启 Proxy Protocol",
+              "en": "Proxy Protocol",
+              "ja": "Proxy Protocol"
+            },
+            "description": {
+              "zh": "开启 Proxy Protocol V1/2，如果 EMQ X 集群部署在 HAProxy 或 Nginx 后",
+              "en": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx",
+              "ja": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx"
+            }
+          },
+          "max_connections": {
+            "title": {
+              "zh": "最大连接数",
+              "en": "Max Connections",
+              "ja": "Max Connections"
+            },
+            "description": {
+              "zh": "该监听器允许的最大连接数",
+              "en": "The maximum connections of listener",
+              "ja": "The maximum connections of listener"
+            }
+          },
+          "max_conn_rate": {
+            "title": {
+              "zh": "最大连接速率",
+              "en": "Max Connection Rate",
+              "ja": "Max Connection Rate"
+            },
+            "description": {
+              "zh": "该监听器每秒允许的最大连接个数",
+              "en": "Allowed connections per second",
+              "ja": "Allowed connections per second"
+            }
+          },
+          "active_n": {
+            "title": {
+              "zh": "ActiveN",
+              "en": "ActiveN",
+              "ja": "ActiveN"
+            },
+            "description": {
+              "zh": "设置 Socket 的 {active, N} 选项",
+              "en": "Specify the {active, N} option for the Socket",
+              "ja": "Specify the {active, N} option for the Socket"
+            }
+          },
+          "acceptors": {
+            "title": {
+              "zh": "接收器数量",
+              "en": "Acceptors",
+              "ja": "Acceptors"
+            },
+            "description": {
+              "zh": "接收器数量，执行 accept 操作的进程数量，仅对 TCP/SSL/DTLS Socket 有效",
+              "en": "The number of acceoptors, It just works for TCP/SSL/DTLS socket",
+              "ja": "The number of acceoptors, It just works for TCP/SSL/DTLS socket"
+            }
+          }
+        }
+      },
+      "lifetime_min": {
+        "title": {
+          "zh": "最小心跳时间",
+          "en": "Minimum Lifetime",
+          "ja": "Minimum Lifetime"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "lifetime_max": {
+        "title": {
+          "zh": "最大心跳时间",
+          "en": "Maxinum Lifetime",
+          "ja": "Maxinum Lifetime"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "command_topic": {
+        "title": {
+          "zh": "下行命令主题",
+          "en": "Command Topic",
+          "ja": "Command Topic"
+        },
+        "description": {
+          "zh": "下行控制命令主题，LwM2M 客户端连接后会自动订阅该主题",
+          "en": "The topic subscribed by the lwm2m client after it is connected",
+          "ja": "The topic subscribed by the lwm2m client after it is connected"
+        }
+      },
+      "auto_observe": {
+        "title": {
+          "zh": "自动 Observe",
+          "en": "Auto Observe",
+          "ja": "Auto Observe"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    }
+  },
+  {
+    "name": "mqtt_sn_protocol",
+    "title": {
+      "zh": "MQTT-SN 接入网关",
+      "en": "MQTT-SN Gateway",
+      "ja": "MQTT-SN Gateway"
+    },
+    "description": {
+      "zh": "EMQ X MQTT-SN 接入网关",
+      "en": "EMQ X MQTT-SN Gateway",
+      "ja": "EMQ X MQTT-SN Gateway"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "用户名",
+          "en": "Username",
+          "ja": "Username"
+        },
+        "description": {
+          "zh": "MQTT-SN 设备接入到 EMQ X 中的用户名",
+          "en": "The username of MQTT-SN device to connect to EMQ X",
+          "ja": "The username of MQTT-SN device to connect to EMQ X"
+        }
+      },
+      "predefinded": {
+        "title": {
+          "zh": "预设主题列表",
+          "en": "Pre-defined Topics",
+          "ja": "Pre-defined Topics"
+        },
+        "description": {
+          "zh": "预设主题列表",
+          "en": "Pre-defined Topics",
+          "ja": "Pre-defined Topics"
+        },
+        "items": {
+          "type": "object",
+          "schema": {
+            "topic": {
+              "title": {
+                "zh": "MQTT 主题",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              },
+              "description": {
+                "zh": "MQTT 主题",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              }
+            }
+          }
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        },
+        "description": {
+          "zh": "MQTT-SN 设备接入到 EMQ X 中的密码",
+          "en": "The password of MQTT-SN device to connect to EMQ X",
+          "ja": "The password of MQTT-SN device to connect to EMQ X"
+        }
+      },
+      "listener": {
+        "udp_options": {},
+        "protocol": {
+          "listener_type": {
+            "title": {
+              "zh": "监听类型",
+              "en": "Listener Type",
+              "ja": "Listener Type"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "listen_on": {
+            "title": {
+              "zh": "监听地址",
+              "en": "Listener",
+              "ja": "Listener"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "gateway_id": {
+            "title": {
+              "zh": "网关ID",
+              "en": "Gateway ID",
+              "ja": "Gateway ID"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          }
+        },
+        "common": {
+          "sndbuf": {
+            "title": {
+              "zh": "发送缓冲区",
+              "en": "Send Buffer",
+              "ja": "Send Buffer"
+            },
+            "description": {
+              "zh": "Socket 发送缓冲区大小 (操作系统内核级)",
+              "en": "The send buffer of socket (os kernel)",
+              "ja": "The send buffer of socket (os kernel)"
+            }
+          },
+          "reuseaddr": {
+            "title": {
+              "zh": "SO_REUSEADDR 标识",
+              "en": "SO_REUSEADDR Flag",
+              "ja": "SO_REUSEADDR Flag"
+            },
+            "description": {
+              "zh": "设置 Socket 的 SO_REUSEADDR 标识",
+              "en": "The SO_REUSEADDR flag for listener",
+              "ja": "The SO_REUSEADDR flag for listener"
+            }
+          },
+          "recbuf": {
+            "title": {
+              "zh": "接收缓冲区",
+              "en": "Receive Buffer",
+              "ja": "Receive Buffer"
+            },
+            "description": {
+              "zh": "Socket 接收缓冲区大小 (操作系统内核级)",
+              "en": "The receive buffer of socket (os kernel)",
+              "ja": "The receive buffer of socket (os kernel)"
+            }
+          },
+          "proxy_protocol_timeout": {
+            "title": {
+              "zh": "Proxy Protocol 处理超时时间",
+              "en": "Proxy Protocol Timeout",
+              "ja": "Proxy Protocol Timeout"
+            },
+            "description": {
+              "zh": "处理 Proxy Protocol 的超时时间，如果超过该时间未收到 Proxy Protocol 的报文，EMQ X 将关闭该 TCP 连接",
+              "en": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout",
+              "ja": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout"
+            }
+          },
+          "proxy_protocol": {
+            "title": {
+              "zh": "开启 Proxy Protocol",
+              "en": "Proxy Protocol",
+              "ja": "Proxy Protocol"
+            },
+            "description": {
+              "zh": "开启 Proxy Protocol V1/2，如果 EMQ X 集群部署在 HAProxy 或 Nginx 后",
+              "en": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx",
+              "ja": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx"
+            }
+          },
+          "max_connections": {
+            "title": {
+              "zh": "最大连接数",
+              "en": "Max Connections",
+              "ja": "Max Connections"
+            },
+            "description": {
+              "zh": "该监听器允许的最大连接数",
+              "en": "The maximum connections of listener",
+              "ja": "The maximum connections of listener"
+            }
+          },
+          "max_conn_rate": {
+            "title": {
+              "zh": "最大连接速率",
+              "en": "Max Connection Rate",
+              "ja": "Max Connection Rate"
+            },
+            "description": {
+              "zh": "该监听器每秒允许的最大连接个数",
+              "en": "Allowed connections per second",
+              "ja": "Allowed connections per second"
+            }
+          },
+          "active_n": {
+            "title": {
+              "zh": "ActiveN",
+              "en": "ActiveN",
+              "ja": "ActiveN"
+            },
+            "description": {
+              "zh": "设置 Socket 的 {active, N} 选项",
+              "en": "Specify the {active, N} option for the Socket",
+              "ja": "Specify the {active, N} option for the Socket"
+            }
+          },
+          "acceptors": {
+            "title": {
+              "zh": "接收器数量",
+              "en": "Acceptors",
+              "ja": "Acceptors"
+            },
+            "description": {
+              "zh": "接收器数量，执行 accept 操作的进程数量，仅对 TCP/SSL/DTLS Socket 有效",
+              "en": "The number of acceoptors, It just works for TCP/SSL/DTLS socket",
+              "ja": "The number of acceoptors, It just works for TCP/SSL/DTLS socket"
+            }
+          }
+        }
+      },
+      "idle_timeout": {
+        "title": {
+          "zh": "空闲超时时间",
+          "en": "Idle Timeout",
+          "ja": "Idle Timeout"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "enable_stats": {
+        "title": {
+          "zh": "启用数据统计",
+          "en": "Enable Statistic",
+          "ja": "Enable Statistic"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "enable_qos3": {
+        "title": {
+          "zh": "启动 QoS -1",
+          "en": "Enable QoS -1",
+          "ja": "Enable QoS -1"
+        },
+        "description": {
+          "zh": "是否处理 QoS 为 -1 的消息",
+          "en": "To control whether accept and process the received publish message with QoS -1",
+          "ja": "To control whether accept and process the received publish message with QoS -1"
+        }
+      }
+    }
+  },
+  {
+    "name": "tcp_protocol",
+    "title": {
+      "zh": "TCP 接入网关",
+      "en": "TCP Gateway",
+      "ja": "TCP Gateway"
+    },
+    "description": {
+      "zh": "EMQ X TCP 接入网关",
+      "en": "EMQ X TCP Gateway",
+      "ja": "EMQ X TCP Gateway"
+    },
+    "params": {
+      "up_topic": {
+        "title": {
+          "zh": "上行主题",
+          "en": "Uplink Topic",
+          "ja": "Uplink Topic"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "max_packet_size": {
+        "title": {
+          "zh": "报文最大长度",
+          "en": "Max Packet Size",
+          "ja": "Max Packet Size"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "listener": {
+        "tcp_options": {
+          "send_timeout_close": {
+            "title": {
+              "zh": "关闭发送超时连接",
+              "en": "Send Timeout Close",
+              "ja": "Send Timeout Close"
+            },
+            "description": {
+              "zh": "关闭发送超时的 TCP 连接",
+              "en": "Close the TCP connection if send timeout",
+              "ja": "Close the TCP connection if send timeout"
+            }
+          },
+          "send_timeout": {
+            "title": {
+              "zh": "发送超时时间",
+              "en": "Send Timeout",
+              "ja": "Send Timeout"
+            },
+            "description": {
+              "zh": "TCP 报文发送超时时间",
+              "en": "The TCP send timeout",
+              "ja": "The TCP send timeout"
+            }
+          },
+          "nodelay": {
+            "title": {
+              "zh": "TCP_NODELAY 标识",
+              "en": "TCP_NODELAY Flag",
+              "ja": "TCP_NODELAY Flag"
+            },
+            "description": {
+              "zh": "设置 TCP_NODELAY 标识",
+              "en": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending",
+              "ja": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending"
+            }
+          },
+          "backlog": {
+            "title": {
+              "zh": "TCP 连接队列长度",
+              "en": "Backlog",
+              "ja": "Backlog"
+            },
+            "description": {
+              "zh": "TCP 连接队列最大长度",
+              "en": "The TCP backlog defines the maximum length that the queue of pendingconnections can grow to",
+              "ja": "The TCP backlog defines the maximum length that the queue of pendingconnections can grow to"
+            }
+          }
+        },
+        "ssl_options": {
+          "versions": {
+            "title": {
+              "zh": "TLS 版本",
+              "en": "TLS Version",
+              "ja": "TLS Version"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "verify": {
+            "title": {
+              "zh": "校验类型",
+              "en": "Verify",
+              "ja": "Verify"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "keyfile": {
+            "title": {
+              "zh": "密钥文件",
+              "en": "Keyfile",
+              "ja": "Keyfile"
+            },
+            "description": {
+              "zh": "秘钥文件路径",
+              "en": "The Key file path",
+              "ja": "The Key file path"
+            }
+          },
+          "handshake_timeout": {
+            "title": {
+              "zh": "握手超时时间",
+              "en": "Handshake Timeout",
+              "ja": "Handshake Timeout"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "fail_if_no_peer_cert": {
+            "title": {
+              "zh": "关闭无证书客户端连接",
+              "en": "fail_if_no_peer_cert",
+              "ja": "fail_if_no_peer_cert"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "ciphers": {
+            "title": {
+              "zh": "加密套件",
+              "en": "Ciphers",
+              "ja": "Ciphers"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "certfile": {
+            "title": {
+              "zh": "证书文件",
+              "en": "Certfile",
+              "ja": "Certfile"
+            },
+            "description": {
+              "zh": "证书文件路径",
+              "en": "The certificate file path",
+              "ja": "The certificate file path"
+            }
+          },
+          "cacertfile": {
+            "title": {
+              "zh": "CA 证书文件",
+              "en": "CA Certfile",
+              "ja": "CA Certfile"
+            },
+            "description": {
+              "zh": "CA 证书文件路径",
+              "en": "The CA certificate file path",
+              "ja": "The CA certificate file path"
+            }
+          }
+        },
+        "protocol": {
+          "listener_type": {
+            "title": {
+              "zh": "监听类型",
+              "en": "Listener Type",
+              "ja": "Listener Type"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "listen_on": {
+            "title": {
+              "zh": "监听地址",
+              "en": "Listener",
+              "ja": "Listener"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          }
+        },
+        "common": {
+          "sndbuf": {
+            "title": {
+              "zh": "发送缓冲区",
+              "en": "Send Buffer",
+              "ja": "Send Buffer"
+            },
+            "description": {
+              "zh": "Socket 发送缓冲区大小 (操作系统内核级)",
+              "en": "The send buffer of socket (os kernel)",
+              "ja": "The send buffer of socket (os kernel)"
+            }
+          },
+          "reuseaddr": {
+            "title": {
+              "zh": "SO_REUSEADDR 标识",
+              "en": "SO_REUSEADDR Flag",
+              "ja": "SO_REUSEADDR Flag"
+            },
+            "description": {
+              "zh": "设置 Socket 的 SO_REUSEADDR 标识",
+              "en": "The SO_REUSEADDR flag for listener",
+              "ja": "The SO_REUSEADDR flag for listener"
+            }
+          },
+          "recbuf": {
+            "title": {
+              "zh": "接收缓冲区",
+              "en": "Receive Buffer",
+              "ja": "Receive Buffer"
+            },
+            "description": {
+              "zh": "Socket 接收缓冲区大小 (操作系统内核级)",
+              "en": "The receive buffer of socket (os kernel)",
+              "ja": "The receive buffer of socket (os kernel)"
+            }
+          },
+          "proxy_protocol_timeout": {
+            "title": {
+              "zh": "Proxy Protocol 处理超时时间",
+              "en": "Proxy Protocol Timeout",
+              "ja": "Proxy Protocol Timeout"
+            },
+            "description": {
+              "zh": "处理 Proxy Protocol 的超时时间，如果超过该时间未收到 Proxy Protocol 的报文，EMQ X 将关闭该 TCP 连接",
+              "en": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout",
+              "ja": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout"
+            }
+          },
+          "proxy_protocol": {
+            "title": {
+              "zh": "开启 Proxy Protocol",
+              "en": "Proxy Protocol",
+              "ja": "Proxy Protocol"
+            },
+            "description": {
+              "zh": "开启 Proxy Protocol V1/2，如果 EMQ X 集群部署在 HAProxy 或 Nginx 后",
+              "en": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx",
+              "ja": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx"
+            }
+          },
+          "max_connections": {
+            "title": {
+              "zh": "最大连接数",
+              "en": "Max Connections",
+              "ja": "Max Connections"
+            },
+            "description": {
+              "zh": "该监听器允许的最大连接数",
+              "en": "The maximum connections of listener",
+              "ja": "The maximum connections of listener"
+            }
+          },
+          "max_conn_rate": {
+            "title": {
+              "zh": "最大连接速率",
+              "en": "Max Connection Rate",
+              "ja": "Max Connection Rate"
+            },
+            "description": {
+              "zh": "该监听器每秒允许的最大连接个数",
+              "en": "Allowed connections per second",
+              "ja": "Allowed connections per second"
+            }
+          },
+          "active_n": {
+            "title": {
+              "zh": "ActiveN",
+              "en": "ActiveN",
+              "ja": "ActiveN"
+            },
+            "description": {
+              "zh": "设置 Socket 的 {active, N} 选项",
+              "en": "Specify the {active, N} option for the Socket",
+              "ja": "Specify the {active, N} option for the Socket"
+            }
+          },
+          "acceptors": {
+            "title": {
+              "zh": "接收器数量",
+              "en": "Acceptors",
+              "ja": "Acceptors"
+            },
+            "description": {
+              "zh": "接收器数量，执行 accept 操作的进程数量，仅对 TCP/SSL/DTLS Socket 有效",
+              "en": "The number of acceoptors, It just works for TCP/SSL/DTLS socket",
+              "ja": "The number of acceoptors, It just works for TCP/SSL/DTLS socket"
+            }
+          }
+        }
+      },
+      "idle_timeout": {
+        "title": {
+          "zh": "空闲超时时间",
+          "en": "Idle Timeout",
+          "ja": "Idle Timeout"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "force_shutdown_policy": {
+        "title": {
+          "zh": "强制关闭策略",
+          "en": "Force Shutdown Policy",
+          "ja": "Force Shutdown Policy"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "force_gc_policy": {
+        "title": {
+          "zh": "强制 GC 策略",
+          "en": "Force GC Policy",
+          "ja": "Force GC Policy"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "enable_stats": {
+        "title": {
+          "zh": "启用数据统计",
+          "en": "Enable Statistic",
+          "ja": "Enable Statistic"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "dn_topic": {
+        "title": {
+          "zh": "下行主题",
+          "en": "Downlink Topic",
+          "ja": "Downlink Topic"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    }
+  },
+  {
+    "name": "jt808_protocol",
+    "title": {
+      "zh": "JT/T808 接入网关",
+      "en": "JT/T808 Gateway",
+      "ja": "JT/T808 Gateway"
+    },
+    "description": {
+      "zh": "EMQ X JT/T808 接入网关",
+      "en": "EMQ X JT/T808 Gateway",
+      "ja": "EMQ X JT/T808 Gateway"
+    },
+    "params": {
+      "up_topic": {
+        "title": {
+          "zh": "上行消息主题格式",
+          "en": "Uplink Message Topic",
+          "ja": "Uplink Message Topic"
+        },
+        "description": {
+          "zh": "上行消息主题格式",
+          "en": "Uplink Message Topic",
+          "ja": "Uplink Message Topic"
+        }
+      },
+      "registray": {
+        "title": {
+          "zh": "注册服务地址",
+          "en": "Registray URL",
+          "ja": "Registray URL"
+        },
+        "description": {
+          "zh": "The JT/T 808 device registray central. It is necessary if allow_anonymous=false",
+          "en": "The JT/T 808 device registray central. It is necessary if allow_anonymous=false",
+          "ja": "The JT/T 808 device registray central. It is necessary if allow_anonymous=false"
+        }
+      },
+      "max_length": {
+        "title": {
+          "zh": "允许最大报文长度",
+          "en": "Max Frame Length",
+          "ja": "Max Frame Length"
+        },
+        "description": {
+          "zh": "允许最大报文长度",
+          "en": "Max Frame Length",
+          "ja": "Max Frame Length"
+        }
+      },
+      "listener": {
+        "tcp_options": {
+          "send_timeout_close": {
+            "title": {
+              "zh": "关闭发送超时连接",
+              "en": "Send Timeout Close",
+              "ja": "Send Timeout Close"
+            },
+            "description": {
+              "zh": "关闭发送超时的 TCP 连接",
+              "en": "Close the TCP connection if send timeout",
+              "ja": "Close the TCP connection if send timeout"
+            }
+          },
+          "send_timeout": {
+            "title": {
+              "zh": "发送超时时间",
+              "en": "Send Timeout",
+              "ja": "Send Timeout"
+            },
+            "description": {
+              "zh": "TCP 报文发送超时时间",
+              "en": "The TCP send timeout",
+              "ja": "The TCP send timeout"
+            }
+          },
+          "nodelay": {
+            "title": {
+              "zh": "TCP_NODELAY 标识",
+              "en": "TCP_NODELAY Flag",
+              "ja": "TCP_NODELAY Flag"
+            },
+            "description": {
+              "zh": "设置 TCP_NODELAY 标识",
+              "en": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending",
+              "ja": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending"
+            }
+          },
+          "backlog": {
+            "title": {
+              "zh": "TCP 连接队列长度",
+              "en": "Backlog",
+              "ja": "Backlog"
+            },
+            "description": {
+              "zh": "TCP 连接队列最大长度",
+              "en": "The TCP backlog defines the maximum length that the queue of pendingconnections can grow to",
+              "ja": "The TCP backlog defines the maximum length that the queue of pendingconnections can grow to"
+            }
+          }
+        },
+        "ssl_options": {
+          "versions": {
+            "title": {
+              "zh": "TLS 版本",
+              "en": "TLS Version",
+              "ja": "TLS Version"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "verify": {
+            "title": {
+              "zh": "校验类型",
+              "en": "Verify",
+              "ja": "Verify"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "keyfile": {
+            "title": {
+              "zh": "密钥文件",
+              "en": "Keyfile",
+              "ja": "Keyfile"
+            },
+            "description": {
+              "zh": "秘钥文件路径",
+              "en": "The Key file path",
+              "ja": "The Key file path"
+            }
+          },
+          "handshake_timeout": {
+            "title": {
+              "zh": "握手超时时间",
+              "en": "Handshake Timeout",
+              "ja": "Handshake Timeout"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "fail_if_no_peer_cert": {
+            "title": {
+              "zh": "关闭无证书客户端连接",
+              "en": "fail_if_no_peer_cert",
+              "ja": "fail_if_no_peer_cert"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "ciphers": {
+            "title": {
+              "zh": "加密套件",
+              "en": "Ciphers",
+              "ja": "Ciphers"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "certfile": {
+            "title": {
+              "zh": "证书文件",
+              "en": "Certfile",
+              "ja": "Certfile"
+            },
+            "description": {
+              "zh": "证书文件路径",
+              "en": "The certificate file path",
+              "ja": "The certificate file path"
+            }
+          },
+          "cacertfile": {
+            "title": {
+              "zh": "CA 证书文件",
+              "en": "CA Certfile",
+              "ja": "CA Certfile"
+            },
+            "description": {
+              "zh": "CA 证书文件路径",
+              "en": "The CA certificate file path",
+              "ja": "The CA certificate file path"
+            }
+          }
+        },
+        "protocol": {
+          "listener_type": {
+            "title": {
+              "zh": "监听类型",
+              "en": "Listener Type",
+              "ja": "Listener Type"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "listen_on": {
+            "title": {
+              "zh": "监听地址",
+              "en": "Listener",
+              "ja": "Listener"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          }
+        },
+        "common": {
+          "sndbuf": {
+            "title": {
+              "zh": "发送缓冲区",
+              "en": "Send Buffer",
+              "ja": "Send Buffer"
+            },
+            "description": {
+              "zh": "Socket 发送缓冲区大小 (操作系统内核级)",
+              "en": "The send buffer of socket (os kernel)",
+              "ja": "The send buffer of socket (os kernel)"
+            }
+          },
+          "reuseaddr": {
+            "title": {
+              "zh": "SO_REUSEADDR 标识",
+              "en": "SO_REUSEADDR Flag",
+              "ja": "SO_REUSEADDR Flag"
+            },
+            "description": {
+              "zh": "设置 Socket 的 SO_REUSEADDR 标识",
+              "en": "The SO_REUSEADDR flag for listener",
+              "ja": "The SO_REUSEADDR flag for listener"
+            }
+          },
+          "recbuf": {
+            "title": {
+              "zh": "接收缓冲区",
+              "en": "Receive Buffer",
+              "ja": "Receive Buffer"
+            },
+            "description": {
+              "zh": "Socket 接收缓冲区大小 (操作系统内核级)",
+              "en": "The receive buffer of socket (os kernel)",
+              "ja": "The receive buffer of socket (os kernel)"
+            }
+          },
+          "proxy_protocol_timeout": {
+            "title": {
+              "zh": "Proxy Protocol 处理超时时间",
+              "en": "Proxy Protocol Timeout",
+              "ja": "Proxy Protocol Timeout"
+            },
+            "description": {
+              "zh": "处理 Proxy Protocol 的超时时间，如果超过该时间未收到 Proxy Protocol 的报文，EMQ X 将关闭该 TCP 连接",
+              "en": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout",
+              "ja": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout"
+            }
+          },
+          "proxy_protocol": {
+            "title": {
+              "zh": "开启 Proxy Protocol",
+              "en": "Proxy Protocol",
+              "ja": "Proxy Protocol"
+            },
+            "description": {
+              "zh": "开启 Proxy Protocol V1/2，如果 EMQ X 集群部署在 HAProxy 或 Nginx 后",
+              "en": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx",
+              "ja": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx"
+            }
+          },
+          "max_connections": {
+            "title": {
+              "zh": "最大连接数",
+              "en": "Max Connections",
+              "ja": "Max Connections"
+            },
+            "description": {
+              "zh": "该监听器允许的最大连接数",
+              "en": "The maximum connections of listener",
+              "ja": "The maximum connections of listener"
+            }
+          },
+          "max_conn_rate": {
+            "title": {
+              "zh": "最大连接速率",
+              "en": "Max Connection Rate",
+              "ja": "Max Connection Rate"
+            },
+            "description": {
+              "zh": "该监听器每秒允许的最大连接个数",
+              "en": "Allowed connections per second",
+              "ja": "Allowed connections per second"
+            }
+          },
+          "active_n": {
+            "title": {
+              "zh": "ActiveN",
+              "en": "ActiveN",
+              "ja": "ActiveN"
+            },
+            "description": {
+              "zh": "设置 Socket 的 {active, N} 选项",
+              "en": "Specify the {active, N} option for the Socket",
+              "ja": "Specify the {active, N} option for the Socket"
+            }
+          },
+          "acceptors": {
+            "title": {
+              "zh": "接收器数量",
+              "en": "Acceptors",
+              "ja": "Acceptors"
+            },
+            "description": {
+              "zh": "接收器数量，执行 accept 操作的进程数量，仅对 TCP/SSL/DTLS Socket 有效",
+              "en": "The number of acceoptors, It just works for TCP/SSL/DTLS socket",
+              "ja": "The number of acceoptors, It just works for TCP/SSL/DTLS socket"
+            }
+          }
+        }
+      },
+      "idle_timeout": {
+        "title": {
+          "zh": "空闲超时时间",
+          "en": "Idle Timeout",
+          "ja": "Idle Timeout"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "enable_stats": {
+        "title": {
+          "zh": "是否开启统计",
+          "en": "Enable Stats",
+          "ja": "Enable Stats"
+        },
+        "description": {
+          "zh": "是否开启统计",
+          "en": "Enable Stats",
+          "ja": "Enable Stats"
+        }
+      },
+      "dn_topic": {
+        "title": {
+          "zh": "下行消息主题格式",
+          "en": "Downlink Message Topic",
+          "ja": "Downlink Message Topic"
+        },
+        "description": {
+          "zh": "下行消息主题格式",
+          "en": "Downlink Message Topic",
+          "ja": "Downlink Message Topic"
+        }
+      },
+      "authentication": {
+        "title": {
+          "zh": "认证服务地址",
+          "en": "Authentication URL",
+          "ja": "Authentication URL"
+        },
+        "description": {
+          "zh": "The JT/T 808 device authentication central. It is necessary if allow_anonymous=false",
+          "en": "The JT/T 808 device authentication central. It is necessary if allow_anonymous=false",
+          "ja": "The JT/T 808 device authentication central. It is necessary if allow_anonymous=false"
+        }
+      },
+      "allow_anonymous": {
+        "title": {
+          "zh": "允许匿名登录",
+          "en": "Allow Anonymous",
+          "ja": "Allow Anonymous"
+        },
+        "description": {
+          "zh": "JT/T808 网关是否允许匿名登录",
+          "en": "JT/T808 Gateway Allow Anonymous",
+          "ja": "JT/T808 Gateway Allow Anonymous"
+        }
+      }
+    }
+  },
+  {
+    "name": "retainer",
+    "title": {
+      "zh": "MQTT 保留消息",
+      "en": "MQTT Retainer",
+      "ja": "MQTT Retainer"
+    },
+    "description": {
+      "zh": "MQTT 保留消息",
+      "en": "MQTT Retainer",
+      "ja": "MQTT Retainer"
+    },
+    "params": {
+      "storage_type": {
+        "title": {
+          "zh": "存储类型",
+          "en": "Storage Type",
+          "ja": "Storage Type"
+        },
+        "description": {
+          "zh": "保留消息存储类型",
+          "en": "Retainer Message Storage Type",
+          "ja": "Retainer Message Storage Type"
+        }
+      },
+      "max_retained_messages": {
+        "title": {
+          "zh": "最大保留消息数",
+          "en": "Max Retainer Msg",
+          "ja": "Max Retainer Msg"
+        },
+        "description": {
+          "zh": "最大保留消息数, 0表示没有限制",
+          "en": "Maximum number of retained messages. 0 means no limit",
+          "ja": "Maximum number of retained messages. 0 means no limit"
+        }
+      },
+      "max_payload_size": {
+        "title": {
+          "zh": "最大保留消息大小",
+          "en": "Storage Type",
+          "ja": "Storage Type"
+        },
+        "description": {
+          "zh": "最大保留消息大小",
+          "en": "Maximum retained message size",
+          "ja": "Maximum retained message size"
+        }
+      },
+      "expiry_interval": {
+        "title": {
+          "zh": "有效期限",
+          "en": "Expiry Interval",
+          "ja": "Expiry Interval"
+        },
+        "description": {
+          "zh": "保留消息的有效期限, 如果值为0, 则永不过期",
+          "en": "Expiry interval of the retained messages. Never expire if the value is 0.",
+          "ja": "Expiry interval of the retained messages. Never expire if the value is 0."
+        }
+      }
+    }
+  },
+  {
+    "name": "topic_metrics",
+    "title": {
+      "zh": "主题监控",
+      "en": "Topic Metrics",
+      "ja": "Topic Metrics"
+    },
+    "description": {
+      "zh": "主题监控",
+      "en": "Topic Metrics",
+      "ja": "Topic Metrics"
+    },
+    "params": {}
+  },
+  {
+    "name": "auth_sasl",
+    "title": {
+      "zh": "MQTT 增强认证",
+      "en": "Enhanced Auth",
+      "ja": "Enhanced Auth"
+    },
+    "description": {
+      "zh": "MQTT 增强认证",
+      "en": "Enhanced Auth",
+      "ja": "Enhanced Auth"
+    },
+    "params": {}
+  },
+  {
+    "name": "presence",
+    "title": {
+      "zh": "上下线通知",
+      "en": "Presence",
+      "ja": "Presence"
+    },
+    "description": {
+      "zh": "客户端上下线通知",
+      "en": "Client Presence",
+      "ja": "Client Presence"
+    },
+    "params": {
+      "qos": {
+        "title": {
+          "zh": "上下线消息服务质量",
+          "en": "Presence Message QoS",
+          "ja": "Presence Message QoS"
+        },
+        "description": {
+          "zh": "上下线消息服务质量",
+          "en": "Presence Message QoS",
+          "ja": "Presence Message QoS"
+        }
+      }
+    }
+  },
+  {
+    "name": "subscription",
+    "title": {
+      "zh": "MQTT 代理订阅",
+      "en": "MQTT Subscription",
+      "ja": "MQTT Subscription"
+    },
+    "description": {
+      "zh": "MQTT 代理订阅",
+      "en": "MQTT Subscription",
+      "ja": "MQTT Subscription"
+    },
+    "params": {
+      "subscription_opts": {
+        "title": {
+          "zh": "订阅选项",
+          "en": "Subscription Opts",
+          "ja": "Subscription Opts"
+        },
+        "description": {
+          "zh": "订阅选项",
+          "en": "Subscription Opts",
+          "ja": "Subscription Opts"
+        },
+        "items": {
+          "type": "object",
+          "schema": {
+            "topic": {
+              "title": {
+                "zh": "主题",
+                "en": "Topic",
+                "ja": "Topic"
+              },
+              "description": {
+                "zh": "MQTT 主题",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              }
+            },
+            "rh": {
+              "title": {
+                "zh": "RH",
+                "en": "RH",
+                "ja": "RH"
+              },
+              "description": {
+                "zh": "MQTT Topic Retain Handling",
+                "en": "MQTT Topic Retain Handling",
+                "ja": "MQTT Topic Retain Handling"
+              }
+            },
+            "rap": {
+              "title": {
+                "zh": "RAP",
+                "en": "RAP",
+                "ja": "RAP"
+              },
+              "description": {
+                "zh": "MQTT Topic Retain As Published",
+                "en": "MQTT Topic Retain As Published",
+                "ja": "MQTT Topic Retain As Published"
+              }
+            },
+            "qos": {
+              "title": {
+                "zh": "服务质量",
+                "en": "QoS",
+                "ja": "QoS"
+              },
+              "description": {
+                "zh": "MQTT 服务质量",
+                "en": "MQTT Topic QoS",
+                "ja": "MQTT Topic QoS"
+              }
+            },
+            "nl": {
+              "title": {
+                "zh": "NL",
+                "en": "NL",
+                "ja": "NL"
+              },
+              "description": {
+                "zh": "MQTT Topic No Local",
+                "en": "MQTT Topic No Local",
+                "ja": "MQTT Topic No Local"
+              }
+            }
+          },
+          "default": {}
+        }
+      }
+    }
+  },
+  {
+    "name": "topic_rewrite",
+    "title": {
+      "zh": "主题重写",
+      "en": "Topic Rewrite",
+      "ja": "Topic Rewrite"
+    },
+    "description": {
+      "zh": "主题重写",
+      "en": "Topic Rewrite",
+      "ja": "Topic Rewrite"
+    },
+    "params": {
+      "rules": {
+        "title": {
+          "zh": "主题重写规则",
+          "en": "Rewrite Rules",
+          "ja": "Rewrite Rules"
+        },
+        "description": {
+          "zh": "主题重写规则",
+          "en": "Topic Rewrite Rules",
+          "ja": "Topic Rewrite Rules"
+        },
+        "items": {
+          "type": "object",
+          "schema": {
+            "type": {
+              "title": {
+                "zh": "动作类型",
+                "en": "Action",
+                "ja": "Action"
+              },
+              "description": {
+                "zh": "动作类型",
+                "en": "Action",
+                "ja": "Action"
+              }
+            },
+            "topic": {
+              "title": {
+                "zh": "原始主题",
+                "en": "Source Topic",
+                "ja": "Source Topic"
+              },
+              "description": {
+                "zh": "原始主题",
+                "en": "Source Topic",
+                "ja": "Source Topic"
+              }
+            },
+            "re": {
+              "title": {
+                "zh": "正则表达式",
+                "en": "Regular Expression",
+                "ja": "Regular Expression"
+              },
+              "description": {
+                "zh": "正则表达式",
+                "en": "Regular Expression",
+                "ja": "Regular Expression"
+              }
+            },
+            "dest": {
+              "title": {
+                "zh": "目标主题",
+                "en": "Dest Topic",
+                "ja": "Dest Topic"
+              },
+              "description": {
+                "zh": "目标主题",
+                "en": "Dest Topic",
+                "ja": "Dest Topic"
+              }
+            }
+          },
+          "default": {}
+        }
+      }
+    }
+  },
+  {
+    "name": "delayed_publish",
+    "title": {
+      "zh": "延迟发布",
+      "en": "Delayed Publish",
+      "ja": "Delayed Publish"
+    },
+    "description": {
+      "zh": "消息延迟发布",
+      "en": "Message Delayed Publish",
+      "ja": "Message Delayed Publish"
+    },
+    "params": {}
+  },
+  {
+    "name": "kafka_consumer",
+    "title": {
+      "zh": "Kafka 消费组",
+      "en": "Kafka Consumer Group",
+      "ja": "Kafka Consumer Group"
+    },
+    "description": {
+      "zh": "Kafka 消费组",
+      "en": "Kafka Consumer Group",
+      "ja": "Kafka Consumer Group"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "Kafka 用户名",
+          "en": "Kafka Username",
+          "ja": "Kafka Username"
+        },
+        "description": {
+          "zh": "Kafka 认证用户名",
+          "en": "Kafka Auth Username",
+          "ja": "Kafka Auth Username"
+        }
+      },
+      "topic_mapping": {
+        "title": {
+          "zh": "Kafka 主题转 MQTT 主题映射关系",
+          "en": "Topic Mapping",
+          "ja": "Topic Mapping"
+        },
+        "description": {
+          "zh": "Kafka 主题转 MQTT 主题映射关系",
+          "en": "Kafka topic to MQTT topic mapping relationship",
+          "ja": "Kafka topic to MQTT topic mapping relationship"
+        },
+        "items": {
+          "type": "object",
+          "schema": {
+            "mqtt_topic_qos": {
+              "title": {
+                "zh": "MQTT 主题服务质量",
+                "en": "MQTT Topic QoS",
+                "ja": "MQTT Topic QoS"
+              },
+              "description": {
+                "zh": "MQTT 主题服务质量",
+                "en": "MQTT Topic QoS",
+                "ja": "MQTT Topic QoS"
+              }
+            },
+            "mqtt_topic": {
+              "title": {
+                "zh": "MQTT 主题",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              },
+              "description": {
+                "zh": "MQTT Topic",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              }
+            },
+            "kafka_topic": {
+              "title": {
+                "zh": "Kafka 主题",
+                "en": "Kafka Topic",
+                "ja": "Kafka Topic"
+              },
+              "description": {
+                "zh": "Kafka Topic",
+                "en": "Kafka Topic",
+                "ja": "Kafka Topic"
+              }
+            }
+          },
+          "default": {}
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "Kafka 服务器",
+          "en": "Kafka Server",
+          "ja": "Kafka Server"
+        },
+        "description": {
+          "zh": "Kafka 服务器地址, 多节点使用逗号分隔",
+          "en": "Kafka Server Address, Multiple nodes separated by commas",
+          "ja": "Kafka Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "Pool Size",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "Pool Size",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Kafka 密码",
+          "en": "Kafka Password",
+          "ja": "Kafka Password"
+        },
+        "description": {
+          "zh": "Kafka 认证密码",
+          "en": "Kafka Auth Password",
+          "ja": "Kafka Auth Password"
+        }
+      },
+      "offset_reset_policy": {
+        "title": {
+          "zh": "Offset Reset Policy",
+          "en": "Offset Reset Policy",
+          "ja": "Offset Reset Policy"
+        },
+        "description": {
+          "zh": "如果收到OffsetOutOfRange异常，如何重置begin_offset",
+          "en": "How to reset begin_offset if OffsetOutOfRange exception is received",
+          "ja": "How to reset begin_offset if OffsetOutOfRange exception is received"
+        }
+      },
+      "max_bytes": {
+        "title": {
+          "zh": "Max Bytes",
+          "en": "Max Bytes",
+          "ja": "Max Bytes"
+        },
+        "description": {
+          "zh": "批量提取消息的最大字节数",
+          "en": "Maximum bytes to fetch in a batch of messages",
+          "ja": "Maximum bytes to fetch in a batch of messages"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "Consumer 连接断开时是否重连",
+          "en": "If re-try when the connection lost",
+          "ja": "If re-try when the connection lost"
+        }
+      }
+    }
+  },
+  {
+    "name": "mqtt_subscriber",
+    "title": {
+      "zh": "MQTT Subscriber",
+      "en": "MQTT Subscriber",
+      "ja": "MQTT Subscriber"
+    },
+    "description": {
+      "zh": "MQTT 订阅者",
+      "en": "MQTT Subscriber",
+      "ja": "MQTT Subscriber"
+    },
+    "params": {
+      "versions": {
+        "title": {
+          "zh": "TLS Version",
+          "en": "TLS Version",
+          "ja": "TLS Version"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "username": {
+        "title": {
+          "zh": "用户名",
+          "en": "Username",
+          "ja": "Username"
+        },
+        "description": {
+          "zh": "连接远程 Broker 的用户名",
+          "en": "Username for connecting to remote MQTT Broker",
+          "ja": "Username for connecting to remote MQTT Broker"
+        }
+      },
+      "subscription_opts": {
+        "title": {
+          "zh": "订阅选项",
+          "en": "Subscription Opts",
+          "ja": "Subscription Opts"
+        },
+        "description": {
+          "zh": "订阅选项",
+          "en": "Subscription Opts",
+          "ja": "Subscription Opts"
+        },
+        "items": {
+          "type": "object",
+          "schema": {
+            "topic": {
+              "title": {
+                "zh": "MQTT 主题",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              },
+              "description": {
+                "zh": "MQTT 主题",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              }
+            },
+            "qos": {
+              "title": {
+                "zh": "MQTT 服务质量",
+                "en": "MQTT Topic QoS",
+                "ja": "MQTT Topic QoS"
+              },
+              "description": {
+                "zh": "MQTT 服务质量",
+                "en": "MQTT Topic QoS",
+                "ja": "MQTT Topic QoS"
+              }
+            }
+          },
+          "default": {}
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "Bridge SSL",
+          "en": "Bridge SSL",
+          "ja": "Bridge SSL"
+        },
+        "description": {
+          "zh": "是否启用 Bridge SSL 连接",
+          "en": "Switch which used to enable ssl connection of the bridge",
+          "ja": "Switch which used to enable ssl connection of the bridge"
+        }
+      },
+      "reconnect_interval": {
+        "title": {
+          "zh": "重连间隔",
+          "en": "Reconnect Interval",
+          "ja": "Reconnect Interval"
+        },
+        "description": {
+          "zh": "重连间隔",
+          "en": "Reconnect interval of bridge:<br/>",
+          "ja": "Reconnect interval of bridge:<br/>"
+        }
+      },
+      "proto_ver": {
+        "title": {
+          "zh": "协议版本",
+          "en": "Protocol Version",
+          "ja": "Protocol Version"
+        },
+        "description": {
+          "zh": "MQTT 协议版本",
+          "en": "MQTTT Protocol version",
+          "ja": "MQTTT Protocol version"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "连接池大小",
+          "en": "MQTT Connection Pool Size",
+          "ja": "MQTT Connection Pool Size"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        },
+        "description": {
+          "zh": "连接远程 Broker 的密码",
+          "en": "Password for connecting to remote MQTT Broker",
+          "ja": "Password for connecting to remote MQTT Broker"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL 密钥文件",
+          "en": "SSL Keyfile",
+          "ja": "SSL Keyfile"
+        },
+        "description": {
+          "zh": "客户端密钥",
+          "en": "The file of the client keyfile",
+          "ja": "The file of the client keyfile"
+        }
+      },
+      "keepalive": {
+        "title": {
+          "zh": "心跳间隔",
+          "en": "Keepalive",
+          "ja": "Keepalive"
+        },
+        "description": {
+          "zh": "心跳间隔",
+          "en": "Keepalive",
+          "ja": "Keepalive"
+        }
+      },
+      "clientid": {
+        "title": {
+          "zh": "客户端 Id",
+          "en": "ClientId",
+          "ja": "ClientId"
+        },
+        "description": {
+          "zh": "连接远程 Broker 的 ClientId",
+          "en": "ClientId for connecting to remote MQTT broker",
+          "ja": "ClientId for connecting to remote MQTT broker"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL 客户端证书",
+          "en": "SSL Certfile",
+          "ja": "SSL Certfile"
+        },
+        "description": {
+          "zh": "客户端证书",
+          "en": "The file of the client certfile",
+          "ja": "The file of the client certfile"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书",
+          "en": "CA certificates",
+          "ja": "CA certificates"
+        },
+        "description": {
+          "zh": "CA 证书",
+          "en": "The file of the CA certificates",
+          "ja": "The file of the CA certificates"
+        }
+      },
+      "append": {
+        "title": {
+          "zh": "附加 GUID",
+          "en": "Append GUID",
+          "ja": "Append GUID"
+        },
+        "description": {
+          "zh": "是否将GUID附加到 MQTT ClientId 后",
+          "en": "Append GUID to MQTT ClientId?",
+          "ja": "Append GUID to MQTT ClientId?"
+        }
+      },
+      "address": {
+        "title": {
+          "zh": "远程 broker 地址",
+          "en": " Broker Address",
+          "ja": " Broker Address"
+        },
+        "description": {
+          "zh": "远程 MQTT Broker 的地址",
+          "en": "The MQTT Remote Address",
+          "ja": "The MQTT Remote Address"
+        }
+      }
+    }
+  },
+  {
+    "name": "pulsar_consumer",
+    "title": {
+      "zh": "Pulsar 消费组",
+      "en": "Pulsar Consumer Group",
+      "ja": "Pulsar Consumer Group"
+    },
+    "description": {
+      "zh": "Pulsar 消费组",
+      "en": "Pulsar Consumer Group",
+      "ja": "Pulsar Consumer Group"
+    },
+    "params": {
+      "topic_mapping": {
+        "title": {
+          "zh": "Pulsar 主题转 MQTT 主题映射关系",
+          "en": "Topic Mapping",
+          "ja": "Topic Mapping"
+        },
+        "description": {
+          "zh": "Pulsar 主题转 MQTT 主题映射关系",
+          "en": "Pulsar topic to MQTT topic mapping relationship",
+          "ja": "Pulsar topic to MQTT topic mapping relationship"
+        },
+        "items": {
+          "type": "object",
+          "schema": {
+            "pulsar_topic": {
+              "title": {
+                "zh": "Pulsar 主题",
+                "en": "Pulsar Topic",
+                "ja": "Pulsar Topic"
+              },
+              "description": {
+                "zh": "Pulsar Topic",
+                "en": "Pulsar Topic",
+                "ja": "Pulsar Topic"
+              }
+            },
+            "mqtt_topic_qos": {
+              "title": {
+                "zh": "MQTT 主题服务质量",
+                "en": "MQTT Topic QoS",
+                "ja": "MQTT Topic QoS"
+              },
+              "description": {
+                "zh": "MQTT 主题服务质量",
+                "en": "MQTT Topic QoS",
+                "ja": "MQTT Topic QoS"
+              }
+            },
+            "mqtt_topic": {
+              "title": {
+                "zh": "MQTT 主题",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              },
+              "description": {
+                "zh": "MQTT Topic",
+                "en": "MQTT Topic",
+                "ja": "MQTT Topic"
+              }
+            }
+          },
+          "default": {}
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "Pulsar 服务器",
+          "en": "Pulsar Server",
+          "ja": "Pulsar Server"
+        },
+        "description": {
+          "zh": "Pulsar 服务器地址, 多节点使用逗号分隔",
+          "en": "Pulsar Server Address, Multiple nodes separated by commas",
+          "ja": "Pulsar Server Address, Multiple nodes separated by commas"
+        }
+      },
+      "reset_flow_rate": {
+        "title": {
+          "zh": "重置流控阈值的百分比",
+          "en": "Reset Flow Rate",
+          "ja": "Reset Flow Rate"
+        },
+        "description": {
+          "zh": "Pulsar 流控阈值重置百分比。此配置让消费者处理完成一定数量的消息之后，提前重置 Pulsar 流控阈值。 (比如，Pulsar 流控阈值 为 1000，阈值重置百分比 为 80%，则重置)",
+          "en": "Pulsar flow control threshold reset percentage.This configuration allows consumers to reset the Pulsar flow control threshold in advance after processing a certain number of messages.(For example, if Pulsar flow control threshold is 1000 and threshold reset percentage is 80%, then reset)",
+          "ja": "Pulsar flow control threshold reset percentage.This configuration allows consumers to reset the Pulsar flow control threshold in advance after processing a certain number of messages.(For example, if Pulsar flow control threshold is 1000 and threshold reset percentage is 80%, then reset)"
+        }
+      },
+      "max_consumer_num": {
+        "title": {
+          "zh": "Consumer Num",
+          "en": "Consumer Num",
+          "ja": "Consumer Num"
+        },
+        "description": {
+          "zh": "Pulsar Consumer Num",
+          "en": "Pulsar Consumer Num",
+          "ja": "Pulsar Consumer Num"
+        }
+      },
+      "flow_size": {
+        "title": {
+          "zh": "流控阈值",
+          "en": "Flow Threshold",
+          "ja": "Flow Threshold"
+        },
+        "description": {
+          "zh": "Pulsar 流控阈值，配置 Pulsar 向消费者发送多少条消息后阻塞 Pulsar Consumer",
+          "en": "Pulsar flow control threshold, configure how many messages Pulsar sends to consumers and then block Pulsar Consumer",
+          "ja": "Pulsar flow control threshold, configure how many messages Pulsar sends to consumers and then block Pulsar Consumer"
+        }
+      }
+    }
+  },
+  {
+    "name": "exproto",
+    "title": {
+      "zh": "多语言扩展协议接入",
+      "en": "Extension Protocol",
+      "ja": "Extension Protocol"
+    },
+    "description": {
+      "zh": "多语言扩展协议接入",
+      "en": "The Extension Protocol for multiple language supported",
+      "ja": "The Extension Protocol for multiple language supported"
+    },
+    "params": {
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        }
+      },
+      "port": {
+        "title": {
+          "zh": "监听端口",
+          "en": "Listen Port",
+          "ja": "Listen Port"
+        },
+        "description": {
+          "zh": "gRPC ConnectionAdapter 服务的监听地址。用于提供 API 供外部调用",
+          "en": "The Listen Port for ConnectionAdapter gRPC service.It is used to provide APIs for external calls",
+          "ja": "The Listen Port for ConnectionAdapter gRPC service.It is used to provide APIs for external calls"
+        }
+      },
+      "listener": {
+        "udp_options": {},
+        "tcp_options": {
+          "send_timeout_close": {
+            "title": {
+              "zh": "关闭发送超时连接",
+              "en": "Send Timeout Close",
+              "ja": "Send Timeout Close"
+            },
+            "description": {
+              "zh": "关闭发送超时的 TCP 连接",
+              "en": "Close the TCP connection if send timeout",
+              "ja": "Close the TCP connection if send timeout"
+            }
+          },
+          "send_timeout": {
+            "title": {
+              "zh": "发送超时时间",
+              "en": "Send Timeout",
+              "ja": "Send Timeout"
+            },
+            "description": {
+              "zh": "TCP 报文发送超时时间",
+              "en": "The TCP send timeout",
+              "ja": "The TCP send timeout"
+            }
+          },
+          "nodelay": {
+            "title": {
+              "zh": "TCP_NODELAY 标识",
+              "en": "TCP_NODELAY Flag",
+              "ja": "TCP_NODELAY Flag"
+            },
+            "description": {
+              "zh": "设置 TCP_NODELAY 标识",
+              "en": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending",
+              "ja": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending"
+            }
+          },
+          "backlog": {
+            "title": {
+              "zh": "TCP 连接队列长度",
+              "en": "Backlog",
+              "ja": "Backlog"
+            },
+            "description": {
+              "zh": "TCP 连接队列最大长度",
+              "en": "The TCP backlog defines the maximum length that the queue of pendingconnections can grow to",
+              "ja": "The TCP backlog defines the maximum length that the queue of pendingconnections can grow to"
+            }
+          }
+        },
+        "ssl_options": {
+          "versions": {
+            "title": {
+              "zh": "TLS 版本",
+              "en": "TLS Version",
+              "ja": "TLS Version"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "verify": {
+            "title": {
+              "zh": "校验类型",
+              "en": "Verify",
+              "ja": "Verify"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "keyfile": {
+            "title": {
+              "zh": "密钥文件",
+              "en": "Keyfile",
+              "ja": "Keyfile"
+            },
+            "description": {
+              "zh": "秘钥文件路径",
+              "en": "The Key file path",
+              "ja": "The Key file path"
+            }
+          },
+          "handshake_timeout": {
+            "title": {
+              "zh": "握手超时时间",
+              "en": "Handshake Timeout",
+              "ja": "Handshake Timeout"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "fail_if_no_peer_cert": {
+            "title": {
+              "zh": "关闭无证书客户端连接",
+              "en": "fail_if_no_peer_cert",
+              "ja": "fail_if_no_peer_cert"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "ciphers": {
+            "title": {
+              "zh": "加密套件",
+              "en": "Ciphers",
+              "ja": "Ciphers"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "certfile": {
+            "title": {
+              "zh": "证书文件",
+              "en": "Certfile",
+              "ja": "Certfile"
+            },
+            "description": {
+              "zh": "证书文件路径",
+              "en": "The certificate file path",
+              "ja": "The certificate file path"
+            }
+          },
+          "cacertfile": {
+            "title": {
+              "zh": "CA 证书文件",
+              "en": "CA Certfile",
+              "ja": "CA Certfile"
+            },
+            "description": {
+              "zh": "CA 证书文件路径",
+              "en": "The CA certificate file path",
+              "ja": "The CA certificate file path"
+            }
+          }
+        },
+        "protocol": {
+          "listener_type": {
+            "title": {
+              "zh": "监听类型",
+              "en": "Listener Type",
+              "ja": "Listener Type"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "listen_on": {
+            "title": {
+              "zh": "监听地址",
+              "en": "Listener",
+              "ja": "Listener"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "connection_handler_url": {
+            "title": {
+              "zh": "处理器服务地址",
+              "en": "Handler Server Address",
+              "ja": "Handler Server Address"
+            },
+            "description": {
+              "zh": "连接处理服务器的 URL 地址",
+              "en": "The URL address for ConnectionHandler server",
+              "ja": "The URL address for ConnectionHandler server"
+            }
+          },
+          "connection_handler_keyfile": {
+            "title": {
+              "zh": "处理器 SSL 密钥文件",
+              "en": "Handler's SSL Key File",
+              "ja": "Handler's SSL Key File"
+            },
+            "description": {
+              "zh": "用于向 HTTPS 的连接处理服务器建立双向 SSL 连接的客户端密钥文件",
+              "en": "The Key file for establishing a Two-Way SSL connection to the HTTPS ConnectionHandler server",
+              "ja": "The Key file for establishing a Two-Way SSL connection to the HTTPS ConnectionHandler server"
+            }
+          },
+          "connection_handler_certfile": {
+            "title": {
+              "zh": "处理器 SSL 证书文件",
+              "en": "Handler's SSL Certifile",
+              "ja": "Handler's SSL Certifile"
+            },
+            "description": {
+              "zh": "用于向 HTTPS 的连接处理服务器建立双向 SSL 连接的客户端证书文件",
+              "en": "The Certificate file for establishing a Two-Way SSL connection to the HTTPS ConnectionHandler server",
+              "ja": "The Certificate file for establishing a Two-Way SSL connection to the HTTPS ConnectionHandler server"
+            }
+          },
+          "connection_handler_cacertfile": {
+            "title": {
+              "zh": "处理器 SSL CA 证书文件",
+              "en": "Handler's SSL CA Certfile",
+              "ja": "Handler's SSL CA Certfile"
+            },
+            "description": {
+              "zh": "CA 证书文件。用于验证连接处理服务器的自签名 SSL 证书",
+              "en": "The CA Certficate file to verify the self-signed SSL certificate in the HTTPS ConnectionHandler server",
+              "ja": "The CA Certficate file to verify the self-signed SSL certificate in the HTTPS ConnectionHandler server"
+            }
+          }
+        },
+        "dtls_options": {
+          "versions": {
+            "title": {
+              "zh": "DTLS 协议版本",
+              "en": "DTLS Version",
+              "ja": "DTLS Version"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "verify": {
+            "title": {
+              "zh": "校验类型",
+              "en": "Verify",
+              "ja": "Verify"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "keyfile": {
+            "title": {
+              "zh": "密钥文件",
+              "en": "Keyfile",
+              "ja": "Keyfile"
+            },
+            "description": {
+              "zh": "秘钥文件路径",
+              "en": "The Key file path",
+              "ja": "The Key file path"
+            }
+          },
+          "fail_if_no_peer_cert": {
+            "title": {
+              "zh": "关闭无证书客户端连接",
+              "en": "fail_if_no_peer_cert",
+              "ja": "fail_if_no_peer_cert"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "ciphers": {
+            "title": {
+              "zh": "加密套件",
+              "en": "Ciphers",
+              "ja": "Ciphers"
+            },
+            "description": {
+              "zh": "",
+              "en": ""
+            }
+          },
+          "certfile": {
+            "title": {
+              "zh": "证书文件",
+              "en": "Certfile",
+              "ja": "Certfile"
+            },
+            "description": {
+              "zh": "证书路径",
+              "en": "The certificate file path",
+              "ja": "The certificate file path"
+            }
+          },
+          "cacertfile": {
+            "title": {
+              "zh": "CA 证书文件",
+              "en": "CA Certfile",
+              "ja": "CA Certfile"
+            },
+            "description": {
+              "zh": "CA 证书文件路径",
+              "en": "The CA certificate file path",
+              "ja": "The CA certificate file path"
+            }
+          }
+        },
+        "common": {
+          "sndbuf": {
+            "title": {
+              "zh": "发送缓冲区",
+              "en": "Send Buffer",
+              "ja": "Send Buffer"
+            },
+            "description": {
+              "zh": "Socket 发送缓冲区大小 (操作系统内核级)",
+              "en": "The send buffer of socket (os kernel)",
+              "ja": "The send buffer of socket (os kernel)"
+            }
+          },
+          "reuseaddr": {
+            "title": {
+              "zh": "SO_REUSEADDR 标识",
+              "en": "SO_REUSEADDR Flag",
+              "ja": "SO_REUSEADDR Flag"
+            },
+            "description": {
+              "zh": "设置 Socket 的 SO_REUSEADDR 标识",
+              "en": "The SO_REUSEADDR flag for listener",
+              "ja": "The SO_REUSEADDR flag for listener"
+            }
+          },
+          "recbuf": {
+            "title": {
+              "zh": "接收缓冲区",
+              "en": "Receive Buffer",
+              "ja": "Receive Buffer"
+            },
+            "description": {
+              "zh": "Socket 接收缓冲区大小 (操作系统内核级)",
+              "en": "The receive buffer of socket (os kernel)",
+              "ja": "The receive buffer of socket (os kernel)"
+            }
+          },
+          "proxy_protocol_timeout": {
+            "title": {
+              "zh": "Proxy Protocol 处理超时时间",
+              "en": "Proxy Protocol Timeout",
+              "ja": "Proxy Protocol Timeout"
+            },
+            "description": {
+              "zh": "处理 Proxy Protocol 的超时时间，如果超过该时间未收到 Proxy Protocol 的报文，EMQ X 将关闭该 TCP 连接",
+              "en": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout",
+              "ja": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout"
+            }
+          },
+          "proxy_protocol": {
+            "title": {
+              "zh": "开启 Proxy Protocol",
+              "en": "Proxy Protocol",
+              "ja": "Proxy Protocol"
+            },
+            "description": {
+              "zh": "开启 Proxy Protocol V1/2，如果 EMQ X 集群部署在 HAProxy 或 Nginx 后",
+              "en": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx",
+              "ja": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx"
+            }
+          },
+          "max_connections": {
+            "title": {
+              "zh": "最大连接数",
+              "en": "Max Connections",
+              "ja": "Max Connections"
+            },
+            "description": {
+              "zh": "该监听器允许的最大连接数",
+              "en": "The maximum connections of listener",
+              "ja": "The maximum connections of listener"
+            }
+          },
+          "max_conn_rate": {
+            "title": {
+              "zh": "最大连接速率",
+              "en": "Max Connection Rate",
+              "ja": "Max Connection Rate"
+            },
+            "description": {
+              "zh": "该监听器每秒允许的最大连接个数",
+              "en": "Allowed connections per second",
+              "ja": "Allowed connections per second"
+            }
+          },
+          "active_n": {
+            "title": {
+              "zh": "ActiveN",
+              "en": "ActiveN",
+              "ja": "ActiveN"
+            },
+            "description": {
+              "zh": "设置 Socket 的 {active, N} 选项",
+              "en": "Specify the {active, N} option for the Socket",
+              "ja": "Specify the {active, N} option for the Socket"
+            }
+          },
+          "acceptors": {
+            "title": {
+              "zh": "接收器数量",
+              "en": "Acceptors",
+              "ja": "Acceptors"
+            },
+            "description": {
+              "zh": "接收器数量，执行 accept 操作的进程数量，仅对 TCP/SSL/DTLS Socket 有效",
+              "en": "The number of acceoptors, It just works for TCP/SSL/DTLS socket",
+              "ja": "The number of acceoptors, It just works for TCP/SSL/DTLS socket"
+            }
+          }
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        },
+        "description": {
+          "zh": "SSL 私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        }
+      }
+    }
+  },
+  {
+    "name": "exhook",
+    "title": {
+      "zh": "多语言扩展钩子",
+      "en": "Extension Hook",
+      "ja": "Extension Hook"
+    },
+    "description": {
+      "zh": "多语言扩展钩子",
+      "en": "The Extension Hook for multiple language supported",
+      "ja": "The Extension Hook for multiple language supported"
+    },
+    "params": {
+      "url": {
+        "title": {
+          "zh": "服务器 URL",
+          "en": "Server URL",
+          "ja": "Server URL"
+        },
+        "description": {
+          "zh": "gRPC HookProvider 服务的 HTTP 地址",
+          "en": "The gRPC server URL for HookProvider Service",
+          "ja": "The gRPC server URL for HookProvider Service"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 HTTPS",
+          "en": "Enable HTTPS",
+          "ja": "Enable HTTPS"
+        },
+        "description": {
+          "zh": "是否开启 HTTPS",
+          "en": "Enable HTTPS",
+          "ja": "Enable HTTPS"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        },
+        "description": {
+          "zh": "SSL 私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        }
+      }
+    }
+  },
+  {
+    "name": "recon",
+    "title": {
+      "zh": "Recon",
+      "en": "Recon",
+      "ja": "Recon"
+    },
+    "description": {
+      "zh": "Recon",
+      "en": "Recon",
+      "ja": "Recon"
+    },
+    "params": {}
+  },
+  {
+    "name": "prometheus",
+    "title": {
+      "zh": "EMQ X Prometheus Agent",
+      "en": "EMQ X Prometheus Agent",
+      "ja": "EMQ X Prometheus Agent"
+    },
+    "description": {
+      "zh": "EMQ X Prometheus Agent",
+      "en": "EMQ X Prometheus Agent",
+      "ja": "EMQ X Prometheus Agent"
+    },
+    "params": {
+      "url": {
+        "title": {
+          "zh": "PushGateway URL",
+          "en": "PushGateway URL",
+          "ja": "PushGateway URL"
+        },
+        "description": {
+          "zh": "普罗米修斯 PushGateway 服务的 URL",
+          "en": "Prometheus PushGateway URL",
+          "ja": "Prometheus PushGateway URL"
+        }
+      },
+      "interval": {
+        "title": {
+          "zh": "推送间隔",
+          "en": "Push Interval",
+          "ja": "Push Interval"
+        },
+        "description": {
+          "zh": "往普罗米修斯服务推送数据的间隔值",
+          "en": "Prometheus Push Interval",
+          "ja": "Prometheus Push Interval"
+        }
+      }
+    }
+  },
+  {
+    "name": "hot_confs",
+    "title": {
+      "zh": "热配置",
+      "en": "Hot configuration",
+      "ja": "Hot configuration"
+    },
+    "description": {
+      "zh": "热配置",
+      "en": "Hot configuration",
+      "ja": "Hot configuration"
+    },
+    "params": {}
+  },
+  {
+    "name": "internal_acl",
+    "title": {
+      "zh": "内置访问控制文件",
+      "en": "Internal ACL File",
+      "ja": "Internal ACL File"
+    },
+    "description": {
+      "zh": "内置访问控制文件",
+      "en": "Internal ACL File",
+      "ja": "Internal ACL File"
+    },
+    "params": {
+      "acl_rule_file": {
+        "title": {
+          "zh": "访问控制规则文件",
+          "en": "ACL Rule File",
+          "ja": "ACL Rule File"
+        },
+        "description": {
+          "zh": "内置访问控制规则文件",
+          "en": "Internal ACL Rule File",
+          "ja": "Internal ACL Rule File"
+        }
+      }
+    }
+  },
+  {
+    "name": "ldap_authentication",
+    "title": {
+      "zh": "LDAP 认证/访问控制",
+      "en": "LDAP AUTH/ACL",
+      "ja": "LDAP AUTH/ACL"
+    },
+    "description": {
+      "zh": "LDAP 认证/访问控制",
+      "en": "LDAP AUTH/ACL",
+      "ja": "LDAP AUTH/ACL"
+    },
+    "params": {
+      "username_attribute_type": {
+        "title": {
+          "zh": "用户参数",
+          "en": "User Attribute Type",
+          "ja": "User Attribute Type"
+        },
+        "description": {
+          "zh": "用户参数",
+          "en": "User Attribute Type",
+          "ja": "User Attribute Type"
+        }
+      },
+      "timeout": {
+        "title": {
+          "zh": "超期时间(s)",
+          "en": "Connect Timeout(s)",
+          "ja": "Connect Timeout(s)"
+        },
+        "description": {
+          "zh": "超期时间(s)",
+          "en": "Connect Timeout(s)",
+          "ja": "Connect Timeout(s)"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        }
+      },
+      "servers": {
+        "title": {
+          "zh": "LDAP 服务器",
+          "en": "LDAP Server",
+          "ja": "LDAP Server"
+        },
+        "description": {
+          "zh": "LDAP 服务器地址",
+          "en": "LDAP IP Address or Hostname",
+          "ja": "LDAP IP Address or Hostname"
+        }
+      },
+      "port": {
+        "title": {
+          "zh": "LDAP 服务器端口",
+          "en": "LDAP Server Port",
+          "ja": "LDAP Server Port"
+        },
+        "description": {
+          "zh": "LDAP 服务器端口",
+          "en": "LDAP Server Port",
+          "ja": "LDAP Server Port"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "LDAP 连接池大小",
+          "en": "The Size of Connection Pool for LDAP",
+          "ja": "The Size of Connection Pool for LDAP"
+        }
+      },
+      "password_attribute_type": {
+        "title": {
+          "zh": "密码",
+          "en": "Password Type",
+          "ja": "Password Type"
+        },
+        "description": {
+          "zh": "密码",
+          "en": "Password Type",
+          "ja": "Password Type"
+        }
+      },
+      "match_object_class": {
+        "title": {
+          "zh": "对象类",
+          "en": "Object Class",
+          "ja": "Object Class"
+        },
+        "description": {
+          "zh": "对象类",
+          "en": "Object Class",
+          "ja": "Object Class"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        },
+        "description": {
+          "zh": "SSL 私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        }
+      },
+      "device_dn": {
+        "title": {
+          "zh": "设备识别名",
+          "en": "Device Dn",
+          "ja": "Device Dn"
+        },
+        "description": {
+          "zh": "设备识别名",
+          "en": "Device Dn",
+          "ja": "Device Dn"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        }
+      },
+      "bind_password": {
+        "title": {
+          "zh": "LDAP 密码",
+          "en": "LDAP Bind Password",
+          "ja": "LDAP Bind Password"
+        },
+        "description": {
+          "zh": "LDAP 密码",
+          "en": "Password for Bind to LDAP",
+          "ja": "Password for Bind to LDAP"
+        }
+      },
+      "bind_dn": {
+        "title": {
+          "zh": "LDAP 识别名",
+          "en": "LDAP Bind Dn",
+          "ja": "LDAP Bind Dn"
+        },
+        "description": {
+          "zh": "LDAP 识别名",
+          "en": "LDAP Bind Dn",
+          "ja": "LDAP Bind Dn"
+        }
+      }
+    }
+  },
+  {
+    "name": "http_authentication",
+    "title": {
+      "zh": "HTTP 认证/访问控制",
+      "en": "HTTP AUTH/ACL",
+      "ja": "HTTP AUTH/ACL"
+    },
+    "description": {
+      "zh": "HTTP 认证/访问控制",
+      "en": "HTTP AUTH/ACL",
+      "ja": "HTTP AUTH/ACL"
+    },
+    "params": {
+      "super_req_params": {
+        "title": {
+          "zh": "超级用户请求参数",
+          "en": "Super User Request Params",
+          "ja": "Super User Request Params"
+        },
+        "description": {
+          "zh": "超级用户请求参数",
+          "en": "Super User Request Params",
+          "ja": "Super User Request Params"
+        }
+      },
+      "super_req": {
+        "title": {
+          "zh": "超级用户请求地址",
+          "en": "Super User Request URL",
+          "ja": "Super User Request URL"
+        },
+        "description": {
+          "zh": "超级用户请求地址",
+          "en": "Super User Request URL",
+          "ja": "Super User Request URL"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        }
+      },
+      "req_content_type": {
+        "title": {
+          "zh": "HTTP 请求类型",
+          "en": "HTTP Request ContentType",
+          "ja": "HTTP Request ContentType"
+        },
+        "description": {
+          "zh": "HTTP 请求类型",
+          "en": "HTTP Request ContentType",
+          "ja": "HTTP Request ContentType"
+        }
+      },
+      "method": {
+        "title": {
+          "zh": "HTTP 请求方法",
+          "en": "HTTP Request Method",
+          "ja": "HTTP Request Method"
+        },
+        "description": {
+          "zh": "HTTP 请求方法",
+          "en": "HTTP Request Method",
+          "ja": "HTTP Request Method"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        },
+        "description": {
+          "zh": "SSL 私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        }
+      },
+      "http_opts_timeout": {
+        "title": {
+          "zh": "HTTP Timeout",
+          "en": "HTTP Timeout",
+          "ja": "HTTP Timeout"
+        },
+        "description": {
+          "zh": "HTTP Timeout",
+          "en": "HTTP Timeout",
+          "ja": "HTTP Timeout"
+        }
+      },
+      "http_opts_retry_times": {
+        "title": {
+          "zh": "重试次数",
+          "en": "Retry Times",
+          "ja": "Retry Times"
+        },
+        "description": {
+          "zh": "重试次数",
+          "en": "Retry Times",
+          "ja": "Retry Times"
+        }
+      },
+      "http_opts_retry_interval": {
+        "title": {
+          "zh": "重试间隔",
+          "en": "Retry Interval",
+          "ja": "Retry Interval"
+        },
+        "description": {
+          "zh": "重试间隔",
+          "en": "Retry Interval",
+          "ja": "Retry Interval"
+        }
+      },
+      "http_opts_retry_backoff": {
+        "title": {
+          "zh": "Retry Backoff",
+          "en": "Retry Backoff",
+          "ja": "Retry Backoff"
+        },
+        "description": {
+          "zh": "Retry Backoff",
+          "en": "Retry Backoff",
+          "ja": "Retry Backoff"
+        }
+      },
+      "http_opts_connect_timeout": {
+        "title": {
+          "zh": "HTTP Connect Timeout",
+          "en": "HTTP Connect Timeout",
+          "ja": "HTTP Connect Timeout"
+        },
+        "description": {
+          "zh": "HTTP Connect Timeout",
+          "en": "HTTP Connect Timeout",
+          "ja": "HTTP Connect Timeout"
+        }
+      },
+      "http_headers": {
+        "title": {
+          "zh": "请求头",
+          "en": "Request Header",
+          "ja": "Request Header"
+        },
+        "description": {
+          "zh": "请求头",
+          "en": "Request Header",
+          "ja": "Request Header"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        }
+      },
+      "auth_req_params": {
+        "title": {
+          "zh": "认证请求参数",
+          "en": "AUTH Request Params",
+          "ja": "AUTH Request Params"
+        },
+        "description": {
+          "zh": "认证请求参数",
+          "en": "AUTH Request Params",
+          "ja": "AUTH Request Params"
+        }
+      },
+      "auth_req": {
+        "title": {
+          "zh": "认证请求地址",
+          "en": "AUTH Request URL",
+          "ja": "AUTH Request URL"
+        },
+        "description": {
+          "zh": "认证请求地址",
+          "en": "AUTH Request URL",
+          "ja": "AUTH Request URL"
+        }
+      },
+      "acl_req_params": {
+        "title": {
+          "zh": "访问控制请求参数",
+          "en": "ACL Request Params",
+          "ja": "ACL Request Params"
+        },
+        "description": {
+          "zh": "访问控制请求参数",
+          "en": "ACL Request Params",
+          "ja": "ACL Request Params"
+        }
+      },
+      "acl_req": {
+        "title": {
+          "zh": "访问控制请求地址",
+          "en": "ACL Request URL",
+          "ja": "ACL Request URL"
+        },
+        "description": {
+          "zh": "访问控制请求地址",
+          "en": "ACL Request URL",
+          "ja": "ACL Request URL"
+        }
+      }
+    }
+  },
+  {
+    "name": "pgsql_authentication",
+    "title": {
+      "zh": "PostgreSQL 认证/访问控制",
+      "en": "PostgreSQL AUTH/ACL",
+      "ja": "PostgreSQL AUTH/ACL"
+    },
+    "description": {
+      "zh": "PostgreSQL 认证/访问控制",
+      "en": "PostgreSQL AUTH/ACL",
+      "ja": "PostgreSQL AUTH/ACL"
+    },
+    "params": {
+      "user": {
+        "title": {
+          "zh": "PostgreSQL 用户名",
+          "en": "PostgreSQL User Name",
+          "ja": "PostgreSQL User Name"
+        },
+        "description": {
+          "zh": "PostgreSQL 用户名",
+          "en": "Username for Connecting to PostgreSQL",
+          "ja": "Username for Connecting to PostgreSQL"
+        }
+      },
+      "super_query": {
+        "title": {
+          "zh": "超级用户 SQL 查询语句",
+          "en": "SuperUser Query",
+          "ja": "SuperUser Query"
+        },
+        "description": {
+          "zh": "超级用户 SQL 查询语句",
+          "en": "SuperUser Query",
+          "ja": "SuperUser Query"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "PostgreSQL 服务器",
+          "en": "PostgreSQL Server",
+          "ja": "PostgreSQL Server"
+        },
+        "description": {
+          "zh": "PostgreSQL 服务器地址",
+          "en": "PostgreSQL IP Address or Hostname and Port",
+          "ja": "PostgreSQL IP Address or Hostname and Port"
+        }
+      },
+      "query_timeout": {
+        "title": {
+          "zh": "查询超期时间",
+          "en": "Query Timeout",
+          "ja": "Query Timeout"
+        },
+        "description": {
+          "zh": "查询超期时间",
+          "en": "Query Timeout",
+          "ja": "Query Timeout"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "PostgreSQL 连接池大小",
+          "en": "The Size of Connection Pool for PostgreSQL",
+          "ja": "The Size of Connection Pool for PostgreSQL"
+        }
+      },
+      "password_hash": {
+        "title": {
+          "zh": "加密方式",
+          "en": "Password Hash",
+          "ja": "Password Hash"
+        },
+        "description": {
+          "zh": "密码加密方式",
+          "en": "Password Hash",
+          "ja": "Password Hash"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "PostgreSQL 密码",
+          "en": "PostgreSQL Password",
+          "ja": "PostgreSQL Password"
+        },
+        "description": {
+          "zh": "PostgreSQL 密码",
+          "en": "Password for Connecting to PostgreSQL",
+          "ja": "Password for Connecting to PostgreSQL"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        },
+        "description": {
+          "zh": "SSL 私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "PostgreSQL 数据库名",
+          "en": "PostgreSQL Database",
+          "ja": "PostgreSQL Database"
+        },
+        "description": {
+          "zh": "PostgreSQL 数据库名",
+          "en": "Database for Connecting to PostgreSQL",
+          "ja": "Database for Connecting to PostgreSQL"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "PostgreSQL 连接断开时是否重连",
+          "en": "If Retry When the Connection Lost",
+          "ja": "If Retry When the Connection Lost"
+        }
+      },
+      "auth_query": {
+        "title": {
+          "zh": "认证 SQL 语句",
+          "en": "Auth Query",
+          "ja": "Auth Query"
+        },
+        "description": {
+          "zh": "认证 SQL 语句",
+          "en": "Auth Query",
+          "ja": "Auth Query"
+        }
+      },
+      "acl_query": {
+        "title": {
+          "zh": "访问控制 SQL 语句",
+          "en": "ACL Query",
+          "ja": "ACL Query"
+        },
+        "description": {
+          "zh": "访问控制 SQL 语句",
+          "en": "ACL Query",
+          "ja": "ACL Query"
+        }
+      }
+    }
+  },
+  {
+    "name": "mysql_authentication",
+    "title": {
+      "zh": "MySQL 认证/访问控制",
+      "en": "MySQL AUTH/ACL",
+      "ja": "MySQL AUTH/ACL"
+    },
+    "description": {
+      "zh": "MySQL 认证/访问控制",
+      "en": "MySQL AUTH/ACL",
+      "ja": "MySQL AUTH/ACL"
+    },
+    "params": {
+      "user": {
+        "title": {
+          "zh": "MySQL 用户名",
+          "en": "MySQL User Name",
+          "ja": "MySQL User Name"
+        },
+        "description": {
+          "zh": "MySQL 用户名",
+          "en": "Username for Connect to MySQL",
+          "ja": "Username for Connect to MySQL"
+        }
+      },
+      "super_query": {
+        "title": {
+          "zh": "超级用户 SQL 查询语句",
+          "en": "SuperUser Query",
+          "ja": "SuperUser Query"
+        },
+        "description": {
+          "zh": "超级用户 SQL 查询语句",
+          "en": "SuperUser Query",
+          "ja": "SuperUser Query"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "MySQL 服务器",
+          "en": "MySQL Server",
+          "ja": "MySQL Server"
+        },
+        "description": {
+          "zh": "MySQL 服务器地址",
+          "en": "MySQL IP Address or Hostname and Port",
+          "ja": "MySQL IP Address or Hostname and Port"
+        }
+      },
+      "query_timeout": {
+        "title": {
+          "zh": "查询超期时间",
+          "en": "Query Timeout",
+          "ja": "Query Timeout"
+        },
+        "description": {
+          "zh": "查询超期时间",
+          "en": "Query Timeout",
+          "ja": "Query Timeout"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "MySQL 连接池大小",
+          "en": "The size of Connection Pool for MySQL",
+          "ja": "The size of Connection Pool for MySQL"
+        }
+      },
+      "password_hash": {
+        "title": {
+          "zh": "加密方式",
+          "en": "Password Hash",
+          "ja": "Password Hash"
+        },
+        "description": {
+          "zh": "密码加密方式",
+          "en": "Password Hash",
+          "ja": "Password Hash"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "MySQL 密码",
+          "en": "MySQL Password",
+          "ja": "MySQL Password"
+        },
+        "description": {
+          "zh": "MySQL 密码",
+          "en": "Password for Connect to MySQL",
+          "ja": "Password for Connect to MySQL"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        },
+        "description": {
+          "zh": "SSL 私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "MySQL 数据库名",
+          "en": "MySQL Database",
+          "ja": "MySQL Database"
+        },
+        "description": {
+          "zh": "MySQL 数据库名",
+          "en": "Database Name for Connecting to MySQL",
+          "ja": "Database Name for Connecting to MySQL"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate file",
+          "ja": "CA Certificate file"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "MySQL 连接断开时是否重连",
+          "en": "If Retry When the Connection Lost",
+          "ja": "If Retry When the Connection Lost"
+        }
+      },
+      "auth_query": {
+        "title": {
+          "zh": "用户名/密码 SQL 认证语句",
+          "en": "Auth Query",
+          "ja": "Auth Query"
+        },
+        "description": {
+          "zh": "用户名/密码 SQL 认证语句",
+          "en": "Auth Query",
+          "ja": "Auth Query"
+        }
+      },
+      "acl_query": {
+        "title": {
+          "zh": "访问控制 SQL 查询语句",
+          "en": "ACL Query",
+          "ja": "ACL Query"
+        },
+        "description": {
+          "zh": "访问控制 SQL 查询语句",
+          "en": "ACL Query",
+          "ja": "ACL Query"
+        }
+      }
+    }
+  },
+  {
+    "name": "mongo_authentication",
+    "title": {
+      "zh": "MongoDB 认证/访问控制",
+      "en": "MongoDB AUTH/ACL",
+      "ja": "MongoDB AUTH/ACL"
+    },
+    "description": {
+      "zh": "MongoDB 认证/访问控制",
+      "en": "MongoDB AUTH/ACL",
+      "ja": "MongoDB AUTH/ACL"
+    },
+    "params": {
+      "w_mode": {
+        "title": {
+          "zh": "写模式",
+          "en": "Write mode",
+          "ja": "Write mode"
+        },
+        "description": {
+          "zh": "写模式",
+          "en": "Write mode",
+          "ja": "Write mode"
+        }
+      },
+      "type": {
+        "title": {
+          "zh": "连接模式",
+          "en": "Type",
+          "ja": "Type"
+        },
+        "description": {
+          "zh": "连接模式",
+          "en": "Type",
+          "ja": "Type"
+        },
+        "items": {
+          "unknown": {},
+          "single": {},
+          "shared": {
+            "rs_set_name": {
+              "title": {
+                "zh": "Replica Set",
+                "en": "Replica Set",
+                "ja": "Replica Set"
+              },
+              "description": {
+                "zh": "Replica Set",
+                "en": "Replica Set",
+                "ja": "Replica Set"
+              }
+            }
+          },
+          "rs": {
+            "topology_wait_queue_timeout_ms": {
+              "title": {
+                "zh": "Topology Wait Queue timout(ms)",
+                "en": "Topology Wait Queue timout(ms)",
+                "ja": "Topology Wait Queue timout(ms)"
+              },
+              "description": {
+                "zh": "Topology Wait Queue timout(ms)",
+                "en": "Topology Wait Queue timout(ms)",
+                "ja": "Topology Wait Queue timout(ms)"
+              }
+            },
+            "topology_socket_timeout_ms": {
+              "title": {
+                "zh": "Topology Socket timeout(ms)",
+                "en": "Topology Socket timeout(ms)",
+                "ja": "Topology Socket timeout(ms)"
+              },
+              "description": {
+                "zh": "Topology Socket timeout(ms)",
+                "en": "Topology Socket timeout(ms)",
+                "ja": "Topology Socket timeout(ms)"
+              }
+            },
+            "topology_server_selection_timeout_ms": {
+              "title": {
+                "zh": "Topology Server Selection Timeout(ms)",
+                "en": "Topology Server Selection Timeout(ms)",
+                "ja": "Topology Server Selection Timeout(ms)"
+              },
+              "description": {
+                "zh": "Topology Server Selection Timeout(ms)",
+                "en": "Topology Server Selection Timeout(ms)",
+                "ja": "Topology Server Selection Timeout(ms)"
+              }
+            },
+            "topology_pool_size": {
+              "title": {
+                "zh": "Topology Pool Size",
+                "en": "Topology Pool Size",
+                "ja": "Topology Pool Size"
+              },
+              "description": {
+                "zh": "Topology Pool Size",
+                "en": "Topology Pool Size",
+                "ja": "Topology Pool Size"
+              }
+            },
+            "topology_overflow_ttl": {
+              "title": {
+                "zh": "Topology Overflow TTL",
+                "en": "Topology Overflow TTL",
+                "ja": "Topology Overflow TTL"
+              },
+              "description": {
+                "zh": "Topology Overflow TTL",
+                "en": "Topology Overflow TTL",
+                "ja": "Topology Overflow TTL"
+              }
+            },
+            "topology_overflow_check_period": {
+              "title": {
+                "zh": "Topology Overflow Check Period",
+                "en": "Topology Overflow Check Period",
+                "ja": "Topology Overflow Check Period"
+              },
+              "description": {
+                "zh": "Topology Overflow Check Period",
+                "en": "Topology Overflow Check Period",
+                "ja": "Topology Overflow Check Period"
+              }
+            },
+            "topology_min_heartbeat_frequency_ms": {
+              "title": {
+                "zh": "Topology Min Heartbeat Frequency(ms)",
+                "en": "Topology Min Heartbeat Frequency(ms)",
+                "ja": "Topology Min Heartbeat Frequency(ms)"
+              },
+              "description": {
+                "zh": "Topology Min Heartbeat Frequency(ms)",
+                "en": "Topology Min Heartbeat Frequency(ms)",
+                "ja": "Topology Min Heartbeat Frequency(ms)"
+              }
+            },
+            "topology_max_overflow": {
+              "title": {
+                "zh": "Topology Max Overflow",
+                "en": "Topology Max Overflow",
+                "ja": "Topology Max Overflow"
+              },
+              "description": {
+                "zh": "Topology Max Overflow",
+                "en": "Topology Max Overflow",
+                "ja": "Topology Max Overflow"
+              }
+            },
+            "topology_local_threshold_ms": {
+              "title": {
+                "zh": "Topology Local Threshold Tims(ms)",
+                "en": "Topology Local Threshold Tims(ms)",
+                "ja": "Topology Local Threshold Tims(ms)"
+              },
+              "description": {
+                "zh": "Topology Local Threshold Tims(ms)",
+                "en": "Topology Local Threshold Tims(ms)",
+                "ja": "Topology Local Threshold Tims(ms)"
+              }
+            },
+            "topology_heartbeat_frequency_ms": {
+              "title": {
+                "zh": "Topology Heartbeat frequency(ms)",
+                "en": "Topology Heartbeat frequency(ms)",
+                "ja": "Topology Heartbeat frequency(ms)"
+              },
+              "description": {
+                "zh": "Topology Heartbeat frequency(ms)",
+                "en": "Topology Heartbeat frequency(ms)",
+                "ja": "Topology Heartbeat frequency(ms)"
+              }
+            },
+            "topology_connect_timeout_ms": {
+              "title": {
+                "zh": "Topology Connect timeout(ms)",
+                "en": "Topology Connect timeout(ms)",
+                "ja": "Topology Connect timeout(ms)"
+              },
+              "description": {
+                "zh": "Topology Connect timeout(ms)",
+                "en": "Topology Connect timeout(ms)",
+                "ja": "Topology Connect timeout(ms)"
+              }
+            }
+          }
+        }
+      },
+      "super_query_selector": {
+        "title": {
+          "zh": "超级用户查询条件字段",
+          "en": "SuperUser Selector Field",
+          "ja": "SuperUser Selector Field"
+        },
+        "description": {
+          "zh": "超级用户查询条件字段",
+          "en": "SuperUser Selector Field",
+          "ja": "SuperUser Selector Field"
+        }
+      },
+      "super_query_field": {
+        "title": {
+          "zh": "超级用户查询字段",
+          "en": "Super User Query Field",
+          "ja": "Super User Query Field"
+        },
+        "description": {
+          "zh": "超级用户查询字段",
+          "en": "Super User Query Field",
+          "ja": "Super User Query Field"
+        }
+      },
+      "super_query_collection": {
+        "title": {
+          "zh": "超级用户查询集合",
+          "en": "Super User Query Collection",
+          "ja": "Super User Query Collection"
+        },
+        "description": {
+          "zh": "超级用户查询集合",
+          "en": "Super User Query Collection",
+          "ja": "Super User Query Collection"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": "Enable SSL"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "MongoDB 服务器",
+          "en": "MongoDB Server",
+          "ja": "MongoDB Server"
+        },
+        "description": {
+          "zh": "MongoDB 服务器地址",
+          "en": "MongoDB Server Address",
+          "ja": "MongoDB Server Address"
+        }
+      },
+      "r_mode": {
+        "title": {
+          "zh": "读模式",
+          "en": "Read mode",
+          "ja": "Read mode"
+        },
+        "description": {
+          "zh": "读模式",
+          "en": "Read mode",
+          "ja": "Read mode"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "连接池大小",
+          "en": "The Size of Connection Pool",
+          "ja": "The Size of Connection Pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        },
+        "description": {
+          "zh": "密码",
+          "en": "Password",
+          "ja": "Password"
+        }
+      },
+      "login": {
+        "title": {
+          "zh": "用户名",
+          "en": "User Name",
+          "ja": "User Name"
+        },
+        "description": {
+          "zh": "用户名",
+          "en": "Username",
+          "ja": "Username"
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        },
+        "description": {
+          "zh": "SSL 私钥文件",
+          "en": "Key File",
+          "ja": "Key File"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "数据库名",
+          "en": "Database",
+          "ja": "Database"
+        },
+        "description": {
+          "zh": "数据库名",
+          "en": "Database",
+          "ja": "Database"
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "Certificate File",
+          "ja": "Certificate File"
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": "CA Certificate File"
+        }
+      },
+      "auth_source": {
+        "title": {
+          "zh": "认证源",
+          "en": "Auth Source",
+          "ja": "Auth Source"
+        },
+        "description": {
+          "zh": "认证源",
+          "en": "Auth Source",
+          "ja": "Auth Source"
+        }
+      },
+      "auth_query_selector": {
+        "title": {
+          "zh": "认证条件字段",
+          "en": "Auth Query Selectors",
+          "ja": "Auth Query Selectors"
+        },
+        "description": {
+          "zh": "认证条件字段",
+          "en": "Auth Query Selectors",
+          "ja": "Auth Query Selectors"
+        }
+      },
+      "auth_query_password_hash": {
+        "title": {
+          "zh": "密码加密方式",
+          "en": "Password Hash",
+          "ja": "Password Hash"
+        },
+        "description": {
+          "zh": "密码加密方式",
+          "en": "Password Hash",
+          "ja": "Password Hash"
+        }
+      },
+      "auth_query_password_field": {
+        "title": {
+          "zh": "认证查询字段名",
+          "en": "Mqtt Auth Field",
+          "ja": "Mqtt Auth Field"
+        },
+        "description": {
+          "zh": "认证查询字段名, 多个字段使用逗号分隔",
+          "en": "Mqtt Auth Field",
+          "ja": "Mqtt Auth Field"
+        }
+      },
+      "auth_query_collection": {
+        "title": {
+          "zh": "认证查询集合",
+          "en": "Auth Query Collection",
+          "ja": "Auth Query Collection"
+        },
+        "description": {
+          "zh": "认证查询集合",
+          "en": "Auth Query Collection",
+          "ja": "Auth Query Collection"
+        }
+      },
+      "acl_query_selectors": {
+        "title": {
+          "zh": "访问控制查询参数",
+          "en": "Acl Query Selectors",
+          "ja": "Acl Query Selectors"
+        },
+        "description": {
+          "zh": "访问控制查询参数",
+          "en": "Acl Query Selectors",
+          "ja": "Acl Query Selectors"
+        },
+        "items": {
+          "type": "object",
+          "schema": {
+            "acl_query_selector": {
+              "title": {
+                "zh": "查询条件字段",
+                "en": "Selector Field",
+                "ja": "Selector Field"
+              },
+              "description": {
+                "zh": "查询条件字段",
+                "en": "Field",
+                "ja": "Field"
+              }
+            }
+          }
+        }
+      },
+      "acl_query_collection": {
+        "title": {
+          "zh": "访问控制查询集合",
+          "en": "Acl Query Collection",
+          "ja": "Acl Query Collection"
+        },
+        "description": {
+          "zh": "访问控制查询集合",
+          "en": "Acl Query Collection",
+          "ja": "Acl Query Collection"
+        }
+      }
+    }
+  },
+  {
+    "name": "mnesia_authentication",
+    "title": {
+      "zh": "内置数据库 认证/访问控制",
+      "en": "Internal DB AUTH/ACL",
+      "ja": "Internal DB AUTH/ACL"
+    },
+    "description": {
+      "zh": "Erlang 内置数据库 认证/访问控制",
+      "en": "Erlang Internal DB AUTH/ACL",
+      "ja": "Erlang Internal DB AUTH/ACL"
+    },
+    "params": {
+      "password_hash": {
+        "title": {
+          "zh": "加密类型",
+          "en": "password hash",
+          "ja": "password hash"
+        },
+        "description": {
+          "zh": "加密类型",
+          "en": "passowrd hash",
+          "ja": "passowrd hash"
+        }
+      }
+    }
+  },
+  {
+    "name": "jwt_authentication",
+    "title": {
+      "zh": "JWT 认证",
+      "en": "JWT AUTH",
+      "ja": "JWT AUTH"
+    },
+    "description": {
+      "zh": "JWT 认证",
+      "en": "JWT AUTH",
+      "ja": "JWT AUTH"
+    },
+    "params": {
+      "verify_claims": {
+        "title": {
+          "zh": "验证声明字段",
+          "en": "Verify Claims",
+          "ja": "Verify Claims"
+        },
+        "description": {
+          "zh": "启用验证声明字段",
+          "en": "Enable to Verify Claims Fields",
+          "ja": "Enable to Verify Claims Fields"
+        }
+      },
+      "signature_format": {
+        "title": {
+          "zh": "签名格式",
+          "en": "Signature Format",
+          "ja": "Signature Format"
+        },
+        "description": {
+          "zh": "签名格式",
+          "en": "Signature Format",
+          "ja": "Signature Format"
+        }
+      },
+      "secret": {
+        "title": {
+          "zh": "密钥",
+          "en": "Secret",
+          "ja": "Secret"
+        },
+        "description": {
+          "zh": "密钥",
+          "en": "Secret",
+          "ja": "Secret"
+        }
+      },
+      "pubkey": {
+        "title": {
+          "zh": "公钥文件",
+          "en": "Pubkey",
+          "ja": "Pubkey"
+        },
+        "description": {
+          "zh": "RSA或ECDSA公钥文件",
+          "en": "RSA or ECDSA public key file",
+          "ja": "RSA or ECDSA public key file"
+        }
+      },
+      "from": {
+        "title": {
+          "zh": "认证来源",
+          "en": "From",
+          "ja": "From"
+        },
+        "description": {
+          "zh": "认证来源",
+          "en": "From",
+          "ja": "From"
+        }
+      },
+      "claims": {
+        "title": {
+          "zh": "声明字段列表",
+          "en": "Claims",
+          "ja": "Claims"
+        },
+        "description": {
+          "zh": "要验证的声明字段列表",
+          "en": "The Checklist of Claims to Validate",
+          "ja": "The Checklist of Claims to Validate"
+        }
+      }
+    }
+  },
+  {
+    "name": "psk_authentication",
+    "title": {
+      "zh": "PKSFile 认证",
+      "en": "PKSFile AUTH",
+      "ja": "PKSFile AUTH"
+    },
+    "description": {
+      "zh": "PKSFile 认证",
+      "en": "PKSFile AUTH",
+      "ja": "PKSFile AUTH"
+    },
+    "params": {
+      "psk_file": {
+        "title": {
+          "zh": "PSK 文件",
+          "en": "PSK File",
+          "ja": "PSK File"
+        },
+        "description": {
+          "zh": "PSK 文件",
+          "en": "PSK File",
+          "ja": "PSK File"
+        }
+      }
+    }
+  },
+  {
+    "name": "redis_authentication",
+    "title": {
+      "zh": "Redis 认证/访问控制",
+      "en": "Redis AUTH/ACL",
+      "ja": "Redis AUTH/ACL"
+    },
+    "description": {
+      "zh": "Redis 认证/访问控制",
+      "en": "Redis AUTH/ACL",
+      "ja": "Redis AUTH/ACL"
+    },
+    "params": {
+      "type": {
+        "title": {
+          "zh": "集群类型",
+          "en": "Cluster Type",
+          "ja": "Cluster Type"
+        },
+        "description": {
+          "zh": "Redis 集群类型",
+          "en": "Redis Cluster Type",
+          "ja": "Redis Cluster Type"
+        }
+      },
+      "super_cmd": {
+        "title": {
+          "zh": "超级用户查询命令",
+          "en": "SuperUser CMD",
+          "ja": "SuperUser CMD"
+        },
+        "description": {
+          "zh": "超级用户查询命令",
+          "en": "SuperUser CMD",
+          "ja": "SuperUser CMD"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "Redis 服务器",
+          "en": "Redis Server",
+          "ja": "Redis Server"
+        },
+        "description": {
+          "zh": "Redis 服务器地址",
+          "en": "Redis Server",
+          "ja": "Redis Server"
+        }
+      },
+      "sentinel": {
+        "title": {
+          "zh": "Sentinel 名称",
+          "en": "Sentinel Name",
+          "ja": "Sentinel Name"
+        },
+        "description": {
+          "zh": "Sentinel 名称",
+          "en": "Sentinel Name",
+          "ja": "Sentinel Name"
+        }
+      },
+      "query_timeout": {
+        "title": {
+          "zh": "查询超期时间",
+          "en": "Query Timeout",
+          "ja": "Query Timeout"
+        },
+        "description": {
+          "zh": "查询超期时间",
+          "en": "Query Timeout",
+          "ja": "Query Timeout"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": "Pool Size"
+        },
+        "description": {
+          "zh": "Redis 连接池大小",
+          "en": "Size of Redis Connection Pool",
+          "ja": "Size of Redis Connection Pool"
+        }
+      },
+      "password_hash": {
+        "title": {
+          "zh": "加密方式",
+          "en": "Password Hash",
+          "ja": "Password Hash"
+        },
+        "description": {
+          "zh": "加密方式",
+          "en": "Password Hash",
+          "ja": "Password Hash"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Redis 密码",
+          "en": "Redis Password",
+          "ja": "Redis Password"
+        },
+        "description": {
+          "zh": "Redis 密码",
+          "en": "Redis Password",
+          "ja": "Redis Password"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "Redis 数据库",
+          "en": "Redis Database",
+          "ja": "Redis Database"
+        },
+        "description": {
+          "zh": "Redis 数据库",
+          "en": "Redis Database",
+          "ja": "Redis Database"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect",
+          "ja": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "Redis 连接断开时是否重连",
+          "en": "If Re-try when the Connection Lost",
+          "ja": "If Re-try when the Connection Lost"
+        }
+      },
+      "auth_cmd": {
+        "title": {
+          "zh": "认证查询命令",
+          "en": "Auth CMD",
+          "ja": "Auth CMD"
+        },
+        "description": {
+          "zh": "认证查询命令",
+          "en": "Auth CMD",
+          "ja": "Auth CMD"
+        }
+      },
+      "acl_cmd": {
+        "title": {
+          "zh": "访问控制查询命令",
+          "en": "ACL CMD",
+          "ja": "ACL CMD"
+        },
+        "description": {
+          "zh": "访问控制查询命令",
+          "en": "ACL CMD",
+          "ja": "ACL CMD"
+        }
+      }
+    }
+  }
+]
