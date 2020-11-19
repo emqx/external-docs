@@ -397,4 +397,29 @@ export default {
     ja: '了解です',
     en: 'I knew',
   },
+  expired: {
+    zh: '过期',
+    ja: '待翻译',
+    en: 'Expired',
+  },
+  noSubscribers: {
+    zh: '无订阅者',
+    ja: '待翻译',
+    en: 'No Subscribers',
+  },
+  receivedMsg: {
+    zh: '消息接收',
+    ja: '待翻译',
+    en: 'Received',
+  },
+  sentMsg: {
+    zh: '消息发送',
+    ja: '待翻译',
+    en: 'Sent',
+  },
+  droppedMsg: {
+    zh: '消息丢弃',
+    ja: '待翻译',
+    en: 'Dropped',
+  },
 }

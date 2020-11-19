@@ -362,4 +362,19 @@ export default {
     ja: '展開',
     en: 'Expand',
   },
+  authSuccess: {
+    zh: '认证成功',
+    ja: '待翻译',
+    en: 'Auth Success',
+  },
+  authFailed: {
+    zh: '认证失败',
+    ja: '待翻译',
+    en: 'Auth Failed',
+  },
+  connectSuccess: {
+    zh: '连接成功',
+    ja: '待翻译',
+    en: 'Connected',
+  },
 }
