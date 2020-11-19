@@ -195,4 +195,14 @@ export default {
     ja: '管理',
     en: 'Manage',
   },
+  tips: {
+    zh: '提示',
+    ja: '待翻译',
+    en: 'Tips',
+  },
+  operateSuccess: {
+    zh: '操作成功',
+    ja: '待翻译',
+    en: 'Successful operation',
+  },
 }
