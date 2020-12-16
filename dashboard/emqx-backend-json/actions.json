@@ -4,24 +4,24 @@
     "title": {
       "zh": "从 MongoDB 中获取订阅列表",
       "en": "Subscription List From MongoDB",
-      "ja": "Subscription List From MongoDB"
+      "ja": "MongoDBからサブスクリプションリストを取得します "
     },
     "description": {
       "zh": "从 MongoDB 中获取订阅列表",
       "en": "Get Subscription List From MongoDB",
-      "ja": "Get Subscription List From MongoDB"
+      "ja": "MongoDBからサブスクリプションリストを取得します "
     },
     "params": {
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -31,36 +31,36 @@
     "title": {
       "zh": "保存数据到 Timescale",
       "en": "Data to Timescale",
-      "ja": "Data to Timescale"
+      "ja": "データをTimescaleDBに保存します"
     },
     "description": {
       "zh": "保存数据到 Timescale",
       "en": "Store Data to Timescale",
-      "ja": "Store Data to Timescale"
+      "ja": "データをTimescaleDBに保存します"
     },
     "params": {
       "sql": {
         "title": {
           "zh": "SQL 模板",
           "en": "SQL Template",
-          "ja": "SQL Template"
+          "ja": "SQLテンプレート"
         },
         "description": {
           "zh": "包含了占位符的 SQL 模板，用以插入或更新数据到 Timescale 数据库",
           "en": "SQL Template with Placeholders for Inserting/Updating Data to Timescale",
-          "ja": "SQL Template with Placeholders for Inserting/Updating Data to Timescale"
+          "ja": "TimescaleDBにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -70,48 +70,48 @@
     "title": {
       "zh": "桥接数据到 RabbitMQ",
       "en": "Data bridge to RabbitMQ",
-      "ja": "Data bridge to RabbitMQ"
+      "ja": "データをRabbitMQにブリッジします"
     },
     "description": {
       "zh": "桥接数据到 RabbitMQ",
       "en": "Store Data to RabbitMQ",
-      "ja": "Store Data to RabbitMQ"
+      "ja": "データをRabbitMQにブリッジします"
     },
     "params": {
       "routing_key": {
         "title": {
           "zh": "Rabbit Routing Key",
           "en": "RabbitMQ Routing Key",
-          "ja": "RabbitMQ Routing Key"
+          "ja": "RabbitMQのルーティングキー "
         },
         "description": {
           "zh": "Rabbit Routing Key",
           "en": "RabbitMQ Routing Key",
-          "ja": "RabbitMQ Routing Key"
+          "ja": "RabbitMQのルーティングキー "
         }
       },
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
           "en": "Payload Template",
-          "ja": "Payload Template"
+          "ja": "ペイロードテンプレート"
         },
         "description": {
           "zh": "消息内容模板，支持变量。若使用空模板（默认），消息内容为 JSON 格式的所有字段",
           "en": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format",
-          "ja": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format"
+          "ja": "メッセージコンテンツテンプレートは変数をサポートします。 空のテンプレート（デフォルト）を使用する場合、メッセージの内容はすべてJSON形式のフィールドです "
         }
       },
       "exchange_type": {
         "title": {
           "zh": "RabbitMQ Exchange Type",
           "en": "RabbitMQ Exchange Type",
-          "ja": "RabbitMQ Exchange Type"
+          "ja": "RabbitMQExchangeタイプ"
         },
         "description": {
           "zh": "RabbitMQ Exchange 类型",
           "en": "RabbitMQ Exchange Type",
-          "ja": "RabbitMQ Exchange Type"
+          "ja": "RabbitMQExchangeタイプ"
         }
       },
       "exchange": {
@@ -130,12 +130,12 @@
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -145,72 +145,72 @@
     "title": {
       "zh": "桥接数据到 RocketMQ",
       "en": "Data bridge to RocketMQ",
-      "ja": "Data bridge to RocketMQ"
+      "ja": "リソースをアクションにバインドします"
     },
     "description": {
       "zh": "桥接数据到 RocketMQ",
       "en": "Store Data to RocketMQ",
-      "ja": "Store Data to RocketMQ"
+      "ja": "リソースをアクションにバインドします"
     },
     "params": {
       "type": {
         "title": {
           "zh": "Produce 类型",
           "en": "Produce Type",
-          "ja": "Produce Type"
+          "ja": "プロデュースタイプ"
         },
         "description": {
           "zh": "Produce 类型",
           "en": "Produce Type",
-          "ja": "Produce Type"
+          "ja": "プロデュースタイプ"
         }
       },
       "topic": {
         "title": {
           "zh": "RocketMQ 主题",
           "en": "RocketMQ Topic",
-          "ja": "RocketMQ Topic"
+          "ja": "RocketMQテーマ"
         },
         "description": {
           "zh": "RocketMQ 主题",
           "en": "RocketMQ Topic",
-          "ja": "RocketMQ Topic"
+          "ja": "RocketMQテーマ"
         }
       },
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
           "en": "Payload Template",
-          "ja": "Payload Template"
+          "ja": "ペイロードテンプレート"
         },
         "description": {
           "zh": "消息内容模板，支持变量。若使用空模板（默认），消息内容为 JSON 格式的所有字段",
           "en": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format",
-          "ja": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format"
+          "ja": "メッセージコンテンツテンプレートは変数をサポートします。 空のテンプレート（デフォルト）を使用する場合、メッセージの内容はすべてJSON形式のフィールドです"
         }
       },
       "batch_size": {
         "title": {
           "zh": "最大批处理数",
           "en": "Max Batch Size",
-          "ja": "Max Batch Size"
+          "ja": "最大バッチサイズ"
         },
         "description": {
           "zh": "最大批处理数",
           "en": "Max Batch Size",
-          "ja": "Max Batch Size"
+          "ja": "最大バッチサイズ"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -220,36 +220,36 @@
     "title": {
       "zh": "离线消息保存到 Redis",
       "en": "Offline Msg to Redis",
-      "ja": "Offline Msg to Redis"
+      "ja": "オフラインメッセージをRedisに保存します"
     },
     "description": {
       "zh": "离线消息保存到 Redis",
       "en": "Offline Msg to Redis",
-      "ja": "Offline Msg to Redis"
+      "ja": "オフラインメッセージをRedisに保存します"
     },
     "params": {
       "ttl": {
         "title": {
           "zh": "Redis Key 超期时间",
           "en": "Redis Key TTL",
-          "ja": "Redis Key TTL"
+          "ja": "Redisキーの有効期限"
         },
         "description": {
           "zh": "Redis Key 超期时间 单位(秒)",
           "en": "Redis Key TTL Unit (seconds)",
-          "ja": "Redis Key TTL Unit (seconds)"
+          "ja": "Redisキーの有効期限の単位（秒）"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -259,84 +259,84 @@
     "title": {
       "zh": "桥接数据到 Pulsar",
       "en": "Data bridge to Pulsar",
-      "ja": "Data bridge to Pulsar"
+      "ja": "データをPulsarにブリッジします"
     },
     "description": {
       "zh": "桥接数据到 Pulsar",
       "en": "Store Data to Pulsar",
-      "ja": "Store Data to Pulsar"
+      "ja": "データをPulsarにブリッジします"
     },
     "params": {
       "type": {
         "title": {
           "zh": "Produce 类型",
           "en": "Produce Type",
-          "ja": "Produce Type"
+          "ja": "プロデュースタイプ"
         },
         "description": {
           "zh": "Produce 类型",
           "en": "Produce Type",
-          "ja": "Produce Type"
+          "ja": "プロデュースタイプ"
         }
       },
       "topic": {
         "title": {
           "zh": "Pulsar 主题",
           "en": "Pulsar Topic",
-          "ja": "Pulsar Topic"
+          "ja": "Pulsarトピック"
         },
         "description": {
           "zh": "Pulsar 主题",
           "en": "Pulsar Topic",
-          "ja": "Pulsar Topic"
+          "ja": "Pulsarトピック"
         }
       },
       "strategy": {
         "title": {
           "zh": "Produce 策略",
           "en": "Produce Strategy",
-          "ja": "Produce Strategy"
+          "ja": "プロデュース戦略"
         },
         "description": {
           "zh": "Produce 策略",
           "en": "Produce Strategy",
-          "ja": "Produce Strategy"
+          "ja": "プロデュース戦略"
         }
       },
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
           "en": "Payload Template",
-          "ja": "Payload Template"
+          "ja": "ペイロードテンプレート"
         },
         "description": {
           "zh": "消息内容模板，支持变量。若使用空模板（默认），消息内容为 JSON 格式的所有字段",
           "en": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format",
-          "ja": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format"
+          "ja": "メッセージコンテンツテンプレートは変数をサポートします。 空のテンプレート（デフォルト）を使用する場合、メッセージの内容はすべてJSON形式のフィールドです"
         }
       },
       "key": {
         "title": {
           "zh": "Strategy Key",
           "en": "Strategy Key",
-          "ja": "Strategy Key"
+          "ja": "戦略キー"
         },
         "description": {
           "zh": "Strategy Key, 仅在策略为 first_key_dispatch 时生效",
           "en": "Strategy Key, only take effect when strategy is first_key_dispatch",
-          "ja": "Strategy Key, only take effect when strategy is first_key_dispatch"
+          "ja": "戦略キー、戦略がfirst_key_dispatchの場合にのみ有効になります"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -346,24 +346,24 @@
     "title": {
       "zh": "从 Cassandra 中获取订阅列表",
       "en": "Subscription List From Cassandra",
-      "ja": "Subscription List From Cassandra"
+      "ja": "Cassandraからサブスクリプションリストを取得します"
     },
     "description": {
       "zh": "从 Cassandra 中获取订阅列表",
       "en": "Get Subscription List From Cassandra",
-      "ja": "Get Subscription List From Cassandra"
+      "ja": "Cassandraからサブスクリプションリストを取得します"
     },
     "params": {
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -373,48 +373,48 @@
     "title": {
       "zh": "离线消息保存到 MongoDB",
       "en": "Offline Msg to MongoDB",
-      "ja": "Offline Msg to MongoDB"
+      "ja": "オフラインメッセージをMongoDBに保存します"
     },
     "description": {
       "zh": "离线消息保存到 MongoDB",
       "en": "Offline Msg to MongoDB",
-      "ja": "Offline Msg to MongoDB"
+      "ja": "オフラインメッセージをMongoDBに保存します"
     },
     "params": {
       "time_range": {
         "title": {
           "zh": "Time Range",
           "en": "Time Range",
-          "ja": "Time Range"
+          "ja": "時間範囲"
         },
         "description": {
           "zh": "获取最近时间范围内的离线消息",
           "en": "Time Range of fetch offline messages",
-          "ja": "Time Range of fetch offline messages"
+          "ja": "最近の時間範囲でオフラインメッセージを取得します"
         }
       },
       "max_returned_count": {
         "title": {
           "zh": "Max Returned Count",
           "en": "Max Returned Count",
-          "ja": "Max Returned Count"
+          "ja": "最大返却数"
         },
         "description": {
           "zh": "获取离线消息的最大条数",
           "en": "Max number of fetch offline messages",
-          "ja": "Max number of fetch offline messages"
+          "ja": "オフラインメッセージの最大数を取得します"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -424,36 +424,36 @@
     "title": {
       "zh": "保存数据到 MySQL",
       "en": "Data to MySQL",
-      "ja": "Data to MySQL"
+      "ja": "MySQLにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 MySQL 数据库",
       "en": "Data to MySQL",
-      "ja": "Data to MySQL"
+      "ja": "MySQLにデータを保存します"
     },
     "params": {
       "sql": {
         "title": {
           "zh": "SQL 模板",
           "en": "SQL Template",
-          "ja": "SQL Template"
+          "ja": "SQLテンプレート"
         },
         "description": {
           "zh": "包含了占位符的 SQL 模板，用以插入或更新数据到 MySQL 数据库",
           "en": "SQL template with placeholders for inserting/updating data to MySQL",
-          "ja": "SQL template with placeholders for inserting/updating data to MySQL"
+          "ja": "MySQLにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -463,36 +463,36 @@
     "title": {
       "zh": "保存数据到 PostgreSQL",
       "en": "Data to PostgreSQL",
-      "ja": "Data to PostgreSQL"
+      "ja": "PostgreSQLにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 PostgreSQL",
       "en": "Store data to PostgreSQL",
-      "ja": "Store data to PostgreSQL"
+      "ja": "PostgreSQLにデータを保存します"
     },
     "params": {
       "sql": {
         "title": {
           "zh": "SQL 模板",
           "en": "SQL Template",
-          "ja": "SQL Template"
+          "ja": "SQLテンプレート"
         },
         "description": {
           "zh": "包含了占位符的 SQL 模板，用于插入或更新数据到 PostgreSQL 数据库",
           "en": "SQL Template with Placeholders for Inserting/Updating Data to PostgreSQL",
-          "ja": "SQL Template with Placeholders for Inserting/Updating Data to PostgreSQL"
+          "ja": "PostgreSQLにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -502,12 +502,12 @@
     "title": {
       "zh": "空动作 (调试)",
       "en": "Do Nothing (debug)",
-      "ja": "Do Nothing (debug)"
+      "ja": "空のアクション（デバッグ）"
     },
     "description": {
       "zh": "此动作什么都不做，并且不会失败 (用以调试)",
       "en": "This action does nothing and never fails. It's for debug purpose",
-      "ja": "This action does nothing and never fails. It's for debug purpose"
+      "ja": "このアクションは何も実行せず、失敗しません（デバッグ用）"
     },
     "params": {}
   },
@@ -516,24 +516,24 @@
     "title": {
       "zh": "从 Redis 中获取订阅列表",
       "en": "Subscription List From Redis",
-      "ja": "Subscription List From Redis"
+      "ja": "Redisからサブスクリプションリストを取得します "
     },
     "description": {
       "zh": "从 Redis 中获取订阅列表",
       "en": "Get Subscription List From Redis",
-      "ja": "Get Subscription List From Redis"
+      "ja": "Redisからサブスクリプションリストを取得します"
     },
     "params": {
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -543,84 +543,84 @@
     "title": {
       "zh": "保存数据到 OpenTSDB",
       "en": "Data to OpenTSDB",
-      "ja": "Data to OpenTSDB"
+      "ja": "OpenTSDBにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 OpenTSDB",
       "en": "Store Data to OpenTSDB",
-      "ja": "Store Data to OpenTSDB"
+      "ja": "データをOpenTSDBに保存します"
     },
     "params": {
       "sync_timeout": {
         "title": {
           "zh": "同步调用超时时间",
           "en": "Sync Timeout",
-          "ja": "Sync Timeout"
+          "ja": "同期呼び出しタイムアウト時間"
         },
         "description": {
           "zh": "等待数据被写入到存储区的最大时间(单位: 毫秒)",
           "en": "A timeout, in milliseconds, to wait for the data to be flushed to storage before returning with an error",
-          "ja": "A timeout, in milliseconds, to wait for the data to be flushed to storage before returning with an error"
+          "ja": "データがストレージ領域に書き込まれるのを待機する最大時間（単位：ミリ秒）"
         }
       },
       "sync": {
         "title": {
           "zh": "是否同步调用",
           "en": "Sync Call",
-          "ja": "Sync Call"
+          "ja": "同期呼び出し"
         },
         "description": {
           "zh": "是否在返回结果之前等待数据被刷新到存储区",
           "en": "Whether or not to wait for the data to be flushed to storage before returning the results",
-          "ja": "Whether or not to wait for the data to be flushed to storage before returning the results"
+          "ja": "結果を返す前に、データがストレージ領域にフラッシュされるのを待つかどうかを指定します"
         }
       },
       "summary": {
         "title": {
           "zh": "摘要信息",
           "en": "Summary",
-          "ja": "Summary"
+          "ja": "概要"
         },
         "description": {
           "zh": "是否返回摘要信息",
           "en": "Whether or not to return summary information",
-          "ja": "Whether or not to return summary information"
+          "ja": "概要情報を返すかどうかを指定します"
         }
       },
       "max_batch_size": {
         "title": {
           "zh": "最大批处理数量",
           "en": "Max Batch Size",
-          "ja": "Max Batch Size"
+          "ja": "最大バッチサイズ"
         },
         "description": {
           "zh": "最大批处理数量",
           "en": "Max Batch Size",
-          "ja": "Max Batch Size"
+          "ja": "最大バッチサイズ"
         }
       },
       "details": {
         "title": {
           "zh": "详细信息",
           "en": "Details",
-          "ja": "Details"
+          "ja": "詳細"
         },
         "description": {
           "zh": "是否返回详细信息",
           "en": "Whether or not to return detailed information",
-          "ja": "Whether or not to return detailed information"
+          "ja": "詳細を返すかどうかを指定します"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -630,48 +630,48 @@
     "title": {
       "zh": "离线消息保存到 Cassandra",
       "en": "Offline Msg to Cassandra",
-      "ja": "Offline Msg to Cassandra"
+      "ja": "オフラインメッセージをMongoDBに保存します"
     },
     "description": {
       "zh": "离线消息保存到 Cassandra",
       "en": "Offline Msg to Cassandra",
-      "ja": "Offline Msg to Cassandra"
+      "ja": "オフラインメッセージをMongoDBに保存します"
     },
     "params": {
       "time_range": {
         "title": {
           "zh": "Time Range",
           "en": "Time Range",
-          "ja": "Time Range"
+          "ja": "時間範囲"
         },
         "description": {
           "zh": "获取最近时间范围内的离线消息",
           "en": "Time Range of fetch offline messages",
-          "ja": "Time Range of fetch offline messages"
+          "ja": "最近の時間範囲でオフラインメッセージを取得します "
         }
       },
       "max_returned_count": {
         "title": {
           "zh": "Max Returned Count",
           "en": "Max Returned Count",
-          "ja": "Max Returned Count"
+          "ja": "最大返却数"
         },
         "description": {
           "zh": "获取离线消息的最大条数",
           "en": "Max number of fetch offline messages",
-          "ja": "Max number of fetch offline messages"
+          "ja": "オフラインメッセージの最大数を取得します"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -681,24 +681,24 @@
     "title": {
       "zh": "从 MySQL 中获取订阅列表",
       "en": "Subscription List From MySQL",
-      "ja": "Subscription List From MySQL"
+      "ja": "MySQLからサブスクリプションリストを取得します "
     },
     "description": {
       "zh": "从 MySQL 中获取订阅列表",
       "en": "Get Subscription List From MySQL",
-      "ja": "Get Subscription List From MySQL"
+      "ja": "MySQLからサブスクリプションリストを取得します "
     },
     "params": {
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -708,24 +708,24 @@
     "title": {
       "zh": "从 PostgreSQL 中获取订阅列表",
       "en": "Subscription List From PostgreSQL",
-      "ja": "Subscription List From PostgreSQL"
+      "ja": "PostgreSQLからサブスクリプションリストを取得します"
     },
     "description": {
       "zh": "从 PostgreSQL 中获取订阅列表",
       "en": "Get Subscription List From PostgreSQL",
-      "ja": "Get Subscription List From PostgreSQL"
+      "ja": "PostgreSQLからサブスクリプションリストを取得します"
     },
     "params": {
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -735,48 +735,48 @@
     "title": {
       "zh": "消息重新发布",
       "en": "Republish",
-      "ja": "Republish"
+      "ja": "リパブリッシュ"
     },
     "description": {
       "zh": "重新发布消息到另一个主题",
       "en": "Republish a MQTT message to another topic",
-      "ja": "Republish a MQTT message to another topic"
+      "ja": "メッセージを別のトピックにリパブリッシュします"
     },
     "params": {
       "target_topic": {
         "title": {
           "zh": "目的主题",
           "en": "Target Topic",
-          "ja": "Target Topic"
+          "ja": "ターゲットトピック"
         },
         "description": {
           "zh": "重新发布消息到哪个主题",
           "en": "To which topic the message will be republished",
-          "ja": "To which topic the message will be republished"
+          "ja": "メッセージがリパブリッシュされるトピック"
         }
       },
       "target_qos": {
         "title": {
           "zh": "目的 QoS",
           "en": "Target QoS",
-          "ja": "Target QoS"
+          "ja": "ターゲットQoS"
         },
         "description": {
           "zh": "重新发布消息时用的 QoS 级别, 设置为 -1 以使用原消息中的 QoS",
           "en": "The QoS Level to be uses when republishing the message. Set to -1 to use the original QoS",
-          "ja": "The QoS Level to be uses when republishing the message. Set to -1 to use the original QoS"
+          "ja": "メッセージをリパブリッシュするときに使用されるQoSレベル。元のメッセージでQoSを使用するには-1に設定します。"
         }
       },
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
           "en": "Payload Template",
-          "ja": "Payload Template"
+          "ja": "ペイロードテンプレート"
         },
         "description": {
           "zh": "消息内容模板，支持变量",
           "en": "The payload template, variable interpolation is supported",
-          "ja": "The payload template, variable interpolation is supported"
+          "ja": "メッセージコンテンツテンプレート、変数をサポートします"
         }
       }
     }
@@ -786,12 +786,12 @@
     "title": {
       "zh": "检查 (调试)",
       "en": "Inspect (debug)",
-      "ja": "Inspect (debug)"
+      "ja": "検査（デバッグ）"
     },
     "description": {
       "zh": "检查动作参数 (用以调试)",
       "en": "Inspect the details of action params for debug purpose",
-      "ja": "Inspect the details of action params for debug purpose"
+      "ja": "アクションパラメータを確認します（デバッグ用）"
     },
     "params": {}
   },
@@ -800,36 +800,36 @@
     "title": {
       "zh": "保存数据到 Redis",
       "en": "Data to Redis",
-      "ja": "Data to Redis"
+      "ja": "Redisにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 Redis",
       "en": "Store Data to Redis",
-      "ja": "Store Data to Redis"
+      "ja": "Redisにデータを保存します"
     },
     "params": {
       "cmd": {
         "title": {
           "zh": "Redis 命令",
           "en": "Redis CMD",
-          "ja": "Redis CMD"
+          "ja": "Redis コメント"
         },
         "description": {
           "zh": "Redis 命令，可包含占位符，用以更新或插入数据",
           "en": "Redis CMD with Placeholders for Inserting/Updating Data",
-          "ja": "Redis CMD with Placeholders for Inserting/Updating Data"
+          "ja": "データを更新したり挿入したりするためのプレースホルダを含むことができる Redis コマンド"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -839,48 +839,48 @@
     "title": {
       "zh": "桥接数据到 MQTT Broker",
       "en": "Data bridge to MQTT Broker",
-      "ja": "Data bridge to MQTT Broker"
+      "ja": "データをMQTT Brokerにブリッジします"
     },
     "description": {
       "zh": "桥接数据到 MQTT Broker",
       "en": "Bridge Data to MQTT Broker",
-      "ja": "Bridge Data to MQTT Broker"
+      "ja": "データをMQTT Brokerにブリッジします"
     },
     "params": {
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
           "en": "Payload Template",
-          "ja": "Payload Template"
+          "ja": "ペイロードテンプレート"
         },
         "description": {
           "zh": "消息内容模板，支持变量。若使用空模板（默认），消息内容为 JSON 格式的所有字段",
           "en": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format",
-          "ja": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format"
+          "ja": "メッセージコンテンツテンプレートは変数をサポートします。 空のテンプレート（デフォルト）を使用する場合、メッセージの内容はすべてJSON形式のフィールドです"
         }
       },
       "forward_topic": {
         "title": {
           "zh": "转发消息主题",
           "en": "Forward Topic",
-          "ja": "Forward Topic"
+          "ja": "フォワードトピック"
         },
         "description": {
           "zh": "转发消息时使用的主题。如果未提供，则默认为桥接消息的主题。",
           "en": "The topic used when forwarding the message. Defaults to the topic of the bridge message if not provided.",
-          "ja": "The topic used when forwarding the message. Defaults to the topic of the bridge message if not provided."
+          "ja": "メッセージを転送するときに使用されるトピック。 提供されていない場合、デフォルトでブリッジメッセージのトピックになります。"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -890,60 +890,60 @@
     "title": {
       "zh": "保存数据到 DynamoDB",
       "en": "Data to DynamoDB",
-      "ja": "Data to DynamoDB"
+      "ja": "DynamoDBにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 DynamoDB",
       "en": "Store Data to DynamoDB",
-      "ja": "Store Data to DynamoDB"
+      "ja": "DynamoDBにデータを保存します"
     },
     "params": {
       "table": {
         "title": {
           "zh": "DyanmoDB 表",
           "en": "DynamoDB Table",
-          "ja": "DynamoDB Table"
+          "ja": "DynamoDB テーブル"
         },
         "description": {
           "zh": "DynamoDB 表",
           "en": "DynamoDB Table",
-          "ja": "DynamoDB Table"
+          "ja": "DynamoDB テーブル"
         }
       },
       "range_key": {
         "title": {
           "zh": "Range Key",
           "en": "Range Key",
-          "ja": "Range Key"
+          "ja": "Range キー"
         },
         "description": {
           "zh": "DynamoDB Range Key",
           "en": "DynamoDB Range Key",
-          "ja": "DynamoDB Range Key"
+          "ja": "DynamoDB Range キー"
         }
       },
       "hash_key": {
         "title": {
           "zh": "Hash Key",
           "en": "Hash Key",
-          "ja": "Hash Key"
+          "ja": "Hash キー"
         },
         "description": {
           "zh": "DynamoDB Hash Key",
           "en": "DynamoDB Hash Key",
-          "ja": "DynamoDB Hash Key"
+          "ja": "DynamoDB Hash キー"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -953,48 +953,48 @@
     "title": {
       "zh": "保存数据到 MongoDB",
       "en": "Data to MongoDB",
-      "ja": "Data to MongoDB"
+      "ja": "MongoDBにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 MongoDB",
       "en": "Store Data to MongoDB",
-      "ja": "Store Data to MongoDB"
+      "ja": "MongoDBにデータを保存します"
     },
     "params": {
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
           "en": "Payload Template",
-          "ja": "Payload Template"
+          "ja": "ペイロードテンプレート"
         },
         "description": {
           "zh": "消息内容模板，支持变量。若使用空模板（默认），消息内容为 JSON 格式的所有字段",
           "en": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format",
-          "ja": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format"
+          "ja": "メッセージコンテンツテンプレートは変数をサポートします。 空のテンプレート（デフォルト）を使用する場合、メッセージの内容はすべてJSON形式のフィールドです"
         }
       },
       "collection": {
         "title": {
           "zh": "Collection",
           "en": "Collection",
-          "ja": "Collection"
+          "ja": "コレクション"
         },
         "description": {
           "zh": "用于保存数据的 Collection 名字",
           "en": "The collection name for saving data",
-          "ja": "The collection name for saving data"
+          "ja": "データの保存に使用されるコレクション名"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -1004,48 +1004,48 @@
     "title": {
       "zh": "离线消息保存到 MySQL",
       "en": "Offline Msg to MySQL",
-      "ja": "Offline Msg to MySQL"
+      "ja": "オフラインメッセージをMySQLに保存します"
     },
     "description": {
       "zh": "离线消息保存到 MySQL",
       "en": "Offline Msg to MySQL",
-      "ja": "Offline Msg to MySQL"
+      "ja": "オフラインメッセージをMySQLに保存します"
     },
     "params": {
       "time_range": {
         "title": {
           "zh": "Time Range",
           "en": "Time Range",
-          "ja": "Time Range"
+          "ja": "時間範囲"
         },
         "description": {
           "zh": "获取最近时间范围内的离线消息",
           "en": "Time Range of fetch offline messages",
-          "ja": "Time Range of fetch offline messages"
+          "ja": "最近の時間範囲でオフラインメッセージを取得します "
         }
       },
       "max_returned_count": {
         "title": {
           "zh": "Max Returned Count",
           "en": "Max Returned Count",
-          "ja": "Max Returned Count"
+          "ja": "最大返却数"
         },
         "description": {
           "zh": "获取离线消息的最大条数",
           "en": "Max number of fetch offline messages",
-          "ja": "Max number of fetch offline messages"
+          "ja": "オフラインメッセージの最大数を取得します"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -1055,48 +1055,48 @@
     "title": {
       "zh": "离线消息保存到 PostgreSQL",
       "en": "Offline Msg to PostgreSQL",
-      "ja": "Offline Msg to PostgreSQL"
+      "ja": "オフラインメッセージをPostgreSQLに保存します"
     },
     "description": {
       "zh": "离线消息保存到 PostgreSQL",
       "en": "Offline Msg to PostgreSQL",
-      "ja": "Offline Msg to PostgreSQL"
+      "ja": "オフラインメッセージをPostgreSQLに保存します"
     },
     "params": {
       "time_range": {
         "title": {
           "zh": "Time Range",
           "en": "Time Range",
-          "ja": "Time Range"
+          "ja": "時間範囲"
         },
         "description": {
           "zh": "获取最近时间范围内的离线消息",
           "en": "Time Range of fetch offline messages",
-          "ja": "Time Range of fetch offline messages"
+          "ja": "最近の時間範囲でオフラインメッセージを取得します "
         }
       },
       "max_returned_count": {
         "title": {
           "zh": "Max Returned Count",
           "en": "Max Returned Count",
-          "ja": "Max Returned Count"
+          "ja": "最大返却数"
         },
         "description": {
           "zh": "获取离线消息的最大条数",
           "en": "Max number of fetch offline messages",
-          "ja": "Max number of fetch offline messages"
+          "ja": "オフラインメッセージの最大数を取得します"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -1106,36 +1106,36 @@
     "title": {
       "zh": "保存数据到 TDengine",
       "en": "Data to TDengine",
-      "ja": "Data to TDengine"
+      "ja": "TDengineにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 TDengine 数据库",
       "en": "Data to TDengine",
-      "ja": "Data to TDengine"
+      "ja": "TDengineにデータを保存します"
     },
     "params": {
       "sql": {
         "title": {
           "zh": "SQL 模板",
           "en": "SQL Template",
-          "ja": "SQL Template"
+          "ja": "SQLテンプレート"
         },
         "description": {
           "zh": "包含了占位符的 SQL 模板，用以插入或更新数据到 TDengine 数据库",
           "en": "SQL template with placeholders for inserting/updating data to TDengine",
-          "ja": "SQL template with placeholders for inserting/updating data to TDengine"
+          "ja": "TDengineにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -1145,36 +1145,36 @@
     "title": {
       "zh": "保存数据到 ClickHouse",
       "en": "Data to ClickHouse",
-      "ja": "Data to ClickHouse"
+      "ja": "ClickHouseにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 ClickHouse 数据库",
       "en": "Data to ClickHouse",
-      "ja": "Data to ClickHouse"
+      "ja": "ClickHouseにデータを保存します"
     },
     "params": {
       "sql": {
         "title": {
           "zh": "SQL 模板",
           "en": "SQL Template",
-          "ja": "SQL Template"
+          "ja": "SQLテンプレート"
         },
         "description": {
           "zh": "包含了占位符的 SQL 模板，用以插入或更新数据到 ClickHouse 数据库",
           "en": "SQL template with placeholders for inserting/updating data to ClickHouse",
-          "ja": "SQL template with placeholders for inserting/updating data to ClickHouse"
+          "ja": "ClickHouseにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -1184,72 +1184,72 @@
     "title": {
       "zh": "保存数据到 InfluxDB",
       "en": "Data to InfluxDB",
-      "ja": "Data to InfluxDB"
+      "ja": "InfluxDBにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 InfluxDB",
       "en": "Store Data to InfluxDB",
-      "ja": "Store Data to InfluxDB"
+      "ja": "InfluxDBにデータを保存します"
     },
     "params": {
       "timestamp": {
         "title": {
           "zh": "Timestamp",
           "en": "Timestamp",
-          "ja": "Timestamp"
+          "ja": "タイムスタンプ"
         },
         "description": {
           "zh": "Timestamp",
           "en": "Timestamp",
-          "ja": "Timestamp"
+          "ja": "タイムスタンプ"
         }
       },
       "tags": {
         "title": {
           "zh": "Tags",
           "en": "Tags",
-          "ja": "Tags"
+          "ja": "タグ"
         },
         "description": {
           "zh": "Tags, 通过逗号分隔",
           "en": "Tags, sparated by commas",
-          "ja": "Tags, sparated by commas"
+          "ja": "カンマで区切られたタグ"
         }
       },
       "measurement": {
         "title": {
           "zh": "Measurement",
           "en": "Measurement",
-          "ja": "Measurement"
+          "ja": "測定"
         },
         "description": {
           "zh": "Measurement",
           "en": "Measurement",
-          "ja": "Measurement"
+          "ja": "測定"
         }
       },
       "fields": {
         "title": {
           "zh": "Fields",
           "en": "Fields",
-          "ja": "Fields"
+          "ja": "フィルド"
         },
         "description": {
           "zh": "Fields, 通过逗号分隔",
           "en": "Fields, sparated by commas",
-          "ja": "Fields, sparated by commas"
+          "ja": "カンマで区切られたフィルド"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -1259,36 +1259,36 @@
     "title": {
       "zh": "发送数据到 Web 服务",
       "en": "Data to Web Server",
-      "ja": "Data to Web Server"
+      "ja": "Webサービスにデータを送信します"
     },
     "description": {
       "zh": "将数据转发给 Web 服务",
       "en": "Forward Messages to Web Server",
-      "ja": "Forward Messages to Web Server"
+      "ja": "Webサービスにデータを送信します"
     },
     "params": {
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
           "en": "Payload Template",
-          "ja": "Payload Template"
+          "ja": "ペイロードテンプレート"
         },
         "description": {
           "zh": "消息内容模板，支持变量。若使用空模板（默认），消息内容为 JSON 格式的所有字段",
           "en": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format",
-          "ja": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format"
+          "ja": "メッセージコンテンツテンプレートは変数をサポートします。 空のテンプレート（デフォルト）を使用する場合、メッセージの内容はすべてJSON形式のフィールドです"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -1298,96 +1298,96 @@
     "title": {
       "zh": "桥接数据到 Kafka",
       "en": "Data bridge to Kafka",
-      "ja": "Data bridge to Kafka"
+      "ja": "データをKafkaにブリッジします"
     },
     "description": {
       "zh": "桥接数据到 Kafka",
       "en": "Store Data to Kafka",
-      "ja": "Store Data to Kafka"
+      "ja": "データをKafkaにブリッジします"
     },
     "params": {
       "type": {
         "title": {
           "zh": "Produce 类型",
           "en": "Produce Type",
-          "ja": "Produce Type"
+          "ja": "プロデュースタイプ"
         },
         "description": {
           "zh": "Produce 类型",
           "en": "Produce Type",
-          "ja": "Produce Type"
+          "ja": "プロデュースタイプ"
         }
       },
       "topic": {
         "title": {
           "zh": "Kafka 主题",
           "en": "Kafka Topic",
-          "ja": "Kafka Topic"
+          "ja": "Kafka トピック"
         },
         "description": {
           "zh": "Kafka 主题",
           "en": "Kafka Topic",
-          "ja": "Kafka Topic"
+          "ja": "Kafka トピック"
         }
       },
       "strategy": {
         "title": {
           "zh": "Produce 策略",
           "en": "Produce Strategy",
-          "ja": "Produce Strategy"
+          "ja": "プロデュース戦略"
         },
         "description": {
           "zh": "Produce 策略",
           "en": "Produce Strategy",
-          "ja": "Produce Strategy"
+          "ja": "プロデュース戦略"
         }
       },
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
           "en": "Payload Template",
-          "ja": "Payload Template"
+          "ja": "ペイロードテンプレート"
         },
         "description": {
           "zh": "消息内容模板，支持变量。若使用空模板（默认），消息内容为 JSON 格式的所有字段",
           "en": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format",
-          "ja": "The payload template, variable interpolation is supported. If using empty template (default), then the payload will be all the available vars in JOSN format"
+          "ja": "メッセージコンテンツテンプレートは変数をサポートします。 空のテンプレート（デフォルト）を使用する場合、メッセージの内容はすべてJSON形式のフィールドです"
         }
       },
       "key": {
         "title": {
           "zh": "Strategy Key",
           "en": "Strategy Key",
-          "ja": "Strategy Key"
+          "ja": "戦略キー"
         },
         "description": {
           "zh": "Strategy Key, 仅在策略为 first_key_dispatch 时生效",
           "en": "Strategy Key, only take effect when strategy is first_key_dispatch",
-          "ja": "Strategy Key, only take effect when strategy is first_key_dispatch"
+          "ja": "戦略キー、戦略がfirst_key_dispatchの場合にのみ有効になります"
         }
       },
       "disk_cache": {
         "title": {
           "zh": "磁盘缓存",
           "en": "Disk Cache",
-          "ja": "Disk Cache"
+          "ja": "ディスクキャッシュ"
         },
         "description": {
           "zh": "当桥接断开时用于控制是否将消息缓存到本地磁盘队列上",
           "en": "The flag which determines whether messagescan be cached on local disk when bridge isdisconnected",
-          "ja": "The flag which determines whether messagescan be cached on local disk when bridge isdisconnected"
+          "ja": "ブリッジが切断されたときに、メッセージをローカルディスクキューにキャッシュするかどうかを制御するために使用されます"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }
@@ -1397,36 +1397,36 @@
     "title": {
       "zh": "保存数据到 Cassandra",
       "en": "Data to Cassandra",
-      "ja": "Data to Cassandra"
+      "ja": "Cassandraにデータを保存します"
     },
     "description": {
       "zh": "保存数据到 Cassandra 数据库",
       "en": "Store data to Cassandra",
-      "ja": "Store data to Cassandra"
+      "ja": "Cassandraにデータを保存します"
     },
     "params": {
       "sql": {
         "title": {
           "zh": "SQL 模板",
           "en": "SQL Template",
-          "ja": "SQL Template"
+          "ja": "SQLテンプレート"
         },
         "description": {
           "zh": "包含了占位符的 SQL 模板，用于插入或更新数据到 Cassandra 数据库",
           "en": "SQL Template with Placeholders for Inserting/Updating Data to Cassandra",
-          "ja": "SQL Template with Placeholders for Inserting/Updating Data to Cassandra"
+          "ja": "Cassandraにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
       "$resource": {
         "title": {
           "zh": "资源 ID",
           "en": "Resource ID",
-          "ja": "Resource ID"
+          "ja": "リソースID"
         },
         "description": {
           "zh": "给动作绑定一个资源",
           "en": "Bind a resource to this action",
-          "ja": "Bind a resource to this action"
+          "ja": "リソースをアクションにバインドします"
         }
       }
     }

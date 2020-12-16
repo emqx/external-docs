@@ -4,294 +4,294 @@
       "description": {
         "zh": "MQTT 连接/消息大小 GC 阈值",
         "en": "Force MQTT connection/session process GC after this number of messages | bytes passed through",
-        "ja": "Force MQTT connection/session process GC after this number of messages | bytes passed through"
+        "ja": "この数の メッセージ/バイト が通過した後、強制的にMQTT接続/セッションプロセスGCを実行します"
       }
     },
     "mountpoint": {
       "description": {
         "zh": "主题挂载点",
         "en": "Topic mount point",
-        "ja": "Topic mount point"
+        "ja": "トピックマウントポイント"
       }
     },
     "acl_nomatch": {
       "description": {
         "zh": "ACL 未命中时允许或拒绝通过验证",
         "en": "Allow or deny if no ACL rules matched",
-        "ja": "Allow or deny if no ACL rules matched"
+        "ja": "ACLルールが一致しない場合は許可/拒否します"
       }
     },
     "quota_conn_messages_routing": {
       "description": {
         "zh": "单个客户端消息转发次数的配额",
         "en": "Quota for the number of times a single client message is forwarded",
-        "ja": "Quota for the number of times a single client message is forwarded"
+        "ja": "単一のクライアントメッセージが転送される回数の割り当て"
       }
     },
     "upgrade_qos": {
       "description": {
         "zh": "根据订阅强制升级 QoS",
         "en": "Force to upgrade QoS according to subscription",
-        "ja": "Force to upgrade QoS according to subscription"
+        "ja": "サブスクリプションに従ってQoSを強制的にアップグレードします"
       }
     },
     "acl_deny_action": {
       "description": {
         "zh": "ACL 被拒绝时的处理动作",
         "en": "The action when acl check reject current operation",
-        "ja": "The action when acl check reject current operation"
+        "ja": "ACLが拒否された場合の処理​​アクション"
       }
     },
     "max_subscriptions": {
       "description": {
         "zh": "允许的最大订阅数，0 表示无限制",
         "en": "Maximum number of subscriptions allowed, 0 means no limit",
-        "ja": "Maximum number of subscriptions allowed, 0 means no limit"
+        "ja": "許可されるサブスクリプションの最大数。0は制限なしを意味します"
       }
     },
     "enable_flapping_detect": {
       "description": {
         "zh": "是否开启 flapping detect",
         "en": "Whether to turn on flapping detect",
-        "ja": "Whether to turn on flapping detect"
+        "ja": "flapping detectをオンにするかどうかを指定します"
       }
     },
     "max_clientid_len": {
       "description": {
         "zh": "MQTT 客户端 ID 的长度限制",
         "en": "Maximum length of MQTT clientid allowed",
-        "ja": "Maximum length of MQTT clientid allowed"
+        "ja": "MQTTクライアントIDの最大長さ"
       }
     },
     "await_rel_timeout": {
       "description": {
         "zh": "如果等待 pubrel 超时时间，超时将删除 QoS2 消息（client 发送到 broker）",
         "en": "await_rel_timeout",
-        "ja": "await_rel_timeout"
+        "ja": "pubrelがタイムアウト後にQoS2メッセージが削除されます（クライアント->ブローカー）"
       }
     },
     "server_keepalive": {
       "description": {
         "zh": "服务端指定的 Keepalive 时间",
         "en": "The Keepalive time specified by the server",
-        "ja": "The Keepalive time specified by the server"
+        "ja": "サーバーによって指定されたKeepalive時間"
       }
     },
     "bypass_auth_plugins": {
       "description": {
         "zh": "允许 zone 的客户端绕过身份验证步骤",
         "en": "Allow the zone's clients to bypass authentication step",
-        "ja": "Allow the zone's clients to bypass authentication step"
+        "ja": "zoneのクライアントが認証ステップをバイパスできるようにします"
       }
     },
     "max_topic_alias": {
       "description": {
         "zh": "最大主题别名数量，0 表示不支持主题别名",
         "en": "Maximum Topic Alias, 0 means no topic alias supported",
-        "ja": "Maximum Topic Alias, 0 means no topic alias supported"
+        "ja": "最大トピックエイリアス、0はトピックエイリアスがサポートされていないことを意味します"
       }
     },
     "mqueue_priorities": {
       "description": {
         "zh": "主题优先级",
         "en": "Topic priorities",
-        "ja": "Topic priorities"
+        "ja": "トピックの優先順位"
       }
     },
     "max_qos_allowed": {
       "description": {
         "zh": "最大 QoS",
         "en": "Maximum QoS allowed",
-        "ja": "Maximum QoS allowed"
+        "ja": "最大 QoS"
       }
     },
     "keepalive_backoff": {
       "description": {
         "zh": "MQTT keepalive 超时回退， keepalive * backoff * 2 时将断开连接",
         "en": "The backoff for MQTT keepalive timeout. The broker will kick a connection out until keepalive * backoff * 2 timeout",
-        "ja": "The backoff for MQTT keepalive timeout. The broker will kick a connection out until keepalive * backoff * 2 timeout"
+        "ja": "MQTT keepalive タイムアウトのバックオフ。ブローカーは、キープアライブ*バックオフ* 2タイムアウトまで接続を切断します。"
       }
     },
     "quota_overall_messages_routing": {
       "description": {
         "zh": "Zone 下面所有客户端消息转发次数的配额",
         "en": "Quota for the number of times all client messages are forwarded under Zone",
-        "ja": "Quota for the number of times all client messages are forwarded under Zone"
+        "ja": "ゾーンのすべてのクライアントメッセージの転送回数の割り当て"
       }
     },
     "allow_anonymous": {
       "description": {
         "zh": "如果未加载身份验证插件，则默认情况下允许匿名身份验证。建议在生产部署中禁用该选项！",
         "en": "Allow anonymous authentication by default if no auth plugins loaded. Disable the option in production deployment",
-        "ja": "Allow anonymous authentication by default if no auth plugins loaded. Disable the option in production deployment"
+        "ja": "認証プラグインがロードされていない場合、デフォルトで匿名認証が許可されます。実稼働環境では、このオプションを無効にすることをお勧めします"
       }
     },
     "max_mqueue_len": {
       "description": {
         "zh": "排队消息的最大长度，0 表示没有限制",
         "en": "Maximum queue length. Enqueued messages when persistent client disconnected, or inflight window is full. 0 means no limit",
-        "ja": "Maximum queue length. Enqueued messages when persistent client disconnected, or inflight window is full. 0 means no limit"
+        "ja": "キューに入っているメッセージの最大長さ。0は制限なしを意味します"
       }
     },
     "max_awaiting_rel": {
       "description": {
         "zh": "等待 PUBREL 的 QoS2 消息最大数据包数（client->broker），0 表示没有限制",
         "en": "Maximum QoS2 packets (Client -> Broker) awaiting PUBREL, 0 means no limit",
-        "ja": "Maximum QoS2 packets (Client -> Broker) awaiting PUBREL, 0 means no limit"
+        "ja": "PUBRELを待機している最大QoS2パケット（クライアント->ブローカー）、0は制限なしを意味します"
       }
     },
     "retry_interval": {
       "description": {
         "zh": "QoS 1/2 消息传递的重试间隔",
         "en": "retry_interval",
-        "ja": "retry_interval"
+        "ja": "QoS 1/2 メッセージ配信のリトライ間隔"
       }
     },
     "use_username_as_clientid": {
       "description": {
         "zh": "是否使用用户名替换客户端 ID",
         "en": "Whether use username replace clientid",
-        "ja": "Whether use username replace clientid"
+        "ja": "ユーザー名を使用してクライアントIDを置き換えるかどうかを指定します"
       }
     },
     "enable_ban": {
       "description": {
         "zh": "是否启用白名单检查",
         "en": "Enable ban check",
-        "ja": "Enable ban check"
+        "ja": "ホワイトリストチェックを有効にするかどうかを指定します"
       }
     },
     "mqueue_store_qos0": {
       "description": {
         "zh": "是否将 QoS0 的消息存储在队列中",
         "en": "Whether to enqueue QoS0 messages",
-        "ja": "Whether to enqueue QoS0 messages"
+        "ja": "QoS0メッセージをキューに保存するかどうかを指定します"
       }
     },
     "idle_timeout": {
       "description": {
         "zh": "MQTT 连接空闲超时",
         "en": "Idle timeout of the MQTT connections",
-        "ja": "Idle timeout of the MQTT connections"
+        "ja": "MQTT接続のアイドルタイムアウト"
       }
     },
     "response_information": {
       "description": {
         "zh": "响应信息",
         "en": "Response information",
-        "ja": "Response information"
+        "ja": "応答メッセージ"
       }
     },
     "retain_available": {
       "description": {
         "zh": "是否启用 Retain 消息",
         "en": "Whether the Server supports MQTT retained messages",
-        "ja": "Whether the Server supports MQTT retained messages"
+        "ja": "サーバーがMQTT保持メッセージをサポートするかどうかを指定します"
       }
     },
     "ignore_loop_deliver": {
       "description": {
         "zh": "是否忽略消息循环传递，常用于消息桥接",
         "en": "Whether to ignore loop delivery of messages (for MQTT v3.1.1)",
-        "ja": "Whether to ignore loop delivery of messages (for MQTT v3.1.1)"
+        "ja": "メッセージのループ配信を無視するかどうかを指定します（MQTT v3.1.1）"
       }
     },
     "force_shutdown_policy": {
       "description": {
         "zh": "进程消息队列长度 ｜ 内存字节",
         "en": "Process message queue length | Memory byte",
-        "ja": "Process message queue length | Memory byte"
+        "ja": "プロセスメッセージキューの長さ|メモリバイト"
       }
     },
     "max_inflight": {
       "description": {
         "zh": "保存的已传递但未确认的 QoS1/2 消息的飞行窗口的最大值",
         "en": "Maximum size of the Inflight Window storing QoS1/2 messages delivered but unacked",
-        "ja": "Maximum size of the Inflight Window storing QoS1/2 messages delivered but unacked"
+        "ja": "配信されたが確認されていないInflightWindowストレージQoS1/2メッセージの最大サイズ"
       }
     },
     "session_expiry_interval": {
       "description": {
         "zh": "会话到期时长 MQTT V3.1.1",
         "en": "Default session expiry interval for MQTT V3.1.1 connections",
-        "ja": "Default session expiry interval for MQTT V3.1.1 connections"
+        "ja": "セッションの有効期限（MQTT v3.1.1）"
       }
     },
     "enable_stats": {
       "description": {
         "zh": "启用连接状态统计，会降低部分性能",
         "en": "Enable per connection stats",
-        "ja": "Enable per connection stats"
+        "ja": "接続ステータス統計を有効にすると、パフォーマンスが低下します"
       }
     },
     "wildcard_subscription": {
       "description": {
         "zh": "是否启用通配符订阅",
         "en": "Whether the Server supports MQTT Wildcard Subscriptions",
-        "ja": "Whether the Server supports MQTT Wildcard Subscriptions"
+        "ja": "ワイルドカードサブスクリプションを有効にするかどうかを指定します"
       }
     },
     "enable_acl": {
       "description": {
         "zh": "是否启用 ACL 检查",
         "en": "Enable ACL check",
-        "ja": "Enable ACL check"
+        "ja": "ACLチェックを有効にするかどうかを指定します"
       }
     },
     "shared_subscription": {
       "description": {
         "zh": "是否启用共享订阅",
         "en": "Whether the Server supports MQTT Shared Subscriptions",
-        "ja": "Whether the Server supports MQTT Shared Subscriptions"
+        "ja": "共有サブスクリプションを有効にするかどうかを指定します"
       }
     },
     "mqueue_default_priority": {
       "description": {
         "zh": "对于不匹配优先级表的主题，默认为最高优先级",
         "en": "Default to highest priority for topics not matching priority table",
-        "ja": "Default to highest priority for topics not matching priority table"
+        "ja": "優先度テーブルと一致しないトピックの場合、デフォルトが最高の優先度です"
       }
     },
     "strict_mode": {
       "description": {
         "zh": "是否在严格模式下解析 MQTT 帧",
         "en": "Whether to parse the MQTT frame in strict mode",
-        "ja": "Whether to parse the MQTT frame in strict mode"
+        "ja": "厳密モードでMQTTフレームを解析するかどうかを指定します"
       }
     },
     "rate_limit_conn_bytes_in": {
       "description": {
         "zh": "客户端字节流入速率限制",
         "en": "Client byte inflow rate limit",
-        "ja": "Client byte inflow rate limit"
+        "ja": "クライアントバイトの流入率の上限"
       }
     },
     "max_topic_levels": {
       "description": {
         "zh": "主题层级限制，0 表示没有限制层级",
         "en": "Maximum topic levels allowed, 0 means no limit",
-        "ja": "Maximum topic levels allowed, 0 means no limit"
+        "ja": "許可される最大トピックレベル、0は制限なしを意味します"
       }
     },
     "rate_limit_conn_messages_in": {
       "description": {
         "zh": "客户端 Publish 消息流入速率限制",
         "en": "Client Publish message inflow rate limit",
-        "ja": "Client Publish message inflow rate limit"
+        "ja": "クライアント パブリッシュ メッセージの流入率の上限"
       }
     },
     "max_packet_size": {
       "description": {
         "zh": "最大 MQTT 数据包大小",
         "en": "Maximum MQTT packet size allowed",
-        "ja": "Maximum MQTT packet size allowed"
+        "ja": "MQTTデータパケットの最大サイズ"
       }
     },
     "publish_limit": {
       "description": {
         "zh": "发布限制",
         "en": "Publish limit",
-        "ja": "Publish limit"
+        "ja": "パブリッシュ制限"
       }
     }
   },
@@ -300,35 +300,35 @@
       "description": {
         "zh": "是否验证MQTT协议头",
         "en": "Whether to validate the protocol header",
-        "ja": "Whether to validate the protocol header"
+        "ja": "MQTTプロトコルヘッダーを検証するかどうかを指定します"
       }
     },
     "mqtt_piggyback": {
       "description": {
         "zh": "WebSocket消息是否允许包含多个MQTT包",
         "en": "Whether a WebSocket message is allowed to contain multiple MQTT packets",
-        "ja": "Whether a WebSocket message is allowed to contain multiple MQTT packets"
+        "ja": "WebSocketメッセージに複数のMQTTパケットを含めることが許可されているかどうかを指定します"
       }
     },
     "mqtt_path": {
       "description": {
         "zh": "mqtt_path",
         "en": "mqtt_path",
-        "ja": "mqtt_path"
+        "ja": "mqttパス"
       }
     },
     "max_frame_size": {
       "description": {
         "zh": "Websocket 报文大小",
         "en": "Websocket Frame size",
-        "ja": "Websocket Frame size"
+        "ja": "Websocketフレームサイズ"
       }
     },
     "idle_timeout": {
       "description": {
         "zh": "MQTT连接的延迟超时",
         "en": "Idle timeout of the MQTT connection.",
-        "ja": "Idle timeout of the MQTT connection."
+        "ja": "MQTT接続のアイドルタイムアウト"
       }
     }
   },
@@ -337,112 +337,112 @@
       "description": {
         "zh": "使用Zone的名字",
         "en": "zone",
-        "ja": "zone"
+        "ja": "ゾーン"
       }
     },
     "sndbuf": {
       "description": {
         "zh": "Socket 发送缓冲区大小 (操作系统内核级)",
         "en": "The send buffer of socket (os kernel)",
-        "ja": "The send buffer of socket (os kernel)"
+        "ja": "ソケットの送信バッファー（osカーネル）"
       }
     },
     "send_timeout_close": {
       "description": {
         "zh": "关闭发送超时的 TCP 连接",
         "en": "Close the TCP connection if send timeout",
-        "ja": "Close the TCP connection if send timeout"
+        "ja": "送信タイムアウトの場合、TCP接続を閉じます"
       }
     },
     "send_timeout": {
       "description": {
         "zh": "TCP 报文发送超时时间",
         "en": "The TCP send timeout",
-        "ja": "The TCP send timeout"
+        "ja": "TCPメッセージ送信タイムアウト時間"
       }
     },
     "reuseaddr": {
       "description": {
         "zh": "设置 Socket 的 SO_REUSEADDR 标识",
         "en": "The SO_REUSEADDR flag for listener",
-        "ja": "The SO_REUSEADDR flag for listener"
+        "ja": "リスナーのSO_REUSEADDRフラグ"
       }
     },
     "recbuf": {
       "description": {
         "zh": "Socket 接收缓冲区大小 (操作系统内核级)",
         "en": "The receive buffer of socket (os kernel)",
-        "ja": "The receive buffer of socket (os kernel)"
+        "ja": "ソケットの受信バッファー（osカーネル）"
       }
     },
     "proxy_protocol_timeout": {
       "description": {
         "zh": "处理 Proxy Protocol 的超时时间，如果超过该时间未收到 Proxy Protocol 的报文，EMQ X 将关闭该 TCP 连接",
         "en": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout",
-        "ja": "The timeout for accepting proxy protocol, EMQ X will close the TCP connection if no proxy protocol packet recevied within the timeout"
+        "ja": "プロキシプロトコルのタイムアウト時間。この時間以降にプロキシプロトコルメッセージが受信されない場合、TCP接続を閉じます。"
       }
     },
     "proxy_protocol": {
       "description": {
         "zh": "开启 Proxy Protocol V1/2，如果 EMQ X 集群部署在 HAProxy 或 Nginx 后",
         "en": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx",
-        "ja": "Enable the Proxy Protocol V1/2 if the EMQ X cluster is deployed behind HAProxy or Nginx"
+        "ja": "EMQ XクラスターがHAProxyまたはNginxにデプロイされている場合、Proxy Protocol V1/2を有効にします"
       }
     },
     "peer_cert_as_username": {
       "description": {
         "zh": "启用基于X.509证书的身份验证选项，EMQX将使用证书的通用名称作为MQTT的用户名。",
         "en": "Enable the option for X.509 certificate based authentication.EMQX will use the common name of certificate as MQTT username.",
-        "ja": "Enable the option for X.509 certificate based authentication.EMQX will use the common name of certificate as MQTT username."
+        "ja": "X.509証明書ベースの認証のオプションを有効にします。EMQXは証明書の共通名をMQTTユーザー名として使用します。"
       }
     },
     "nodelay": {
       "description": {
         "zh": "设置 TCP_NODELAY 标识",
         "en": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending",
-        "ja": "The TCP_NODELAY flag for MQTT connections. Small amounts of data are sent immediately if the option is enabled The TCP backlog defines the maximum length that the queue of pending"
+        "ja": "MQTT接続のTCP_NODELAYフラグ。オプションが有効になっている場合、少量のデータがすぐに送信できます。TCPバックログは、保留中のキューの最大長を定義します。"
       }
     },
     "max_connections": {
       "description": {
         "zh": "该监听器允许的最大连接数",
         "en": "The maximum connections of listener",
-        "ja": "The maximum connections of listener"
+        "ja": "リスナーの最大接続数"
       }
     },
     "max_conn_rate": {
       "description": {
         "zh": "该监听器每秒允许的最大连接个数",
         "en": "Allowed connections per second",
-        "ja": "Allowed connections per second"
+        "ja": "1秒あたりに許可された接続数"
       }
     },
     "listener": {
       "description": {
         "zh": "监听地址",
         "en": "Listener",
-        "ja": "Listener"
+        "ja": "リスナー"
       }
     },
     "backlog": {
       "description": {
         "zh": "TCP 连接队列最大长度",
         "en": "The TCP backlog defines the maximum length that the queue of pending connections can grow to",
-        "ja": "The TCP backlog defines the maximum length that the queue of pending connections can grow to"
+        "ja": "TCP接続キューの最大長さ"
       }
     },
     "active_n": {
       "description": {
         "zh": "设置 Socket 的 {active, N} 选项",
         "en": "Specify the {active, N} option for the Socket",
-        "ja": "Specify the {active, N} option for the Socket"
+        "ja": "ソケットの{active、N}オプションを設定します"
       }
     },
     "acceptors": {
       "description": {
         "zh": "接收器数量，执行 accept 操作的进程数量，仅对 TCP/SSL/DTLS Socket 有效",
         "en": "The number of acceoptors, It just works for TCP/SSL/DTLS socket",
-        "ja": "The number of acceoptors, It just works for TCP/SSL/DTLS socket"
+        "ja": "レシーバーの数、accept操作を実行するプロセスの数、TCP/SSL/DTLSソケットにのみ有効"
       }
     }
   },
@@ -451,63 +451,63 @@
       "description": {
         "zh": "是否开启双认证",
         "en": "Enable Two-Way SSL",
-        "ja": "Enable Two-Way SSL"
+        "ja": "双方向SSLを有効にするかどうかを指定します"
       }
     },
     "tls_versions": {
       "description": {
         "zh": "TLS 版本",
         "en": "TLS Version",
-        "ja": "TLS Version"
+        "ja": "TLSバージョン"
       }
     },
     "secure_renegotiate": {
       "description": {
         "zh": "指定是否拒绝不符合RFC 5746的重新协商尝试",
         "en": "Specifies if to reject renegotiation attempt that does not live up to RFC 5746",
-        "ja": "Specifies if to reject renegotiation attempt that does not live up to RFC 5746"
+        "ja": "RFC5746に準拠していない再ネゴシエーションの試行を拒否するかどうかを指定します"
       }
     },
     "reuse_sessions": {
       "description": {
         "zh": "是否开启SSL会话重用",
         "en": "Reuse Sessions",
-        "ja": "Reuse Sessions"
+        "ja": "SSLセッションの再利用を有効にするかどうかを指定します"
       }
     },
     "psk_ciphers": {
       "description": {
         "zh": "加密套件",
         "en": "Ciphers",
-        "ja": "Ciphers"
+        "ja": "暗号スイート"
       }
     },
     "keyfile": {
       "description": {
         "zh": "秘钥文件",
         "en": "The Key file",
-        "ja": "The Key file"
+        "ja": "キーファイル"
       }
     },
     "honor_cipher_order": {
       "description": {
         "zh": "如果设置为on，则使用服务器偏好来选择密码。如果设置为off（默认值），则使用客户端偏好",
         "en": "If set to on, use the server preference for cipher selection. If set to off (the default), use the client preference.",
-        "ja": "If set to on, use the server preference for cipher selection. If set to off (the default), use the client preference."
+        "ja": "オンに設定されている場合、サーバー設定を使用してパスワードを選択します。オフ（デフォルト）に設定すると、クライアント設定が使用されます"
       }
     },
     "handshake_timeout": {
       "description": {
         "zh": "握手超时时间",
         "en": "Handshake Timeout",
-        "ja": "Handshake Timeout"
+        "ja": "ハンドシェイクタイムアウト時間"
       }
     },
     "fail_if_no_peer_cert": {
       "description": {
         "zh": "关闭无证书客户端连接",
         "en": "fail_if_no_peer_cert",
-        "ja": "fail_if_no_peer_cert"
+        "ja": "証明書なしでクライアント接続を禁止します"
       }
     },
     "dhfile": {
@@ -521,21 +521,21 @@
       "description": {
         "zh": "加密套件",
         "en": "Ciphers",
-        "ja": "Ciphers"
+        "ja": "暗号スイート"
       }
     },
     "certfile": {
       "description": {
         "zh": "证书文件",
         "en": "The Certfile file",
-        "ja": "The Certfile file"
+        "ja": "証明書ファイル"
       }
     },
     "cacertfile": {
       "description": {
         "zh": "CA证书文件",
         "en": "The CA certificate file",
-        "ja": "The CA certificate file"
+        "ja": "CA証明書ファイル"
       }
     }
   }
