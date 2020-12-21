@@ -642,22 +642,22 @@ export default {
   },
   fillTemplate: {
     zh: '填充模板',
-    ja: '待翻译',
+    ja: 'ライブテンプレート',
     en: 'Fill Template',
   },
   strTemplate: {
     zh: '字符模板',
-    ja: '待翻译',
+    ja: 'テンプレート',
     en: 'Template',
   },
   templateOutput: {
     zh: '模板输出',
-    ja: '待翻译',
+    ja: 'リザルト',
     en: 'Result',
   },
   sqlTestFirst: {
     zh: '请先正确完成 SQL 测试',
-    ja: '待翻译',
+    ja: 'SQLテストを正しく完了してください',
     en: 'Please complete the SQL test correctly first',
   },
 }
