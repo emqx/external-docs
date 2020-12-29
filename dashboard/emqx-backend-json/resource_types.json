@@ -131,6 +131,18 @@
           "en": "If Re-try when the Connection Lost",
           "ja": "Cassandra接続が失われたときに再試行します"
         }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
       }
     }
   },
@@ -539,6 +551,18 @@
           "en": "The number of data points to collect in a batch",
           "ja": "バッチで収集されたデータポイントの数"
         }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
       }
     }
   },
@@ -725,6 +749,66 @@
           "en": "Compression",
           "ja": "圧縮"
         }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": ""
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "SSL Certificate File",
+          "ja": ""
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "キーファイル"
+        },
+        "description": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "キーファイル"
+        }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
       }
     }
   },
@@ -810,7 +894,7 @@
         "description": {
           "zh": "连接池大小",
           "en": "MQTT Connection Pool Size",
-          "ja": "MQTT 接続プールのサイズ
+          "ja": "MQTT 接続プールのサイズ"
         }
       },
       "password": {
@@ -1139,6 +1223,18 @@
           "en": "Auth source for connecting to MongoDB",
           "ja": "ユーザーAuth Source"
         }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
       }
     }
   },
@@ -1310,6 +1406,18 @@
           "en": "Auth source for connecting to MongoDB",
           "ja": "ユーザーAuth Source"
         }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
       }
     }
   },
@@ -1469,6 +1577,18 @@
           "en": "Auth source for connecting to MongoDB",
           "ja": "ユーザーAuth Source"
         }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
       }
     }
   },
@@ -1593,30 +1713,6 @@
           "ja": "MYSQL ssl CA証明書"
         }
       },
-      "batch_time": {
-        "title": {
-          "zh": "批量写入间隔(毫秒)",
-          "en": "Batch Time",
-          "ja": "バッチ書き込み間隔（ミリ秒）"
-        },
-        "description": {
-          "zh": "MySQL 批量写入间隔(毫秒)",
-          "en": "Time of MySQL batch insert SQL interval(millisecond)",
-          "ja": "MySQL バッチ書き込み間隔（ミリ秒）"
-        }
-      },
-      "batch_size": {
-        "title": {
-          "zh": "批量写入大小",
-          "en": "Batch Size",
-          "ja": "バッチサイズ  "
-        },
-        "description": {
-          "zh": "MySQL 批量写入大小",
-          "en": "The size of MySQL batch insert SQL",
-          "ja": "MySQL バッチ書き込みサイズ"
-        }
-      },
       "auto_reconnect": {
         "title": {
           "zh": "是否重连",
@@ -1627,6 +1723,18 @@
           "zh": "MySQL 连接断开时是否重连",
           "en": "If re-try when the connection lost",
           "ja": "MySQL接続が失われたときに再試行します"
+        }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
         }
       }
     }
@@ -1904,6 +2012,18 @@
           "en": "If Re-try when the Connection Lost",
           "ja": "PostgreSQL接続が失われたときに再試行します"
         }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
       }
     }
   },
@@ -2149,6 +2269,54 @@
           "en": "Redis Database",
           "ja": "Redis データベース"
         }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": ""
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "SSL Certificate File",
+          "ja": ""
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "キーファイル"
+        },
+        "description": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "キーファイル"
+        }
       }
     }
   },
@@ -2236,6 +2404,54 @@
           "en": "If Re-try when the Connection Lost",
           "ja": "Redis接続が失われたときに再試行します"
         }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": ""
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "SSL Certificate File",
+          "ja": ""
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "キーファイル"
+        },
+        "description": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "キーファイル"
+        }
       }
     }
   },
@@ -2310,6 +2526,66 @@
           "zh": "Redis 连接断开时是否重连",
           "en": "If Re-try when the Connection Lost",
           "ja": "Redis接続が失われたときに再試行します"
+        }
+      },
+      "ssl": {
+        "title": {
+          "zh": "开启 SSL",
+          "en": "Enable SSL",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否开启 SSL",
+          "en": "Enable SSL",
+          "ja": ""
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "证书文件",
+          "en": "Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "SSL 证书文件",
+          "en": "SSL Certificate File",
+          "ja": ""
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "キーファイル"
+        },
+        "description": {
+          "zh": "私钥文件",
+          "en": "Key File",
+          "ja": "キーファイル"
+        }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
         }
       }
     }
@@ -2453,16 +2729,16 @@
     }
   },
   {
-    "name": "timescale",
+    "name": "backend_timescale",
     "title": {
-      "zh": "Timescale",
-      "en": "Timescale",
-      "ja": "Timescale"
+      "zh": "TimescaleDB",
+      "en": "TimescaleDB",
+      "ja": "TimescaleDB"
     },
     "description": {
-      "zh": "Timescale",
-      "en": "Timescale",
-      "ja": "Timescale"
+      "zh": "TimescaleDB",
+      "en": "TimescaleDB",
+      "ja": "TimescaleDB"
     },
     "params": {
       "username": {
@@ -2584,6 +2860,18 @@
           "en": "If Re-try when the Connection Lost",
           "ja": "Timescale接続が失われたときに再試行します"
         }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
       }
     }
   },
@@ -2634,6 +2922,299 @@
           "zh": "请求头",
           "en": "Request Header",
           "ja": "リクエストヘッダー"
+        }
+      },
+      "request_timeout": {
+        "title": {
+          "zh": "请求超时时间时间",
+          "en": "Request Timeout",
+          "ja": ""
+        },
+        "description": {
+          "zh": "请求超时时间",
+          "en": "Request Timeout In Seconds",
+          "ja": ""
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size",
+          "ja": ""
+        },
+        "description": {
+          "zh": "连接池大小",
+          "en": "Connection Pool",
+          "ja": ""
+        }
+      },
+      "connect_timeout": {
+        "title": {
+          "zh": "连接超时时间",
+          "en": "Connect Timeout",
+          "ja": ""
+        },
+        "description": {
+          "zh": "连接超时时间",
+          "en": "Connect Timeout In Seconds",
+          "ja": ""
+        }
+      },
+      "certfile": {
+        "title": {
+          "zh": "SSL Cert",
+          "en": "SSL Cert",
+          "ja": ""
+        },
+        "description": {
+          "zh": "SSL 证书",
+          "en": "Your ssl certfile",
+          "ja": ""
+        }
+      },
+      "cacertfile": {
+        "title": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate File",
+          "ja": ""
+        },
+        "description": {
+          "zh": "CA 证书文件",
+          "en": "CA Certificate file",
+          "ja": ""
+        }
+      },
+      "keyfile": {
+        "title": {
+          "zh": "SSL Key",
+          "en": "SSL Key",
+          "ja": ""
+        },
+        "description": {
+          "zh": "SSL 私钥",
+          "en": "Your ssl keyfile",
+          "ja": ""
+        }
+      },
+      "verify": {
+        "title": {
+          "zh": "校验服务器证书",
+          "en": "Verify Server Certfile",
+          "ja": ""
+        },
+        "description": {
+          "zh": "是否校验服务器证书。 默认客户端不会去校验服务器的证书，如果需要校验，请设置成true。",
+          "en": "Whether to verify the server certificate. By default, the client will not verify the server's certificate. If verification is required, please set it to true.",
+          "ja": ""
+        }
+      }
+    }
+  },
+  {
+    "name": "backend_dolphindb",
+    "title": {
+      "zh": "DolphinDB",
+      "en": "DolphinDB"
+    },
+    "description": {
+      "zh": "DolphinDB 数据库",
+      "en": "DolphinDB Database"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "DolphinDB 用户名",
+          "en": "DolphinDB User Name"
+        },
+        "description": {
+          "zh": "DolphinDB 用户名",
+          "en": "Username for connecting to DolphinDB"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "DolphinDB 服务器",
+          "en": "DolphinDB Server"
+        },
+        "description": {
+          "zh": "DolphinDB 服务器地址",
+          "en": "DolphinDB IP address or hostname and port"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size"
+        },
+        "description": {
+          "zh": "DolphinDB 连接池大小",
+          "en": "The size of connection pool for DolphinDB"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "DolphinDB 密码",
+          "en": "DolphinDB Password"
+        },
+        "description": {
+          "zh": "DolphinDB 密码",
+          "en": "Password for connecting to DolphinDB"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "DolphinDB 连接断开时是否重连",
+          "en": "If re-try when the connection lost"
+        }
+      }
+    }
+  },
+  {
+    "title": {
+      "zh": "Microsoft SQL Server",
+      "en": "Microsoft SQL Server"
+    },
+    "params": {
+      "username": {
+        "title": {
+          "zh": "SQL Server 用户名",
+          "en": "SQL Server User"
+        },
+        "description": {
+          "zh": "SQL Server 用户名",
+          "en": "User for connecting to SQL Server"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "Microsoft SQL 服务器",
+          "en": "Microsoft SQL Server"
+        },
+        "description": {
+          "zh": "Microsoft SQL Server 服务器地址",
+          "en": "Microsoft SQL Server IP address or hostname and port"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size"
+        },
+        "description": {
+          "zh": "SQL Server 连接池大小",
+          "en": "Size of SQL Server Connection Pool"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "SQL Server 密码",
+          "en": "SQL Server Password"
+        },
+        "description": {
+          "zh": "SQL Server 密码",
+          "en": "Key for connecting to SQL Server"
+        }
+      },
+      "driver": {
+        "title": {
+          "zh": "驱动名称",
+          "en": "Driver Name"
+        },
+        "description": {
+          "zh": "驱动名称",
+          "en": "Driver Name"
+        }
+      },
+      "database": {
+        "title": {
+          "zh": "SQL Server 数据库名",
+          "en": "SQL Server Database"
+        },
+        "description": {
+          "zh": "SQL Server 数据库名",
+          "en": "Database name for connecting to SQL Server"
+        }
+      }
+    },
+    "name": "backend_sqlserver",
+    "description": {
+      "zh": "Microsoft SQL Server",
+      "en": "Microsoft SQL Server"
+    }
+  },
+  {
+    "name": "backend_oracle",
+    "title": {
+      "zh": "Oracle Database",
+      "en": "Oracle Database"
+    },
+    "description": {
+      "zh": "Oracle Database 数据库",
+      "en": "Oracle Database Database"
+    },
+    "params": {
+      "user": {
+        "title": {
+          "zh": "Oracle Database 用户",
+          "en": "Oracle Database User"
+        },
+        "description": {
+          "zh": "Oracle Database 用户",
+          "en": "User for Oracle Database"
+        }
+      },
+      "sid": {
+        "title": {
+          "zh": "Oracle Database Sid",
+          "en": "Oracle Database Sid"
+        },
+        "description": {
+          "zh": "Oracle Database Sid 名称",
+          "en": "Sid for Oracle Database"
+        }
+      },
+      "server": {
+        "title": {
+          "zh": "Oracle Database 服务器",
+          "en": "Oracle Database Server"
+        },
+        "description": {
+          "zh": "Oracle Database 服务器地址",
+          "en": "Oracle Database Server Address"
+        }
+      },
+      "pool_size": {
+        "title": {
+          "zh": "连接池大小",
+          "en": "Pool Size"
+        },
+        "description": {
+          "zh": "Oracle Database 连接池大小",
+          "en": "The size of connection pool for Oracle Database"
+        }
+      },
+      "password": {
+        "title": {
+          "zh": "Oracle Database 密码",
+          "en": "Oracle Database Password"
+        },
+        "description": {
+          "zh": "Oracle Database 密码",
+          "en": "Password for Oracle Database"
+        }
+      },
+      "auto_reconnect": {
+        "title": {
+          "zh": "是否重连",
+          "en": "Enable Reconnect"
+        },
+        "description": {
+          "zh": "Oracle Database 连接断开时是否重连",
+          "en": "If re-try when the connection lost"
         }
       }
     }
