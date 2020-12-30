@@ -51,6 +51,61 @@
           "ja": "TimescaleDBにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
+      "enable_batch": {
+        "title": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "description": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "items": {
+          "true": {
+            "sync_timeout": {
+              "title": {
+                "zh": "调用超时时间(ms)",
+                "en": "Call Timeout"
+              },
+              "description": {
+                "zh": "以同步方式执行动作的超时时间。按毫秒计",
+                "en": "Timeout in milliseconds for performing actions in a synchronized manner"
+              }
+            },
+            "insert_mode": {
+              "title": {
+                "zh": "同步或者异步插入",
+                "en": "Sync or Async INSERT"
+              },
+              "description": {
+                "zh": "同步或者异步执行 INSERT 语句",
+                "en": "Sync or async INSERT to DB"
+              }
+            },
+            "batch_time": {
+              "title": {
+                "zh": "最大批量间隔(ms)",
+                "en": "Max Batch Interval"
+              },
+              "description": {
+                "zh": "两次(批量)请求之间最大的等待间隔。按毫秒计",
+                "en": "Maximum interval in milliseconds that is allowed between two successive (batch) request"
+              }
+            },
+            "batch_size": {
+              "title": {
+                "zh": "最大批量数",
+                "en": "Max Batch Insert Count"
+              },
+              "description": {
+                "zh": "单次批量请求可以发送的最大 INSERT SQL 条目",
+                "en": "Maximum number of INSERT SQL clauses that can be sent in a single request"
+              }
+            }
+          },
+          "false": {}
+        }
+      },
       "$resource": {
         "title": {
           "zh": "资源 ID",
@@ -124,6 +179,16 @@
           "zh": "RabbitMQ Exchange",
           "en": "RabbitMQ Exchange",
           "ja": "RabbitMQ Exchange"
+        }
+      },
+      "durable": {
+        "title": {
+          "zh": "RabbitMQ Exchange Durable",
+          "en": "RabbitMQ Exchange Durable"
+        },
+        "description": {
+          "zh": "RabbitMQ Exchange Durable",
+          "en": "RabbitMQ Exchange Durable"
         }
       },
       "$resource": {
@@ -444,6 +509,61 @@
           "ja": "MySQLにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
+      "enable_batch": {
+        "title": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "description": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "items": {
+          "true": {
+            "sync_timeout": {
+              "title": {
+                "zh": "调用超时时间(ms)",
+                "en": "Call Timeout"
+              },
+              "description": {
+                "zh": "以同步方式执行动作的超时时间。按毫秒计",
+                "en": "Timeout in milliseconds for performing actions in a synchronized manner"
+              }
+            },
+            "insert_mode": {
+              "title": {
+                "zh": "同步或者异步插入",
+                "en": "Sync or Async INSERT"
+              },
+              "description": {
+                "zh": "同步或者异步执行 INSERT 语句",
+                "en": "Sync or async INSERT to DB"
+              }
+            },
+            "batch_time": {
+              "title": {
+                "zh": "最大批量间隔(ms)",
+                "en": "Max Batch Interval"
+              },
+              "description": {
+                "zh": "两次(批量)请求之间最大的等待间隔。按毫秒计",
+                "en": "Maximum interval in milliseconds that is allowed between two successive (batch) request"
+              }
+            },
+            "batch_size": {
+              "title": {
+                "zh": "最大批量数",
+                "en": "Max Batch Insert Count"
+              },
+              "description": {
+                "zh": "单次批量请求可以发送的最大 INSERT SQL 条目",
+                "en": "Maximum number of INSERT SQL clauses that can be sent in a single request"
+              }
+            }
+          },
+          "false": {}
+        }
+      },
       "$resource": {
         "title": {
           "zh": "资源 ID",
@@ -481,6 +601,72 @@
           "zh": "包含了占位符的 SQL 模板，用于插入或更新数据到 PostgreSQL 数据库",
           "en": "SQL Template with Placeholders for Inserting/Updating Data to PostgreSQL",
           "ja": "PostgreSQLにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
+        }
+      },
+      "enable_batch": {
+        "title": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "description": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "items": {
+          "true": {
+            "sync_timeout": {
+              "title": {
+                "zh": "调用超时时间(ms)",
+                "en": "Call Timeout"
+              },
+              "description": {
+                "zh": "以同步方式执行动作的超时时间。按毫秒计",
+                "en": "Timeout in milliseconds for performing actions in a synchronized manner"
+              }
+            },
+            "insert_mode": {
+              "title": {
+                "zh": "同步或者异步插入",
+                "en": "Sync or Async INSERT"
+              },
+              "description": {
+                "zh": "同步或者异步执行 INSERT 语句",
+                "en": "Sync or async INSERT to DB"
+              }
+            },
+            "batch_time": {
+              "title": {
+                "zh": "最大批量间隔(ms)",
+                "en": "Max Batch Interval"
+              },
+              "description": {
+                "zh": "两次(批量)请求之间最大的等待间隔。按毫秒计",
+                "en": "Maximum interval in milliseconds that is allowed between two successive (batch) request"
+              }
+            },
+            "batch_size": {
+              "title": {
+                "zh": "最大批量数",
+                "en": "Max Batch Insert Count"
+              },
+              "description": {
+                "zh": "单次批量请求可以发送的最大 INSERT SQL 条目",
+                "en": "Maximum number of INSERT SQL clauses that can be sent in a single request"
+              }
+            }
+          },
+          "false": {
+            "sync_timeout": {
+              "title": {
+                "zh": "调用超时时间(ms)",
+                "en": "Call Timeout"
+              },
+              "description": {
+                "zh": "以同步方式执行动作的超时时间。按毫秒计",
+                "en": "Timeout in milliseconds for performing actions in a synchronized manner"
+              }
+            }
+          }
         }
       },
       "$resource": {
@@ -1126,6 +1312,61 @@
           "ja": "TDengineにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
         }
       },
+      "enable_batch": {
+        "title": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "description": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "items": {
+          "true": {
+            "sync_timeout": {
+              "title": {
+                "zh": "调用超时时间(ms)",
+                "en": "Call Timeout"
+              },
+              "description": {
+                "zh": "以同步方式执行动作的超时时间。按毫秒计",
+                "en": "Timeout in milliseconds for performing actions in a synchronized manner"
+              }
+            },
+            "insert_mode": {
+              "title": {
+                "zh": "同步或者异步插入",
+                "en": "Sync or Async INSERT"
+              },
+              "description": {
+                "zh": "同步或者异步执行 INSERT 语句",
+                "en": "Sync or async INSERT to DB"
+              }
+            },
+            "batch_time": {
+              "title": {
+                "zh": "最大批量间隔(ms)",
+                "en": "Max Batch Interval"
+              },
+              "description": {
+                "zh": "两次(批量)请求之间最大的等待间隔。按毫秒计",
+                "en": "Maximum interval in milliseconds that is allowed between two successive (batch) request"
+              }
+            },
+            "batch_size": {
+              "title": {
+                "zh": "最大批量数",
+                "en": "Max Batch Insert Count"
+              },
+              "description": {
+                "zh": "单次批量请求可以发送的最大 INSERT SQL 条目",
+                "en": "Maximum number of INSERT SQL clauses that can be sent in a single request"
+              }
+            }
+          },
+          "false": {}
+        }
+      },
       "$resource": {
         "title": {
           "zh": "资源 ID",
@@ -1163,6 +1404,61 @@
           "zh": "包含了占位符的 SQL 模板，用以插入或更新数据到 ClickHouse 数据库",
           "en": "SQL template with placeholders for inserting/updating data to ClickHouse",
           "ja": "ClickHouseにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
+        }
+      },
+      "enable_batch": {
+        "title": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "description": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "items": {
+          "true": {
+            "sync_timeout": {
+              "title": {
+                "zh": "调用超时时间(ms)",
+                "en": "Call Timeout"
+              },
+              "description": {
+                "zh": "以同步方式执行动作的超时时间。按毫秒计",
+                "en": "Timeout in milliseconds for performing actions in a synchronized manner"
+              }
+            },
+            "insert_mode": {
+              "title": {
+                "zh": "同步或者异步插入",
+                "en": "Sync or Async INSERT"
+              },
+              "description": {
+                "zh": "同步或者异步执行 INSERT 语句",
+                "en": "Sync or async INSERT to DB"
+              }
+            },
+            "batch_time": {
+              "title": {
+                "zh": "最大批量间隔(ms)",
+                "en": "Max Batch Interval"
+              },
+              "description": {
+                "zh": "两次(批量)请求之间最大的等待间隔。按毫秒计",
+                "en": "Maximum interval in milliseconds that is allowed between two successive (batch) request"
+              }
+            },
+            "batch_size": {
+              "title": {
+                "zh": "最大批量数",
+                "en": "Max Batch Insert Count"
+              },
+              "description": {
+                "zh": "单次批量请求可以发送的最大 INSERT SQL 条目",
+                "en": "Maximum number of INSERT SQL clauses that can be sent in a single request"
+              }
+            }
+          },
+          "false": {}
         }
       },
       "$resource": {
@@ -1342,6 +1638,26 @@
           "ja": "プロデュース戦略"
         }
       },
+      "required_acks": {
+        "title": {
+          "zh": "Produce ACK策略",
+          "en": "Produce Required Acks"
+        },
+        "description": {
+          "zh": "Produce ACK策略",
+          "en": "Produce Required Acks"
+        }
+      },
+      "ram_offload": {
+        "title": {
+          "zh": "磁盘缓存去负载模式",
+          "en": "Disk Cache Offload Mode"
+        },
+        "description": {
+          "zh": "仅当‘磁盘缓存’选项开启是有效。该选项开启时，磁盘缓存仅用于缓解内存压力，重启后未发送消息会被丢弃；关闭时，所有未发送的消息都写入磁盘，重启后继续发送。",
+          "en": "Only takes effect when 'Disk Cache' is opted in. When turned on, the messages are only stored on disk to offload RAM usage stress. When turned off, all unacknowledged messages are stored on disk to survive crashes and restarts"
+        }
+      },
       "payload_tmpl": {
         "title": {
           "zh": "消息内容模板",
@@ -1415,6 +1731,61 @@
           "zh": "包含了占位符的 SQL 模板，用于插入或更新数据到 Cassandra 数据库",
           "en": "SQL Template with Placeholders for Inserting/Updating Data to Cassandra",
           "ja": "Cassandraにデータを挿入/更新するためのプレースホルダーを含むSQLテンプレートです"
+        }
+      },
+      "enable_batch": {
+        "title": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "description": {
+          "zh": "启用批量插入",
+          "en": "Enable Batch Insert"
+        },
+        "items": {
+          "true": {
+            "sync_timeout": {
+              "title": {
+                "zh": "调用超时时间(ms)",
+                "en": "Call Timeout"
+              },
+              "description": {
+                "zh": "以同步方式执行动作的超时时间。按毫秒计",
+                "en": "Timeout in milliseconds for performing actions in a synchronized manner"
+              }
+            },
+            "insert_mode": {
+              "title": {
+                "zh": "同步或者异步插入",
+                "en": "Sync or Async INSERT"
+              },
+              "description": {
+                "zh": "同步或者异步执行 INSERT 语句",
+                "en": "Sync or async INSERT to DB"
+              }
+            },
+            "batch_time": {
+              "title": {
+                "zh": "最大批量间隔(ms)",
+                "en": "Max Batch Interval"
+              },
+              "description": {
+                "zh": "两次(批量)请求之间最大的等待间隔。按毫秒计",
+                "en": "Maximum interval in milliseconds that is allowed between two successive (batch) request"
+              }
+            },
+            "batch_size": {
+              "title": {
+                "zh": "最大批量数",
+                "en": "Max Batch Insert Count"
+              },
+              "description": {
+                "zh": "单次批量请求可以发送的最大 INSERT SQL 条目",
+                "en": "Maximum number of INSERT SQL clauses that can be sent in a single request"
+              }
+            }
+          },
+          "false": {}
         }
       },
       "$resource": {
